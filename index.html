@@ -6,242 +6,332 @@
   <title>THE ZONE MATCH | La Zona Club — Uma Musume Competitive</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,700;0,900;1,800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,700;0,900;1,800;1,900&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
+<body class="landing-active">
 
-  <!-- CABECERA POP-HALFTONE DE LA ZONA -->
-  <header class="zone-header">
-    <div class="header-halftone"></div>
-    <div class="header-container">
-      <div class="brand-box">
-        <div class="brand-art-frame">
-          <img src="assets/winvariation.jpg" alt="Verxina & Win Variation" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-          <div class="art-fallback">V <span>×</span> W</div>
-        </div>
-        <div class="brand-titles">
-          <div class="club-tag">CLUB COMPETITIVO // LA ZONA</div>
-          <h1>THE ZONE <span>MATCH</span></h1>
-          <p>Simulador Telemetrico 1v1 &bull; Edición Verxina vs Win Variation</p>
+  <!-- =========================================================
+       MENÚ DE INICIO CREATIVO (WIN VARIATION FULL BACKGROUND)
+       ========================================================= -->
+  <section id="landing-screen" class="hero-screen" style="--hero-bg: url('../assets/umas.jpg');">
+    <!-- Capas de fondo: Imagen de Win Variation + Viñeta Carmesí/Índigo + Trama Pop-Art -->
+    <div class="hero-bg-image" style="background-image: url('assets/umas.jpg');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-halftone"></div>
+
+    <!-- BARRA SUPERIOR CON BOTONES DE LAS OPCIONES -->
+    <header class="hero-topbar">
+      <div class="hero-brand">
+        <img src="assets/umas.jpg" alt="Win Variation" class="hero-mini-avatar" onerror="this.style.display='none'" />
+        <div>
+          <span class="hero-club-pill">LA ZONA CLUB</span>
+          <strong class="hero-brand-name">THE ZONE <span>MATCH</span></strong>
         </div>
       </div>
 
-      <!-- NAVEGACIÓN DE MÓDULOS -->
-      <nav class="zone-nav">
-        <button class="nav-tab active" data-tab="tab-simulator">⚔️ Zone Match (1v1)</button>
-        <button class="nav-tab" data-tab="tab-stamina">⚡ Calc. Stamina</button>
-        <button class="nav-tab" data-tab="tab-meta">🏆 Meta & CM Club</button>
+      <nav class="hero-top-nav">
+        <button class="hero-nav-btn" data-goto="tab-simulator">
+          <span class="nav-icon">⚔️</span>
+          <span>Zone Match (1v1)</span>
+        </button>
+        <button class="hero-nav-btn" data-goto="tab-stamina">
+          <span class="nav-icon">⚡</span>
+          <span>Calc. Stamina</span>
+        </button>
+        <button class="hero-nav-btn" data-goto="tab-meta">
+          <span class="nav-icon">🏆</span>
+          <span>Meta &amp; CM Club</span>
+        </button>
       </nav>
+    </header>
 
-      <!-- ACCIONES RÁPIDAS DEL CLUB -->
-      <div class="club-actions">
-        <button id="btn-export-build" class="btn-zone btn-outline" title="Copia un código para pasarlo por el Discord de La Zona">📋 Exportar Duelo</button>
-        <button id="btn-import-build" class="btn-zone btn-outline">📥 Importar</button>
+    <!-- CENTRO CREATIVO DE PRESENTACIÓN -->
+    <div class="hero-center">
+      <div class="hero-badge-floating">
+        <span class="pulse-dot"></span> EDICIÓN ESPECIAL // WIN VARIATION ACE
+      </div>
+
+      <h1 class="hero-main-title">
+        ENTRA EN <span class="text-gradient-zone">LA ZONA</span>
+      </h1>
+
+      <p class="hero-description">
+        Suite competitiva de telemetría 1v1, cálculo de supervivencia para <strong>Last Spurt</strong> y estrategia de <strong>Champions Meeting</strong> creada para el club <strong>La Zona</strong>.
+      </p>
+
+      <!-- Botones centrales de acceso rápido -->
+      <div class="hero-cta-group">
+        <button class="btn-hero-primary" data-goto="tab-simulator">
+          ▶ INICIAR DUELO 1v1
+        </button>
+        <button class="btn-hero-secondary" data-goto="tab-stamina">
+          ⚡ CALCULAR STAMINA
+        </button>
+      </div>
+
+      <!-- Tarjetas flotantes de vista rápida -->
+      <div class="hero-cards-preview">
+        <div class="preview-pill" data-goto="tab-simulator">
+          <strong>📊 Telemetría a 60 FPS</strong>
+          <span>Curvas de velocidad, HP y bashin</span>
+        </div>
+        <div class="preview-pill" data-goto="tab-stamina">
+          <strong>💚 Supervivencia Exacta</strong>
+          <span>Ajuste por Guts, curas de oro y debuffs</span>
+        </div>
+        <div class="preview-pill" data-goto="tab-meta">
+          <strong>🔥 Dominio del Meta</strong>
+          <span>Aceleraciones óptimas de cada circuito</span>
+        </div>
       </div>
     </div>
-  </header>
 
-  <main class="zone-main">
+    <!-- BARRA INFERIOR CON BOTONES DE DISCORD, GITHUB E INSTAGRAM -->
+    <footer class="hero-footer">
+      <div class="social-links">
+        <!-- Cambia el href="#" por el link real de invitación al Discord de La Zona -->
+        <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="social-btn social-discord">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+          <span>Discord La Zona</span>
+        </a>
 
-    <!-- ==========================================
-         PESTAÑA 1: SIMULADOR 1v1 (ZONE MATCH)
-         ========================================== -->
-    <section id="tab-simulator" class="tab-content active">
+        <a href="https://github.com/SamsiiMB75/the-zone-match" target="_blank" rel="noopener noreferrer" class="social-btn social-github">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          <span>GitHub</span>
+        </a>
 
-      <!-- BARRA DE CIRCUITO Y CONDICIONES -->
-      <div class="panel track-bar">
-        <div class="track-selectors">
-          <div class="field-group">
-            <label>Hipódromo y Distancia</label>
-            <select id="track-select">
-              <option value="tokyo_2400_turf">Tokio Césped 2400m (Media - Derby / Japan Cup)</option>
-              <option value="nakayama_2500_turf">Nakayama Césped 2500m (Larga - Arima Kinen)</option>
-              <option value="hanshin_1600_turf">Hanshin Césped 1600m (Milla - Oka Sho / Mile CS)</option>
-              <option value="kyoto_3200_turf">Kioto Césped 3200m (Larga - Tenno Sho Primavera)</option>
-              <option value="chukyo_1200_turf">Chukyo Césped 1200m (Sprint - Takamatsunomiya)</option>
-              <option value="tokyo_2000_turf">Tokio Césped 2000m (Media - Tenno Sho Otoño)</option>
-              <option value="oi_2000_dirt">Oi Tierra 2000m (Media - Tokyo Daishoten)</option>
-            </select>
+        <!-- Cambia el href por el Instagram tuyo o del club -->
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn social-instagram">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          <span>Instagram</span>
+        </a>
+      </div>
+    </footer>
+  </section>
+
+
+  <!-- =========================================================
+       PANEL PRINCIPAL DE LA APLICACIÓN (OCULTO AL INICIO)
+       ========================================================= -->
+  <div id="app-workspace" class="workspace-hidden">
+
+    <!-- CABECERA POP-HALFTONE DE LA ZONA -->
+    <header class="zone-header">
+      <div class="header-halftone"></div>
+      <div class="header-container">
+        <div class="brand-box">
+          <div class="brand-art-frame">
+            <img src="assets/umas.jpg" alt="Win Variation" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="art-fallback">V <span>×</span> W</div>
           </div>
-
-          <div class="field-group">
-            <label>Estado de Pista</label>
-            <select id="ground-select">
-              <option value="good">Firme / 良 (Good)</option>
-              <option value="yielding">Bueno / 稍重 (Yielding)</option>
-              <option value="soft">Blando / 重 (Soft)</option>
-              <option value="heavy">Pesado / 不良 (Heavy)</option>
-            </select>
-          </div>
-
-          <div class="field-group">
-            <label>Iteraciones (Monte Carlo)</label>
-            <select id="sim-runs">
-              <option value="50">50 carreras (Rápido)</option>
-              <option value="250" selected>250 carreras (Competitivo)</option>
-              <option value="500">500 carreras (Alta precisión)</option>
-            </select>
+          <div class="brand-titles">
+            <div class="club-tag">CLUB COMPETITIVO // LA ZONA</div>
+            <h1>THE ZONE <span>MATCH</span></h1>
+            <p>Simulador Telemetrico 1v1 &bull; Edición Verxina vs Win Variation</p>
           </div>
         </div>
 
-        <div class="track-cta">
-          <button id="btn-run-sim" class="btn-zone btn-primary">▶ SIMULAR DUELO EN LA ZONA</button>
+        <!-- NAVEGACIÓN DE MÓDULOS -->
+        <nav class="zone-nav">
+          <button id="btn-back-home" class="nav-tab home-btn" title="Volver a la portada">🏠 Inicio</button>
+          <button class="nav-tab active" data-tab="tab-simulator">⚔️ Zone Match (1v1)</button>
+          <button class="nav-tab" data-tab="tab-stamina">⚡ Calc. Stamina</button>
+          <button class="nav-tab" data-tab="tab-meta">🏆 Meta &amp; CM Club</button>
+        </nav>
+
+        <!-- ACCIONES RÁPIDAS DEL CLUB -->
+        <div class="club-actions">
+          <button id="btn-export-build" class="btn-zone btn-outline" title="Copia un código para pasarlo por el Discord de La Zona">📋 Exportar Duelo</button>
+          <button id="btn-import-build" class="btn-zone btn-outline">📥 Importar</button>
         </div>
       </div>
+    </header>
 
-      <!-- PANEL DE TELEMETRÍA Y RESULTADOS -->
-      <div class="panel telemetry-panel">
-        <div class="telemetry-header">
-          <div class="versus-banner">
-            <span class="badge-verxina" id="banner-uma1">UMA 1 (Verxina Side)</span>
-            <span class="vs-spark">VS</span>
-            <span class="badge-winvari" id="banner-uma2">UMA 2 (Win Variation Side)</span>
-          </div>
-          <div class="telemetry-legend">
-            <span class="leg-item"><i class="dot-v"></i> Velocidad Uma 1</span>
-            <span class="leg-item"><i class="dot-w"></i> Velocidad Uma 2</span>
-            <span class="leg-item"><i class="dot-hp"></i> Línea punteada: Stamina (%)</span>
-          </div>
-        </div>
+    <main class="zone-main">
 
-        <div class="canvas-wrapper">
-          <canvas id="race-canvas" width="1150" height="300"></canvas>
-          <div id="canvas-tooltip" class="canvas-tooltip hidden"></div>
-        </div>
-
-        <!-- TARJETAS DE RESULTADO DE LA SIMULACIÓN -->
-        <div class="results-strip">
-          <div class="res-card">
-            <span class="res-label">GANADORA PROMEDIO</span>
-            <strong id="res-winner" class="res-value">--</strong>
-          </div>
-          <div class="res-card">
-            <span class="res-label">VENTAJA MEDIA (BASHIN)</span>
-            <strong id="res-bashin" class="res-value">0.00 cuerpos</strong>
-          </div>
-          <div class="res-card">
-            <span class="res-label">RANGO (MÍN / MÁX)</span>
-            <strong id="res-range" class="res-value">0.00 / 0.00</strong>
-          </div>
-          <div class="res-card">
-            <span class="res-label">TIEMPO MEDIO (1 vs 2)</span>
-            <strong id="res-times" class="res-value">-- vs --</strong>
-          </div>
-          <div class="res-card">
-            <span class="res-label">SUPERVIVENCIA SPURT</span>
-            <strong id="res-spurt" class="res-value">100% / 100%</strong>
-          </div>
-        </div>
-      </div>
-
-      <!-- COMPARADOR LADO A LADO: VERXINA (AZUL) VS WIN VARIATION (ROJO) -->
-      <div class="duel-grid">
-        <!-- COLUMNA UMA 1 (VERXINA THEME) -->
-        <div class="uma-card theme-verxina" id="card-uma-1"></div>
-
-        <!-- COLUMNA UMA 2 (WIN VARIATION THEME) -->
-        <div class="uma-card theme-winvari" id="card-uma-2"></div>
-      </div>
-
-    </section>
-
-    <!-- ==========================================
-         PESTAÑA 2: CALCULADORA DE STAMINA
-         ========================================== -->
-    <section id="tab-stamina" class="tab-content">
-      <div class="panel stamina-calc-panel">
-        <h2>⚡ Calculadora Competitiva de Stamina & Supervivencia</h2>
-        <p class="sub-text">Calcula la Stamina exacta necesaria para hacer un <strong>Full Last Spurt</strong> desde el inicio del último tercio sin morir en el intento.</p>
-
-        <div class="stamina-grid">
-          <div class="stamina-inputs">
+      <!-- PESTAÑA 1: SIMULADOR 1v1 (ZONE MATCH) -->
+      <section id="tab-simulator" class="tab-content active">
+        <div class="panel track-bar">
+          <div class="track-selectors">
             <div class="field-group">
-              <label>Distancia de la Carrera (metros)</label>
-              <input type="number" id="sc-distance" value="2400" step="100" min="1000" max="3600" />
-            </div>
-            <div class="field-group">
-              <label>Estrategia / Estilo</label>
-              <select id="sc-style">
-                <option value="0.95">Líder / Nige (Front Runner)</option>
-                <option value="0.89" selected>Delantera / Senkou (Pace Chaser)</option>
-                <option value="1.0">Medio / Sashi (Late Surger)</option>
-                <option value="0.995">Remate / Oikomi (End Closer)</option>
+              <label>Hipódromo y Distancia</label>
+              <select id="track-select">
+                <option value="tokyo_2400_turf">Tokio Césped 2400m (Media - Derby / Japan Cup)</option>
+                <option value="nakayama_2500_turf">Nakayama Césped 2500m (Larga - Arima Kinen)</option>
+                <option value="hanshin_1600_turf">Hanshin Césped 1600m (Milla - Oka Sho / Mile CS)</option>
+                <option value="kyoto_3200_turf">Kioto Césped 3200m (Larga - Tenno Sho Primavera)</option>
+                <option value="chukyo_1200_turf">Chukyo Césped 1200m (Sprint - Takamatsunomiya)</option>
+                <option value="tokyo_2000_turf">Tokio Césped 2000m (Media - Tenno Sho Otoño)</option>
+                <option value="oi_2000_dirt">Oi Tierra 2000m (Media - Tokyo Daishoten)</option>
               </select>
             </div>
+
             <div class="field-group">
-              <label>Velocidad (Speed) Objetivo</label>
-              <input type="number" id="sc-speed" value="1200" min="400" max="2000" />
+              <label>Estado de Pista</label>
+              <select id="ground-select">
+                <option value="good">Firme / 良 (Good)</option>
+                <option value="yielding">Bueno / 稍重 (Yielding)</option>
+                <option value="soft">Blando / 重 (Soft)</option>
+                <option value="heavy">Pesado / 不良 (Heavy)</option>
+              </select>
             </div>
+
             <div class="field-group">
-              <label>Agallas (Guts)</label>
-              <input type="number" id="sc-guts" value="450" min="200" max="1500" />
-            </div>
-            <div class="field-group">
-              <label>Curas Doradas (5.5% HP c/u)</label>
-              <input type="number" id="sc-gold-heals" value="1" min="0" max="4" />
-            </div>
-            <div class="field-group">
-              <label>Debuffs Enemigos recibidos (Murmur / Nice Nature)</label>
-              <select id="sc-debuffs">
-                <option value="0">Lobby Limpio (0% daño)</option>
-                <option value="0.03">1 Debuffer moderado (-3% HP)</option>
-                <option value="0.06">Lobby Competitivo La Zona (-6% HP)</option>
-                <option value="0.09">Doble Nice Nature Infierno (-9% HP)</option>
+              <label>Iteraciones (Monte Carlo)</label>
+              <select id="sim-runs">
+                <option value="50">50 carreras (Rápido)</option>
+                <option value="250" selected>250 carreras (Competitivo)</option>
+                <option value="500">500 carreras (Alta precisión)</option>
               </select>
             </div>
           </div>
 
-          <div class="stamina-output-box" id="stamina-result-box">
-            <!-- Se llena dinámicamente por JS -->
+          <div class="track-cta">
+            <button id="btn-run-sim" class="btn-zone btn-primary">▶ SIMULAR DUELO EN LA ZONA</button>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- ==========================================
-         PESTAÑA 3: META & CHAMPIONS MEETING (CLUB)
-         ========================================== -->
-    <section id="tab-meta" class="tab-content">
-      <div class="panel meta-panel">
-        <h2>🏆 Tablón Táctico de "La Zona" — Guía de Circuitos</h2>
-        <p class="sub-text">Resumen rápido de aceleraciones válidas para cada distancia y estadísticas recomendadas para torneos internos del club.</p>
-
-        <div class="meta-cards-grid">
-          <div class="meta-card card-v">
-            <span class="meta-tag">TOKIO 2400m (CÉSPED)</span>
-            <h3>Derby / Japan Cup (Media)</h3>
-            <ul>
-              <li><strong>Inicio del Last Spurt:</strong> 1600m (Justo al entrar en la curva final).</li>
-              <li><strong>Aceleraciones Top:</strong> <em>Angling & Scheming</em> (Seiun Sky), <em>Red Shift</em> (Maruzensky), <em>Shooting for Victory</em> (Taiki), <em>Let's Pump Some Iron</em> (Ryan).</li>
-              <li><strong>Stats Objetivo (Global):</strong> 1200 SPD / 850 STA (+1 Oro) / 900 PWR / 400 GUTS / 600 WIT.</li>
-            </ul>
+        <div class="panel telemetry-panel">
+          <div class="telemetry-header">
+            <div class="versus-banner">
+              <span class="badge-verxina" id="banner-uma1">UMA 1 (Verxina Side)</span>
+              <span class="vs-spark">VS</span>
+              <span class="badge-winvari" id="banner-uma2">UMA 2 (Win Variation Side)</span>
+            </div>
+            <div class="telemetry-legend">
+              <span class="leg-item"><i class="dot-v"></i> Velocidad Uma 1</span>
+              <span class="leg-item"><i class="dot-w"></i> Velocidad Uma 2</span>
+              <span class="leg-item"><i class="dot-hp"></i> Línea punteada: Stamina (%)</span>
+            </div>
           </div>
 
-          <div class="meta-card card-w">
-            <span class="meta-tag">NAKAYAMA 2500m (CÉSPED)</span>
-            <h3>Arima Kinen (Larga)</h3>
-            <ul>
-              <li><strong>Inicio del Last Spurt:</strong> 1667m (En plena curva antes de la recta final con subida).</li>
-              <li><strong>Aceleraciones Top:</strong> <em>Angling & Scheming</em>, <em>Straightaway Spurt</em> (Narita Taishin / Hishi Amazon), <em>No Stopping Me!</em></li>
-              <li><strong>Stats Objetivo (Global):</strong> 1200 SPD / 1000+ STA (+2 Oros) / 850 PWR / 450 GUTS / 500 WIT.</li>
-            </ul>
+          <div class="canvas-wrapper">
+            <canvas id="race-canvas" width="1150" height="300"></canvas>
+            <div id="canvas-tooltip" class="canvas-tooltip hidden"></div>
           </div>
 
-          <div class="meta-card card-v">
-            <span class="meta-tag">HANSHIN 1600m (CÉSPED)</span>
-            <h3>Mile Championship / Oka Sho</h3>
-            <ul>
-              <li><strong>Inicio del Last Spurt:</strong> 1067m (Final de la curva hacia la recta larga).</li>
-              <li><strong>Aceleraciones Top:</strong> <em>Angling & Scheming</em>, <em>Let's Pump Some Iron</em>, <em>Furious Feat</em>, <em>Updrafters</em>.</li>
-              <li><strong>Stats Objetivo (Global):</strong> 1200 SPD / 600 STA / 1000+ PWR / 400 GUTS / 700+ WIT.</li>
-            </ul>
+          <div class="results-strip">
+            <div class="res-card">
+              <span class="res-label">GANADORA PROMEDIO</span>
+              <strong id="res-winner" class="res-value">--</strong>
+            </div>
+            <div class="res-card">
+              <span class="res-label">VENTAJA MEDIA (BASHIN)</span>
+              <strong id="res-bashin" class="res-value">0.00 cuerpos</strong>
+            </div>
+            <div class="res-card">
+              <span class="res-label">RANGO (MÍN / MÁX)</span>
+              <strong id="res-range" class="res-value">0.00 / 0.00</strong>
+            </div>
+            <div class="res-card">
+              <span class="res-label">TIEMPO MEDIO (1 vs 2)</span>
+              <strong id="res-times" class="res-value">-- vs --</strong>
+            </div>
+            <div class="res-card">
+              <span class="res-label">SUPERVIVENCIA SPURT</span>
+              <strong id="res-spurt" class="res-value">100% / 100%</strong>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
 
-  </main>
+        <div class="duel-grid">
+          <div class="uma-card theme-verxina" id="card-uma-1"></div>
+          <div class="uma-card theme-winvari" id="card-uma-2"></div>
+        </div>
+      </section>
+
+      <!-- PESTAÑA 2: CALCULADORA DE STAMINA -->
+      <section id="tab-stamina" class="tab-content">
+        <div class="panel stamina-calc-panel">
+          <h2>⚡ Calculadora Competitiva de Stamina &amp; Supervivencia</h2>
+          <p class="sub-text">Calcula la Stamina exacta necesaria para hacer un <strong>Full Last Spurt</strong> desde el inicio del último tercio sin morir en el intento.</p>
+
+          <div class="stamina-grid">
+            <div class="stamina-inputs">
+              <div class="field-group">
+                <label>Distancia de la Carrera (metros)</label>
+                <input type="number" id="sc-distance" value="2400" step="100" min="1000" max="3600" />
+              </div>
+              <div class="field-group">
+                <label>Estrategia / Estilo</label>
+                <select id="sc-style">
+                  <option value="0.95">Líder / Nige (Front Runner)</option>
+                  <option value="0.89" selected>Delantera / Senkou (Pace Chaser)</option>
+                  <option value="1.0">Medio / Sashi (Late Surger)</option>
+                  <option value="0.995">Remate / Oikomi (End Closer)</option>
+                </select>
+              </div>
+              <div class="field-group">
+                <label>Velocidad (Speed) Objetivo</label>
+                <input type="number" id="sc-speed" value="1200" min="400" max="2000" />
+              </div>
+              <div class="field-group">
+                <label>Agallas (Guts)</label>
+                <input type="number" id="sc-guts" value="450" min="200" max="1500" />
+              </div>
+              <div class="field-group">
+                <label>Curas Doradas (5.5% HP c/u)</label>
+                <input type="number" id="sc-gold-heals" value="1" min="0" max="4" />
+              </div>
+              <div class="field-group">
+                <label>Debuffs Enemigos recibidos (Murmur / Nice Nature)</label>
+                <select id="sc-debuffs">
+                  <option value="0">Lobby Limpio (0% daño)</option>
+                  <option value="0.03">1 Debuffer moderado (-3% HP)</option>
+                  <option value="0.06">Lobby Competitivo La Zona (-6% HP)</option>
+                  <option value="0.09">Doble Nice Nature Infierno (-9% HP)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="stamina-output-box" id="stamina-result-box"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PESTAÑA 3: META & CHAMPIONS MEETING (CLUB) -->
+      <section id="tab-meta" class="tab-content">
+        <div class="panel meta-panel">
+          <h2>🏆 Tablón Táctico de "La Zona" — Guía de Circuitos</h2>
+          <p class="sub-text">Resumen rápido de aceleraciones válidas para cada distancia y estadísticas recomendadas para torneos internos del club.</p>
+
+          <div class="meta-cards-grid">
+            <div class="meta-card card-v">
+              <span class="meta-tag">TOKIO 2400m (CÉSPED)</span>
+              <h3>Derby / Japan Cup (Media)</h3>
+              <ul>
+                <li><strong>Inicio del Last Spurt:</strong> 1600m (Justo al entrar en la curva final).</li>
+                <li><strong>Aceleraciones Top:</strong> <em>Angling &amp; Scheming</em> (Seiun Sky), <em>Red Shift</em> (Maruzensky), <em>Shooting for Victory</em> (Taiki), <em>Let's Pump Some Iron</em> (Ryan).</li>
+                <li><strong>Stats Objetivo (Global):</strong> 1200 SPD / 850 STA (+1 Oro) / 900 PWR / 400 GUTS / 600 WIT.</li>
+              </ul>
+            </div>
+
+            <div class="meta-card card-w">
+              <span class="meta-tag">NAKAYAMA 2500m (CÉSPED)</span>
+              <h3>Arima Kinen (Larga)</h3>
+              <ul>
+                <li><strong>Inicio del Last Spurt:</strong> 1667m (En plena curva antes de la recta final con subida).</li>
+                <li><strong>Aceleraciones Top:</strong> <em>Angling &amp; Scheming</em>, <em>Straightaway Spurt</em> (Narita Taishin / Hishi Amazon), <em>No Stopping Me!</em></li>
+                <li><strong>Stats Objetivo (Global):</strong> 1200 SPD / 1000+ STA (+2 Oros) / 850 PWR / 450 GUTS / 500 WIT.</li>
+              </ul>
+            </div>
+
+            <div class="meta-card card-v">
+              <span class="meta-tag">HANSHIN 1600m (CÉSPED)</span>
+              <h3>Mile Championship / Oka Sho</h3>
+              <ul>
+                <li><strong>Inicio del Last Spurt:</strong> 1067m (Final de la curva hacia la recta larga).</li>
+                <li><strong>Aceleraciones Top:</strong> <em>Angling &amp; Scheming</em>, <em>Let's Pump Some Iron</em>, <em>Furious Feat</em>, <em>Updrafters</em>.</li>
+                <li><strong>Stats Objetivo (Global):</strong> 1200 SPD / 600 STA / 1000+ PWR / 400 GUTS / 700+ WIT.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
 
   <script src="js/app.js"></script>
 </body>
