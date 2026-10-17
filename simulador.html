@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulador 1v1 | THE ZONE MATCH</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,700;0,900;1,800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="zone-header">
+    <div class="header-halftone"></div>
+    <div class="header-container">
+      <a href="index.html" class="brand-box" style="text-decoration:none; color:inherit;">
+        <div class="brand-art-frame">
+          <img src="assets/umas.jpg" alt="Win Variation" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="art-fallback">V <span>×</span> W</div>
+        </div>
+        <div class="brand-titles">
+          <div class="club-tag">CLUB COMPETITIVO // LA ZONA</div>
+          <h1>THE ZONE <span>MATCH</span></h1>
+          <p>Simulador Telemetrico 1v1</p>
+        </div>
+      </a>
+
+      <nav class="zone-nav">
+        <a href="index.html" class="nav-tab">🏠 Inicio</a>
+        <a href="simulador.html" class="nav-tab active">⚔️ Zone Match (1v1)</a>
+        <a href="stamina.html" class="nav-tab">⚡ Calc. Stamina</a>
+        <a href="meta.html" class="nav-tab">🏆 Meta &amp; CM</a>
+      </nav>
+
+      <div class="club-actions">
+        <button id="btn-export-build" class="btn-zone btn-outline">📋 Exportar Duelo</button>
+        <button id="btn-import-build" class="btn-zone btn-outline">📥 Importar</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="zone-main">
+    <div class="panel track-bar">
+      <div class="track-selectors">
+        <div class="field-group">
+          <label>Hipódromo y Distancia</label>
+          <select id="track-select">
+            <option value="tokyo_2400_turf">Tokio Césped 2400m (Media - Derby / Japan Cup)</option>
+            <option value="nakayama_2500_turf">Nakayama Césped 2500m (Larga - Arima Kinen)</option>
+            <option value="hanshin_1600_turf">Hanshin Césped 1600m (Milla - Oka Sho / Mile CS)</option>
+            <option value="kyoto_3200_turf">Kioto Césped 3200m (Larga - Tenno Sho Primavera)</option>
+            <option value="chukyo_1200_turf">Chukyo Césped 1200m (Sprint - Takamatsunomiya)</option>
+            <option value="tokyo_2000_turf">Tokio Césped 2000m (Media - Tenno Sho Otoño)</option>
+            <option value="oi_2000_dirt">Oi Tierra 2000m (Media - Tokyo Daishoten)</option>
+          </select>
+        </div>
+
+        <div class="field-group">
+          <label>Estado de Pista</label>
+          <select id="ground-select">
+            <option value="good">Firme / 良 (Good)</option>
+            <option value="yielding">Bueno / 稍重 (Yielding)</option>
+            <option value="soft">Blando / 重 (Soft)</option>
+            <option value="heavy">Pesado / 不良 (Heavy)</option>
+          </select>
+        </div>
+
+        <div class="field-group">
+          <label>Iteraciones (Monte Carlo)</label>
+          <select id="sim-runs">
+            <option value="50">50 carreras (Rápido)</option>
+            <option value="250" selected>250 carreras (Competitivo)</option>
+            <option value="500">500 carreras (Alta precisión)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="track-cta">
+        <button id="btn-run-sim" class="btn-zone btn-primary">▶ SIMULAR DUELO EN LA ZONA</button>
+      </div>
+    </div>
+
+    <div class="panel telemetry-panel">
+      <div class="telemetry-header">
+        <div class="versus-banner">
+          <span class="badge-verxina" id="banner-uma1">UMA 1</span>
+          <span class="vs-spark">VS</span>
+          <span class="badge-winvari" id="banner-uma2">UMA 2</span>
+        </div>
+        <div class="telemetry-legend">
+          <span class="leg-item"><i class="dot-v"></i> Velocidad Uma 1</span>
+          <span class="leg-item"><i class="dot-w"></i> Velocidad Uma 2</span>
+          <span class="leg-item"><i class="dot-hp"></i> Línea punteada: Stamina (%)</span>
+        </div>
+      </div>
+
+      <div class="canvas-wrapper">
+        <canvas id="race-canvas" width="1150" height="300"></canvas>
+        <div id="canvas-tooltip" class="canvas-tooltip hidden"></div>
+      </div>
+
+      <div class="results-strip">
+        <div class="res-card">
+          <span class="res-label">GANADORA PROMEDIO</span>
+          <strong id="res-winner" class="res-value">--</strong>
+        </div>
+        <div class="res-card">
+          <span class="res-label">VENTAJA MEDIA (BASHIN)</span>
+          <strong id="res-bashin" class="res-value">0.00 cuerpos</strong>
+        </div>
+        <div class="res-card">
+          <span class="res-label">RANGO (MÍN / MÁX)</span>
+          <strong id="res-range" class="res-value">0.00 / 0.00</strong>
+        </div>
+        <div class="res-card">
+          <span class="res-label">TIEMPO MEDIO (1 vs 2)</span>
+          <strong id="res-times" class="res-value">-- vs --</strong>
+        </div>
+        <div class="res-card">
+          <span class="res-label">SUPERVIVENCIA SPURT</span>
+          <strong id="res-spurt" class="res-value">100% / 100%</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="duel-grid">
+      <div class="uma-card theme-verxina" id="card-uma-1"></div>
+      <div class="uma-card theme-winvari" id="card-uma-2"></div>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
