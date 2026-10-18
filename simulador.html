@@ -16,26 +16,26 @@
     <div class="header-container">
       <a href="index.html" class="brand-box" style="text-decoration:none; color:inherit;">
         <div class="brand-art-frame">
-          <img src="assets/umas.jpg" alt="Win Variation" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <img src="assets/winvariation.jpg" alt="Win Variation" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
           <div class="art-fallback">V <span>×</span> W</div>
         </div>
         <div class="brand-titles">
-          <div class="club-tag">CLUB COMPETITIVO // LA ZONA</div>
-          <h1>THE ZONE <span>MATCH</span></h1>
-          <p>Simulador Telemetrico 1v1</p>
+          <div class="club-tag">LA ZONA</div>
+          <h1>Uma Musume <span>Pretty Derby</span></h1>
+          <p>Simulador</p>
         </div>
       </a>
 
       <nav class="zone-nav">
-        <a href="index.html" class="nav-tab">🏠 Inicio</a>
-        <a href="simulador.html" class="nav-tab active">⚔️ Zone Match (1v1)</a>
-        <a href="stamina.html" class="nav-tab">⚡ Calc. Stamina</a>
-        <a href="meta.html" class="nav-tab">🏆 Meta &amp; CM</a>
+        <a href="index.html" class="nav-tab">Inicio</a>
+        <a href="simulador.html" class="nav-tab active">Simulador</a>
+        <a href="stamina.html" class="nav-tab">Calculadora</a>
+        <a href="meta.html" class="nav-tab">Meta &amp; CM</a>
       </nav>
 
       <div class="club-actions">
-        <button id="btn-export-build" class="btn-zone btn-outline">📋 Exportar Duelo</button>
-        <button id="btn-import-build" class="btn-zone btn-outline">📥 Importar</button>
+        <button id="btn-export-build" class="btn-zone btn-outline">Exportar</button>
+        <button id="btn-import-build" class="btn-zone btn-outline">Importar</button>
       </div>
     </div>
   </header>
@@ -59,15 +59,15 @@
         <div class="field-group">
           <label>Estado de Pista</label>
           <select id="ground-select">
-            <option value="good">Firme / 良 (Good)</option>
-            <option value="yielding">Bueno / 稍重 (Yielding)</option>
-            <option value="soft">Blando / 重 (Soft)</option>
-            <option value="heavy">Pesado / 不良 (Heavy)</option>
+            <option value="good">Firme / (Good)</option>
+            <option value="yielding">Bueno / (Yielding)</option>
+            <option value="soft">Blando / (Soft)</option>
+            <option value="heavy">Pesado / (Heavy)</option>
           </select>
         </div>
 
         <div class="field-group">
-          <label>Iteraciones (Monte Carlo)</label>
+          <label>Iteraciones</label>
           <select id="sim-runs">
             <option value="50">50 carreras (Rápido)</option>
             <option value="250" selected>250 carreras (Competitivo)</option>
@@ -77,7 +77,7 @@
       </div>
 
       <div class="track-cta">
-        <button id="btn-run-sim" class="btn-zone btn-primary">▶ SIMULAR DUELO EN LA ZONA</button>
+        <button id="btn-run-sim" class="btn-zone btn-primary">▶ SIMULAR CARRERA</button>
       </div>
     </div>
 
