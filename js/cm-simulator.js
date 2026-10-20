@@ -3,7 +3,6 @@
    Conectado a data/tracks.json, data/skills.json y data/umas.json
    ============================================================================ */
 
-// Base de datos de respaldo (Fallback)
 const FALLBACK_TRACKS = [
   {
     id: "10606", trackName: "Tokyo", name: "Tokyo 2400m (Turf) - Japanese Derby / Japan Cup",
@@ -57,7 +56,6 @@ const FALLBACK_SKILLS = [
   { id: "2010", name: "Tail Held High", category: "white", duration: 3.0, targetSpeed: 0.25, accel: 0.0, heal: 0, phase: "mid", reqRank: [1, 9] }
 ];
 
-// Estado global de la aplicación
 let currentSkillFilter = 'all';
 
 const STATE = {
@@ -88,9 +86,6 @@ const RIVAL_ROLES = {
   debuffer: { name: "Debuffer", style: 3, skills: ["2009"], debuffStamina: 0.03 } 
 };
 
-// ============================================================================
-// 1. CARGA DE LA BASE DE DATOS JSON (CON FALLBACK)
-// ============================================================================
 async function initDatabase() {
   const badge = document.getElementById("dbStatusBadge");
   try {
@@ -135,9 +130,6 @@ async function initDatabase() {
   runChampionsMeeting();
 }
 
-// ============================================================================
-// 2. INTERFAZ Y EVENTOS DEL USUARIO
-// ============================================================================
 function renderUI() {
   const trackSel = document.getElementById("trackSelect");
   trackSel.innerHTML = STATE.tracks.map((t, idx) => `<option value="${idx}">${t.name}</option>`).join("");
@@ -159,19 +151,18 @@ function renderActivePlayerSlot() {
   document.getElementById("statGuts").value = uma.guts;
   document.getElementById("statWit").value = uma.wit;
 
-  // Cargar imagen dinámica con SISTEMA MULTI-CDN (Anti 404)
   const portraitImg = document.getElementById("umaPortrait");
-  const selectedUmaData = STATE.umas.find(u => u.name === uma.name);
+  // Búsqueda más flexible para esquivar problemas de caché
+  const selectedUmaData = STATE.umas.find(u => u.name === uma.name) || STATE.umas.find(u => u.name.includes(uma.name.split(" ")[0]));
   
   if (selectedUmaData && selectedUmaData.id) {
     let iconId = selectedUmaData.id.toString();
     if (iconId.length === 4) iconId += "01"; 
     
-    // Cola de enlaces: Si uno falla, intenta el siguiente automáticamente
     const fallbackChain = [
-      `https://uma.tools/images/icons/chara_${iconId}.png`, // Intento 1: Uma-tools
-      `https://wsrv.nl/?url=gametora.com/images/umamusume/characters/icons/chara_${iconId}.png`, // Intento 2: GameTora vía Proxy (Se salta el bloqueo CORS)
-      `assets/umas.jpg` // Intento 3: Imagen local por defecto
+      `https://uma.tools/images/icons/chara_${iconId}.png`, 
+      `https://wsrv.nl/?url=gametora.com/images/umamusume/characters/icons/chara_${iconId}.png`, 
+      `assets/umas.jpg` 
     ];
     
     let attempt = 0;
@@ -260,9 +251,6 @@ function loadSavedBuilds() {
   }
 }
 
-// ============================================================================
-// 3. MOTOR FÍSICO DE CARRERA DE 9 UMAS
-// ============================================================================
 const STYLE_COEFF = {
   1: { earlySpd: 1.000, midSpd: 0.980, spurtSpd: 0.962, earlyAcc: 1.00, midAcc: 1.00, spurtAcc: 0.996, hpMult: 0.95 }, 
   2: { earlySpd: 0.978, midSpd: 0.991, spurtSpd: 0.975, earlyAcc: 0.985, midAcc: 1.00, spurtAcc: 0.996, hpMult: 0.89 }, 
@@ -449,9 +437,6 @@ function simulateSingleRace(runnersConfig, track, groundMod) {
   return states;
 }
 
-// ============================================================================
-// 4. EJECUCIÓN MONTE CARLO Y DIBUJADO DE TELEMETRÍA
-// ============================================================================
 function runChampionsMeeting() {
   const trackIdx = parseInt(document.getElementById("trackSelect").value) || 0;
   const track = STATE.tracks[trackIdx] || FALLBACK_TRACKS[0];
@@ -564,9 +549,6 @@ function drawTelemetryCanvas(raceStates, track) {
   }
 }
 
-// ============================================================================
-// 5. VINCULAR CONTROLES DEL DOM
-// ============================================================================
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".uma-tab").forEach(tab => {
     tab.addEventListener("click", () => {
@@ -577,7 +559,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Filtros de Habilidades
   document.querySelectorAll(".filter-btn").forEach(btn => {
     btn.addEventListener("click", (e) => {
       document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
