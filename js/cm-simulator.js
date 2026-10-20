@@ -1,10 +1,9 @@
 /* ============================================================================
-   MOTOR DE SIMULACIÓN CHAMPIONS MEETING (3v6) - CLUB LA ZONA
+   MOTOR DE SIMULACIÓN - CLUB LA ZONA
    Conectado a data/tracks.json, data/skills.json y data/umas.json
    ============================================================================ */
-let currentSkillFilter = 'all';
 
-// Base de datos de respaldo (Fallback) por si aún no se ha ejecutado sync_data.py
+// Base de datos de respaldo (Fallback)
 const FALLBACK_TRACKS = [
   {
     id: "10606", trackName: "Tokyo", name: "Tokyo 2400m (Turf) - Japanese Derby / Japan Cup",
@@ -46,7 +45,6 @@ const FALLBACK_SKILLS = [
   { id: "1003", name: "Red Shift / LP1211-M (Maruzensky Unique)", category: "unique", duration: 4.0, targetSpeed: 0.0, accel: 0.40, heal: 0, phase: "spurt", reqRank: [1, 5] },
   { id: "1004", name: "Shooting for Victory! (Taiki Unique)", category: "unique", duration: 4.0, targetSpeed: 0.0, accel: 0.40, heal: 0, phase: "spurt", reqRank: [3, 5] },
   { id: "1005", name: "Triumphant Pulse (Oguri Unique)", category: "unique", duration: 5.0, targetSpeed: 0.45, accel: 0.0, heal: 0, phase: "final200", reqRank: [2, 5] },
-  { id: "1006", name: "Nemesis / Win Variation Unique", category: "unique", duration: 5.0, targetSpeed: 0.45, accel: 0.15, heal: 0, phase: "spurt", reqRank: [4, 9] },
   { id: "2001", name: "Professor of Curvature (Gold)", category: "gold", duration: 2.4, targetSpeed: 0.35, accel: 0.0, heal: 0, phase: "mid", reqRank: [1, 9] },
   { id: "2002", name: "Swinging Maestro (Gold Heal)", category: "heal", duration: 0.0, targetSpeed: 0.0, accel: 0.0, heal: 0.055, phase: "mid", reqRank: [1, 9] },
   { id: "2003", name: "Gourmand (Gold Heal - Pace)", category: "heal", duration: 0.0, targetSpeed: 0.0, accel: 0.0, heal: 0.055, phase: "mid", reqRank: [1, 5] },
@@ -60,32 +58,34 @@ const FALLBACK_SKILLS = [
 ];
 
 // Estado global de la aplicación
+let currentSkillFilter = 'all';
+
 const STATE = {
   tracks: [],
   umas: [],
   skills: [],
   activeSlot: 0,
   playerTeam: [
-    { name: "Verxina (Original)", style: 1, speed: 1200, stamina: 850, power: 950, guts: 400, wit: 700, skills: ["1001", "2001", "2002", "2005"] },
     { name: "Oguri Cap (Original)", style: 2, speed: 1200, stamina: 900, power: 1000, guts: 420, wit: 650, skills: ["1004", "1005", "2001", "2003"] },
-    { name: "Win Variation (Original)", style: 4, speed: 1200, stamina: 920, power: 1050, guts: 400, wit: 600, skills: ["1006", "2002", "2004", "2007"] }
+    { name: "Special Week (Original)", style: 2, speed: 1200, stamina: 850, power: 950, guts: 400, wit: 700, skills: ["1001", "2001", "2002", "2005"] },
+    { name: "Gold Ship (Original)", style: 4, speed: 1200, stamina: 920, power: 1050, guts: 400, wit: 600, skills: ["1006", "2002", "2004", "2007"] }
   ],
   rivalArchetypes: [
-    { slot: 4, role: "nige_meta", label: "Rival #4: Meta Front (Nige)" },
-    { slot: 5, role: "nige_meta", label: "Rival #5: Meta Front (Nige)" },
-    { slot: 6, role: "pace_ace", label: "Rival #6: Pace Chaser Ace" },
-    { slot: 7, role: "late_gambler", label: "Rival #7: Late Surger Gambler" },
-    { slot: 8, role: "end_spurt", label: "Rival #8: End Closer (Taishin/Golshi)" },
-    { slot: 9, role: "debuffer", label: "Rival #9: Nice Nature (Debuffer)" }
+    { slot: 4, role: "nige_meta" },
+    { slot: 5, role: "nige_meta" },
+    { slot: 6, role: "pace_ace" },
+    { slot: 7, role: "late_gambler" },
+    { slot: 8, role: "end_spurt" },
+    { slot: 9, role: "debuffer" }
   ]
 };
 
 const RIVAL_ROLES = {
-  nige_meta: { name: "Meta Front (Nige)", style: 1, skills: ["1001", "2001", "2002", "2005"], debuffStamina: 0 },
-  pace_ace: { name: "Meta Pace (Senkou)", style: 2, skills: ["1003", "1004", "2001", "2003"], debuffStamina: 0 },
-  late_gambler: { name: "Late Surger (Sashi)", style: 3, skills: ["1002", "2001", "2006", "2009"], debuffStamina: 0 },
-  end_spurt: { name: "End Closer (Oikomi)", style: 4, skills: ["2002", "2004", "2007", "2009"], debuffStamina: 0 },
-  debuffer: { name: "Nice Nature (Debuffer)", style: 3, skills: ["2009"], debuffStamina: 0.03 } // Quita 3% vida al equipo jugador
+  nige_meta: { name: "Front Runner", style: 1, skills: ["1001", "2001", "2002", "2005"], debuffStamina: 0 },
+  pace_ace: { name: "Pace", style: 2, skills: ["1003", "1004", "2001", "2003"], debuffStamina: 0 },
+  late_gambler: { name: "Late Surger", style: 3, skills: ["1002", "2001", "2006", "2009"], debuffStamina: 0 },
+  end_spurt: { name: "End Closer", style: 4, skills: ["2002", "2004", "2007", "2009"], debuffStamina: 0 },
+  debuffer: { name: "Debuffer", style: 3, skills: ["2009"], debuffStamina: 0.03 } 
 };
 
 // ============================================================================
@@ -104,7 +104,6 @@ async function initDatabase() {
       const loadedTracks = await tracksRes.json();
       const loadedSkills = await skillsRes.json();
       STATE.tracks = loadedTracks.length > 0 ? loadedTracks : FALLBACK_TRACKS;
-      // Combinar las skills de umalator con las nuestras preconfiguradas para el motor
       STATE.skills = [...FALLBACK_SKILLS, ...loadedSkills.slice(0, 300)];
       badge.textContent = `✅ DB Global Conectada (${STATE.skills.length} skills)`;
       badge.style.color = "#34d399";
@@ -140,11 +139,9 @@ async function initDatabase() {
 // 2. INTERFAZ Y EVENTOS DEL USUARIO
 // ============================================================================
 function renderUI() {
-  // Poblar selector de pistas
   const trackSel = document.getElementById("trackSelect");
   trackSel.innerHTML = STATE.tracks.map((t, idx) => `<option value="${idx}">${t.name}</option>`).join("");
 
-  // Poblar selector de Umas
   const umaSel = document.getElementById("umaCharSelect");
   umaSel.innerHTML = STATE.umas.map(u => `<option value="${u.name}">${u.name}</option>`).join("");
 
@@ -161,6 +158,17 @@ function renderActivePlayerSlot() {
   document.getElementById("statPower").value = uma.power;
   document.getElementById("statGuts").value = uma.guts;
   document.getElementById("statWit").value = uma.wit;
+
+  // Cargar imagen dinámica desde servidor externo (GameTora)
+  const portraitImg = document.getElementById("umaPortrait");
+  const selectedUmaData = STATE.umas.find(u => u.name === uma.name);
+  
+  if (selectedUmaData && selectedUmaData.id) {
+    portraitImg.src = `https://gametora.com/images/umamusume/characters/icons/chara_${selectedUmaData.id}.png`;
+    portraitImg.onerror = () => { portraitImg.src = 'assets/umas.jpg'; };
+  } else {
+    portraitImg.src = 'assets/umas.jpg';
+  }
 
   renderSkillPills(document.getElementById("skillSearchInput").value);
 }
@@ -208,11 +216,11 @@ function renderRivalsGrid() {
     <div class="rival-card">
       <div class="rival-slot-title">OPONENTE #${r.slot}</div>
       <select class="cm-input-sm rival-role-select" data-rival-idx="${i}">
-        <option value="nige_meta" ${r.role === 'nige_meta' ? 'selected' : ''}>🏃‍♀️ Front Runner (Nige Meta)</option>
-        <option value="pace_ace" ${r.role === 'pace_ace' ? 'selected' : ''}>⚡ Pace Chaser (Senkou Ace)</option>
-        <option value="late_gambler" ${r.role === 'late_gambler' ? 'selected' : ''}>🎲 Late Surger (Sashi Gambler)</option>
-        <option value="end_spurt" ${r.role === 'end_spurt' ? 'selected' : ''}>🚀 End Closer (Oikomi Spurt)</option>
-        <option value="debuffer" ${r.role === 'debuffer' ? 'selected' : ''}>😈 Nice Nature (Debuffer)</option>
+        <option value="nige_meta" ${r.role === 'nige_meta' ? 'selected' : ''}>Front Runner</option>
+        <option value="pace_ace" ${r.role === 'pace_ace' ? 'selected' : ''}>Pace</option>
+        <option value="late_gambler" ${r.role === 'late_gambler' ? 'selected' : ''}>Late Surger</option>
+        <option value="end_spurt" ${r.role === 'end_spurt' ? 'selected' : ''}>End Closer</option>
+        <option value="debuffer" ${r.role === 'debuffer' ? 'selected' : ''}>Debuffer</option>
       </select>
     </div>
   `).join("");
@@ -225,7 +233,6 @@ function renderRivalsGrid() {
   });
 }
 
-// Guardado automático en LocalStorage
 function saveBuilds() {
   localStorage.setItem("lazona_cm_team", JSON.stringify(STATE.playerTeam));
 }
@@ -238,25 +245,24 @@ function loadSavedBuilds() {
 }
 
 // ============================================================================
-// 3. MOTOR FÍSICO DE CARRERA DE 9 UMAS (3 JUGADOR + 6 RIVALES)
+// 3. MOTOR FÍSICO DE CARRERA DE 9 UMAS
 // ============================================================================
 const STYLE_COEFF = {
-  1: { earlySpd: 1.000, midSpd: 0.980, spurtSpd: 0.962, earlyAcc: 1.00, midAcc: 1.00, spurtAcc: 0.996, hpMult: 0.95 }, // Front
-  2: { earlySpd: 0.978, midSpd: 0.991, spurtSpd: 0.975, earlyAcc: 0.985, midAcc: 1.00, spurtAcc: 0.996, hpMult: 0.89 }, // Pace
-  3: { earlySpd: 0.938, midSpd: 0.998, spurtSpd: 0.994, earlyAcc: 0.975, midAcc: 1.00, spurtAcc: 1.000, hpMult: 1.00 }, // Late
-  4: { earlySpd: 0.931, midSpd: 1.000, spurtSpd: 1.000, earlyAcc: 0.945, midAcc: 1.00, spurtAcc: 0.997, hpMult: 0.995 } // End
+  1: { earlySpd: 1.000, midSpd: 0.980, spurtSpd: 0.962, earlyAcc: 1.00, midAcc: 1.00, spurtAcc: 0.996, hpMult: 0.95 }, 
+  2: { earlySpd: 0.978, midSpd: 0.991, spurtSpd: 0.975, earlyAcc: 0.985, midAcc: 1.00, spurtAcc: 0.996, hpMult: 0.89 }, 
+  3: { earlySpd: 0.938, midSpd: 0.998, spurtSpd: 0.994, earlyAcc: 0.975, midAcc: 1.00, spurtAcc: 1.000, hpMult: 1.00 }, 
+  4: { earlySpd: 0.931, midSpd: 1.000, spurtSpd: 1.000, earlyAcc: 0.945, midAcc: 1.00, spurtAcc: 0.997, hpMult: 0.995 } 
 };
 
 function buildNineRunners(track, tier) {
   const tierStats = {
-    whale: { speed: 1200, stamina: Math.min(1150, Math.round(track.distance * 0.38)), power: 1100, guts: 450, wit: 850 },
-    comp:  { speed: 1150, stamina: Math.min(950, Math.round(track.distance * 0.35)), power: 920,  guts: 400, wit: 620 },
-    casual:{ speed: 1000, stamina: Math.min(780, Math.round(track.distance * 0.31)), power: 780,  guts: 350, wit: 480 }
+    whale: { speed: 1600, stamina: Math.min(1300, Math.round(track.distance * 0.40)), power: 1400, guts: 1200, wit: 1200 },
+    comp:  { speed: 1200, stamina: Math.min(1000, Math.round(track.distance * 0.35)), power: 1000, guts: 800, wit: 800 },
+    casual:{ speed: 1000, stamina: Math.min(780, Math.round(track.distance * 0.31)), power: 780,  guts: 450, wit: 480 }
   }[tier];
 
   const runners = [];
 
-  // 1. Añadir las 3 Umas del Jugador
   STATE.playerTeam.forEach((p, idx) => {
     runners.push({
       id: idx,
@@ -274,7 +280,6 @@ function buildNineRunners(track, tier) {
     });
   });
 
-  // 2. Añadir las 6 Rivales
   STATE.rivalArchetypes.forEach((r, idx) => {
     const arch = RIVAL_ROLES[r.role];
     runners.push({
@@ -301,13 +306,11 @@ function simulateSingleRace(runnersConfig, track, groundMod) {
   const dist = track.distance;
   const baseSpeed = 20.0 - (dist - 2000) / 1000.0;
   const spurtStart = (dist * 2) / 3;
-  const dt = 0.2; // Paso de tiempo 0.2s
+  const dt = 0.2;
 
-  // Contar cuántas Front Runners (Nige) hay y cuántos debuffers enemigos
   const frontCount = runnersConfig.filter(r => r.style === 1).length;
   const totalEnemyDebuff = runnersConfig.filter(r => !r.isPlayer).reduce((acc, r) => acc + (r.debuffStamina || 0), 0);
 
-  // Inicializar estado de carrera de las 9 Umas
   const states = runnersConfig.map(r => {
     const coeff = STYLE_COEFF[r.style] || STYLE_COEFF[2];
     const maxHp = 0.8 * coeff.hpMult * r.stamina + dist;
@@ -337,7 +340,6 @@ function simulateSingleRace(runnersConfig, track, groundMod) {
   while (!allFinished && time < 240) {
     time += dt;
 
-    // 1. Ordenar posiciones para asignar el Rank (1º a 9º) en tiempo real
     const sorted = [...states].sort((a, b) => b.pos - a.pos);
     sorted.forEach((st, idx) => { st.rank = idx + 1; });
 
@@ -350,7 +352,6 @@ function simulateSingleRace(runnersConfig, track, groundMod) {
       const phase = st.pos < dist / 6 ? "early" : (st.pos < spurtStart ? "mid" : "spurt");
       const witActivationProb = Math.max(0.25, 1.0 - 90.0 / st.cfg.wit);
 
-      // 2. Comprobar activación de habilidades
       for (const sid of st.cfg.skillIds) {
         if (st.usedSkills.has(sid)) continue;
         const sk = STATE.skills.find(s => s.id === sid);
@@ -379,17 +380,14 @@ function simulateSingleRace(runnersConfig, track, groundMod) {
         }
       }
 
-      // Limpiar buffs expirados
       st.activeBuffs = st.activeBuffs.filter(b => b.endTime > time);
       const buffSpd = st.activeBuffs.reduce((sum, b) => sum + b.spd, 0);
       const buffAcc = st.activeBuffs.reduce((sum, b) => sum + b.acc, 0);
 
-      // 3. Calcular Velocidad Objetivo (Target Speed) y Aceleración
       let targetSpd = baseSpeed;
       let accel = 0.0006 * Math.sqrt(500.0 * st.cfg.power * groundMod);
 
       if (phase === "early") {
-        // Si hay 2 o más Front Runners compitiendo por el liderato, aceleran el ritmo inicial (Pace Up)
         const nigeContestBonus = (st.cfg.style === 1 && frontCount >= 2) ? 0.35 : 0;
         targetSpd = baseSpeed * st.coeff.earlySpd + nigeContestBonus;
         accel *= st.coeff.earlyAcc * (st.pos < 30 ? 4.2 : 1.1);
@@ -398,13 +396,11 @@ function simulateSingleRace(runnersConfig, track, groundMod) {
         targetSpd = baseSpeed * (st.coeff.midSpd + witRandom * 0.01);
         accel *= st.coeff.midAcc;
       } else {
-        // Last Spurt
         const spdStatBonus = Math.sqrt(500.0 * st.cfg.speed) * 0.002;
         const gutsBonus = Math.pow(450.0 * st.cfg.guts, 0.597) * 0.0001;
         targetSpd = (baseSpeed * (st.coeff.spurtSpd + 0.01) + spdStatBonus + gutsBonus) * 1.05;
         accel *= st.coeff.spurtAcc;
 
-        // Si se queda sin Stamina en la recta final, cae a velocidad mínima
         if (st.hp <= 0) {
           targetSpd = baseSpeed * 0.82;
         }
@@ -413,19 +409,16 @@ function simulateSingleRace(runnersConfig, track, groundMod) {
       targetSpd += buffSpd;
       accel += buffAcc;
 
-      // Actualizar velocidad real hacia la velocidad objetivo
       if (st.vel < targetSpd) {
         st.vel = Math.min(targetSpd, st.vel + accel * dt);
       } else {
         st.vel = Math.max(targetSpd, st.vel - 0.8 * dt);
       }
 
-      // Consumo de Stamina
       const pacePenalty = (st.cfg.style === 1 && frontCount >= 3 && phase !== "spurt") ? 1.25 : 1.0;
       const hpDrain = 20.0 * Math.pow(st.vel - baseSpeed + 12.0, 2) / 144.0 * pacePenalty * dt;
       st.hp -= hpDrain;
 
-      // Avanzar posición
       const prevPos = st.pos;
       st.pos += st.vel * dt;
       st.telemetry.push({ m: Math.min(dist, st.pos), v: st.vel });
@@ -460,7 +453,6 @@ function runChampionsMeeting() {
     const result = simulateSingleRace(runners, track, groundMod);
     if (i === 0) sampleRace = result;
 
-    // Determinar ganadora de esta carrera (menor tiempo de llegada)
     let winnerIdx = 0;
     let minT = 9999;
     result.forEach((st, idx) => {
@@ -477,15 +469,13 @@ function runChampionsMeeting() {
   const teamWins = wins[0] + wins[1] + wins[2];
   const teamWinrate = Math.round((teamWins / runs) * 100);
 
-  // Actualizar cabeceras de resultados
   const badge = document.getElementById("teamWinrateBadge");
   badge.textContent = `WINRATE LA ZONA: ${teamWinrate}%`;
   badge.style.borderColor = teamWinrate >= 50 ? "#34d399" : "#f43f5e";
 
   document.getElementById("cmSummaryText").textContent =
-    `Simuladas ${runs} carreras en ${track.name} contra sala ${tier.toUpperCase()}. Tu equipo ganó ${teamWins} de ${runs} partidas.`;
+    `Simuladas ${runs} carreras en ${track.name} contra nivel ${tier.toUpperCase()}. Tu equipo ganó ${teamWins} de ${runs} partidas.`;
 
-  // Renderizar tarjetas de puntuación de las 9 Umas
   const sbGrid = document.getElementById("scoreboardGrid");
   sbGrid.innerHTML = runners.map((r, i) => {
     const wr = Math.round((wins[i] / runs) * 100);
@@ -516,7 +506,6 @@ function drawTelemetryCanvas(raceStates, track) {
   const dist = track.distance;
   const minV = 17.5, maxV = 26.5;
 
-  // Fondo de fases (Early, Mid, Last Spurt)
   const xEarly = padL + (1 / 6) * plotW;
   const xSpurt = padL + (2 / 3) * plotW;
 
@@ -525,7 +514,6 @@ function drawTelemetryCanvas(raceStates, track) {
   ctx.fillStyle = "rgba(244, 63, 94, 0.06)";
   ctx.fillRect(xSpurt, padT, padL + plotW - xSpurt, plotH);
 
-  // Líneas de cuadrícula
   ctx.strokeStyle = "rgba(255,255,255,0.08)";
   ctx.lineWidth = 1;
   ctx.font = "11px Inter, sans-serif";
@@ -537,14 +525,12 @@ function drawTelemetryCanvas(raceStates, track) {
     ctx.fillText(`${v} m/s`, 8, y + 4);
   }
 
-  // Etiquetas de distancia y Last Spurt
   ctx.fillStyle = "#fda4af";
   ctx.fillText(`▶ LAST SPURT (${Math.round(dist * 2 / 3)}m)`, xSpurt + 6, padT + 14);
   ctx.fillStyle = "#94a3b8";
   ctx.fillText("0m", padL, H - 10);
   ctx.fillText(`${dist}m`, padL + plotW - 35, H - 10);
 
-  // Dibujar primero los 6 rivales (gris traslúcido) y luego las 3 Umas del jugador (colores vivos)
   const orderedToDraw = [...raceStates].sort((a, b) => (a.cfg.isPlayer ? 1 : -1));
 
   for (const st of orderedToDraw) {
@@ -566,7 +552,6 @@ function drawTelemetryCanvas(raceStates, track) {
 // 5. VINCULAR CONTROLES DEL DOM
 // ============================================================================
 document.addEventListener("DOMContentLoaded", () => {
-  // Cambiar entre las 3 pestañas de Umas del jugador
   document.querySelectorAll(".uma-tab").forEach(tab => {
     tab.addEventListener("click", () => {
       document.querySelectorAll(".uma-tab").forEach(t => t.classList.remove("active"));
@@ -575,15 +560,17 @@ document.addEventListener("DOMContentLoaded", () => {
       renderActivePlayerSlot();
     });
   });
-document.querySelectorAll(".filter-btn").forEach(btn => {
-  btn.addEventListener("click", (e) => {
-    document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
-    e.target.classList.add("active");
-    currentSkillFilter = e.target.getAttribute("data-filter");
-    renderSkillPills(document.getElementById("skillSearchInput").value);
+
+  // Filtros de Habilidades
+  document.querySelectorAll(".filter-btn").forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+      e.target.classList.add("active");
+      currentSkillFilter = e.target.getAttribute("data-filter");
+      renderSkillPills(document.getElementById("skillSearchInput").value);
+    });
   });
-});
-  // Guardar cambios de inputs de la Uma activa
+
   const bindInput = (id, key, isNum = true) => {
     document.getElementById(id).addEventListener("input", (e) => {
       STATE.playerTeam[STATE.activeSlot][key] = isNum ? Number(e.target.value) : e.target.value;
