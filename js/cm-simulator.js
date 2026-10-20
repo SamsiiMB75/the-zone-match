@@ -29,8 +29,6 @@ const FALLBACK_TRACKS = [
 ];
 
 const FALLBACK_UMAS = [
-  { id: "win_var", name: "Win Variation (Original)", defaultStyle: 4 },
-  { id: "verxina", name: "Verxina (Original)", defaultStyle: 1 },
   { id: "seiun_sky", name: "Seiun Sky (Original)", defaultStyle: 1 },
   { id: "maruzensky_sum", name: "Maruzensky (Summer)", defaultStyle: 1 },
   { id: "oguri_cap", name: "Oguri Cap (Original)", defaultStyle: 2 },

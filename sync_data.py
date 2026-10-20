@@ -113,13 +113,19 @@ def build_database():
             json.dump(skills_clean, f, ensure_ascii=False, indent=2)
         print(f"✅ Guardado data/skills.json ({len(skills_clean)} habilidades de Global)")
 
-    # 4. Procesar Umas (umas.json)
+   # 4. Procesar Umas (umas.json - Filtradas para Global)
     if raw_umas:
+        umas_clean = {}
+        for uid, uval in raw_umas.items():
+            # Omitir personajes no oficiales de Global si aparecieran en la base de datos bruta
+            name_raw = uval.get("name")
+            name_en = name_raw[1] if isinstance(name_raw, list) and len(name_raw) > 1 else (name_raw[0] if isinstance(name_raw, list) else str(name_raw))
+            
+            if "verxina" in name_en.lower() or "win variation" in name_en.lower():
+                continue
+                
+            umas_clean[uid] = uval
+
         with open(os.path.join(DATA_DIR, "umas.json"), "w", encoding="utf-8") as f:
-            json.dump(raw_umas, f, ensure_ascii=False, indent=2)
-        print(f"✅ Guardado data/umas.json")
-
-    print("\n🚀 ¡Sincronización completada! Ahora puedes hacer git add, commit y push.")
-
-if __name__ == "__main__":
-    build_database()
+            json.dump(umas_clean, f, ensure_ascii=False, indent=2)
+        print(f"✅ Guardado data/umas.json (Filtrado Global oficial)")
