@@ -159,7 +159,7 @@ function renderActivePlayerSlot() {
   document.getElementById("statGuts").value = uma.guts;
   document.getElementById("statWit").value = uma.wit;
 
-  // Cargar imagen dinámica desde el servidor GameTora corrigiendo ID
+  // Cargar imagen dinámica desde el servidor de GitHub
   const portraitImg = document.getElementById("umaPortrait");
   const selectedUmaData = STATE.umas.find(u => u.name === uma.name);
   
@@ -167,6 +167,7 @@ function renderActivePlayerSlot() {
     let iconId = selectedUmaData.id.toString();
     if (iconId.length === 4) iconId += "01"; 
     
+    // ENLACE DIRECTO A GITHUB CORREGIDO
     portraitImg.src = `https://raw.githubusercontent.com/noccu/uma-database/master/src/assets/img/chara/chara_${iconId}.png`;
     portraitImg.onerror = () => { portraitImg.src = 'assets/umas.jpg'; };
   } else {
