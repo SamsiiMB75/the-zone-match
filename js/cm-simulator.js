@@ -167,7 +167,7 @@ function renderActivePlayerSlot() {
     let iconId = selectedUmaData.id.toString();
     if (iconId.length === 4) iconId += "01"; 
     
-    portraitImg.src = `assets/icons/${iconId}.png`;
+    portraitImg.src = `https://raw.githubusercontent.com/noccu/uma-database/master/src/assets/img/chara/chara_${iconId}.png`;
     portraitImg.onerror = () => { portraitImg.src = 'assets/umas.jpg'; };
   } else {
     portraitImg.src = 'assets/umas.jpg';
