@@ -20,7 +20,7 @@
   --border-color: rgba(124, 131, 253, 0.25);
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
   background-color: var(--bg-deep);
@@ -296,8 +296,8 @@ body {
 .social-discord:hover { background: #5865F2; border-color: #fff; box-shadow: 0 6px 20px rgba(88, 101, 242, 0.5); }
 .social-github:hover { background: #24292e; border-color: var(--verxina-neon); box-shadow: 0 6px 20px rgba(0, 229, 255, 0.35); }
 .social-instagram:hover { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); border-color: #fff; box-shadow: 0 6px 20px rgba(225, 48, 108, 0.5); }
-.social-x:hover { background: #000000; border-color: #ffffff;box-shadow: 0 6px 20px rgba(255, 255, 255, 0.25);}
-.social-tiktok:hover { background: #010101; border-color: #00f2fe; box-shadow: -4px 4px 15px rgba(254, 9, 121, 0.4), 4px -4px 15px rgba(0, 242, 254, 0.4);}
+.social-x:hover { background: #000000; border-color: #ffffff; box-shadow: 0 6px 20px rgba(255, 255, 255, 0.25); }
+.social-tiktok:hover { background: #010101; border-color: #00f2fe; box-shadow: -4px 4px 15px rgba(254, 9, 121, 0.4), 4px -4px 15px rgba(0, 242, 254, 0.4); }
 
 /* CABECERA Y ESTILOS DE LAS PÁGINAS INTERNAS */
 .zone-header {
@@ -429,6 +429,7 @@ select, input[type="number"], input[type="text"] { background: #100e24; border: 
 .stamina-inputs { display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem; }
 .stamina-output-box { background: linear-gradient(135deg, rgba(37, 99, 235, 0.15), rgba(225, 29, 72, 0.15)); border: 2px solid var(--tracen-lavender); border-radius: 14px; padding: 1.5rem; text-align: center; }
 .big-stamina-number { font-family: 'Exo 2', sans-serif; font-size: 3.2rem; font-weight: 900; color: var(--verxina-neon); margin: 0.5rem 0; }
+
 /* ===================================================
    TARJETAS META Y CHAMPIONS MEETING
    =================================================== */
@@ -442,7 +443,7 @@ select, input[type="number"], input[type="text"] { background: #100e24; border: 
   background: var(--bg-card); 
   border-radius: 12px; 
   border-left: 4px solid var(--verxina-neon);
-  overflow: hidden; /* Esto hace que la imagen no se salga de las esquinas curvas */
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -455,11 +456,10 @@ select, input[type="number"], input[type="text"] { background: #100e24; border: 
 
 .meta-card.card-w { border-left-color: var(--winvari-neon); }
 
-/* Estilo para la imagen de cabecera de la tarjeta */
 .meta-card-img {
   width: 100%;
   height: 140px;
-  object-fit: cover; /* Recorta la imagen para que encaje perfecto sin deformarse */
+  object-fit: cover;
   border-bottom: 2px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -477,6 +477,8 @@ select, input[type="number"], input[type="text"] { background: #100e24; border: 
 .meta-card h3 { 
   margin: 0.4rem 0 0; 
   font-size: 1.15rem;
+}
+
 /* ===================================================
    SIMULADOR CHAMPIONS MEETING 3v6
    =================================================== */
@@ -589,5 +591,3 @@ select, input[type="number"], input[type="text"] { background: #100e24; border: 
 .score-wr span { font-size: 0.72rem; color: #94a3b8; }
 .score-time { font-size: 0.68rem; color: #64748b; }
 .chart-wrapper { background: #070b14; border-radius: 10px; padding: 0.5rem; overflow-x: auto; }
-
-}
