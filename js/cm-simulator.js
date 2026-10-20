@@ -1,5 +1,5 @@
 /* ============================================================================
-   MOTOR DE SIMULACIÓN - CLUB LA ZONA
+   MOTOR DE SIMULACIÓN CHAMPIONS MEETING (3v6) - CLUB LA ZONA
    Conectado a data/tracks.json, data/skills.json y data/umas.json
    ============================================================================ */
 
@@ -29,14 +29,14 @@ const FALLBACK_TRACKS = [
 ];
 
 const FALLBACK_UMAS = [
-  { id: "seiun_sky", name: "Seiun Sky (Original)", defaultStyle: 1 },
-  { id: "maruzensky_sum", name: "Maruzensky (Summer)", defaultStyle: 1 },
-  { id: "oguri_cap", name: "Oguri Cap (Original)", defaultStyle: 2 },
-  { id: "narita_taishin", name: "Narita Taishin (Original)", defaultStyle: 4 },
-  { id: "mejiro_ryan", name: "Mejiro Ryan (Original)", defaultStyle: 3 },
-  { id: "gold_ship", name: "Gold Ship (Original)", defaultStyle: 4 },
-  { id: "special_week", name: "Special Week (Original)", defaultStyle: 2 },
-  { id: "symboli_rudolf", name: "Symboli Rudolf (Original)", defaultStyle: 3 }
+  { id: "102001", name: "Seiun Sky (Original)", defaultStyle: 1 },
+  { id: "100502", name: "Maruzensky (Summer)", defaultStyle: 1 },
+  { id: "100401", name: "Oguri Cap (Original)", defaultStyle: 2 },
+  { id: "103401", name: "Narita Taishin (Original)", defaultStyle: 4 },
+  { id: "102701", name: "Mejiro Ryan (Original)", defaultStyle: 3 },
+  { id: "100701", name: "Gold Ship (Original)", defaultStyle: 4 },
+  { id: "100101", name: "Special Week (Original)", defaultStyle: 2 },
+  { id: "101701", name: "Symboli Rudolf (Original)", defaultStyle: 3 }
 ];
 
 const FALLBACK_SKILLS = [
@@ -52,8 +52,8 @@ const FALLBACK_SKILLS = [
   { id: "2005", name: "Groundwork (Early Accel)", category: "white", duration: 3.0, targetSpeed: 0.0, accel: 0.20, heal: 0, phase: "early", reqRank: [1, 9] },
   { id: "2006", name: "Furious Feat (Mile/Late Accel)", category: "gold", duration: 1.8, targetSpeed: 0.0, accel: 0.30, heal: 0, phase: "spurt", reqRank: [4, 9] },
   { id: "2007", name: "No Stopping Me! (Gold Accel)", category: "gold", duration: 1.8, targetSpeed: 0.0, accel: 0.30, heal: 0, phase: "spurt", reqRank: [2, 9] },
-  { id: "2008", name: "Corner Recovery ○ (White Heal)", category: "heal", duration: 0.0, targetSpeed: 0.0, accel: 0.0, heal: 0.015, phase: "mid", reqRank: [1, 9] },
-  { id: "2009", name: "Medium/Long Corners ○", category: "white", duration: 3.0, targetSpeed: 0.25, accel: 0.0, heal: 0, phase: "mid", reqRank: [1, 9] },
+  { id: "2008", name: "Corner Recovery (White Heal)", category: "heal", duration: 0.0, targetSpeed: 0.0, accel: 0.0, heal: 0.015, phase: "mid", reqRank: [1, 9] },
+  { id: "2009", name: "Medium/Long Corners", category: "white", duration: 3.0, targetSpeed: 0.25, accel: 0.0, heal: 0, phase: "mid", reqRank: [1, 9] },
   { id: "2010", name: "Tail Held High", category: "white", duration: 3.0, targetSpeed: 0.25, accel: 0.0, heal: 0, phase: "mid", reqRank: [1, 9] }
 ];
 
@@ -68,7 +68,7 @@ const STATE = {
   playerTeam: [
     { name: "Oguri Cap (Original)", style: 2, speed: 1200, stamina: 900, power: 1000, guts: 420, wit: 650, skills: ["1004", "1005", "2001", "2003"] },
     { name: "Special Week (Original)", style: 2, speed: 1200, stamina: 850, power: 950, guts: 400, wit: 700, skills: ["1001", "2001", "2002", "2005"] },
-    { name: "Gold Ship (Original)", style: 4, speed: 1200, stamina: 920, power: 1050, guts: 400, wit: 600, skills: ["1006", "2002", "2004", "2007"] }
+    { name: "Gold Ship (Original)", style: 4, speed: 1200, stamina: 920, power: 1050, guts: 400, wit: 600, skills: ["2002", "2004", "2007"] }
   ],
   rivalArchetypes: [
     { slot: 4, role: "nige_meta" },
@@ -105,7 +105,7 @@ async function initDatabase() {
       const loadedSkills = await skillsRes.json();
       STATE.tracks = loadedTracks.length > 0 ? loadedTracks : FALLBACK_TRACKS;
       STATE.skills = [...FALLBACK_SKILLS, ...loadedSkills.slice(0, 300)];
-      badge.textContent = `✅ DB Global Conectada (${STATE.skills.length} skills)`;
+      badge.textContent = `DB Global Conectada (${STATE.skills.length} skills)`;
       badge.style.color = "#34d399";
     } else {
       throw new Error("Archivos locales aún no generados");
@@ -126,7 +126,7 @@ async function initDatabase() {
     STATE.tracks = FALLBACK_TRACKS;
     STATE.skills = FALLBACK_SKILLS;
     STATE.umas = FALLBACK_UMAS;
-    badge.textContent = "⚡ DB Semilla Activa (Ejecuta sync_data.py para expandir)";
+    badge.textContent = "DB Semilla Activa (Ejecuta sync_data.py para expandir)";
     badge.style.color = "#fbbf24";
   }
 
@@ -159,12 +159,15 @@ function renderActivePlayerSlot() {
   document.getElementById("statGuts").value = uma.guts;
   document.getElementById("statWit").value = uma.wit;
 
-  // Cargar imagen dinámica desde servidor externo (GameTora)
+  // Cargar imagen dinámica desde el servidor GameTora corrigiendo ID
   const portraitImg = document.getElementById("umaPortrait");
   const selectedUmaData = STATE.umas.find(u => u.name === uma.name);
   
   if (selectedUmaData && selectedUmaData.id) {
-    portraitImg.src = `https://gametora.com/images/umamusume/characters/icons/chara_${selectedUmaData.id}.png`;
+    let iconId = selectedUmaData.id.toString();
+    if (iconId.length === 4) iconId += "01"; 
+    
+    portraitImg.src = `https://gametora.com/images/umamusume/characters/icons/chara_${iconId}.png`;
     portraitImg.onerror = () => { portraitImg.src = 'assets/umas.jpg'; };
   } else {
     portraitImg.src = 'assets/umas.jpg';
