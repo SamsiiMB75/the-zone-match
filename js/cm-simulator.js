@@ -470,7 +470,7 @@ function runChampionsMeeting() {
   const teamWinrate = Math.round((teamWins / runs) * 100);
 
   const badge = document.getElementById("teamWinrateBadge");
-  badge.textContent = `WINRATE LA ZONA: ${teamWinrate}%`;
+  badge.textContent = `WINRATE: ${teamWinrate}%`;
   badge.style.borderColor = teamWinrate >= 50 ? "#34d399" : "#f43f5e";
 
   document.getElementById("cmSummaryText").textContent =
