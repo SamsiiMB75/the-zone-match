@@ -591,3 +591,21 @@ select, input[type="number"], input[type="text"] { background: #100e24; border: 
 .score-wr span { font-size: 0.72rem; color: #94a3b8; }
 .score-time { font-size: 0.68rem; color: #64748b; }
 .chart-wrapper { background: #070b14; border-radius: 10px; padding: 0.5rem; overflow-x: auto; }
+
+.filter-btn {
+  background: #121026;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-muted);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.filter-btn:hover { background: rgba(255, 255, 255, 0.05); }
+.filter-btn.active {
+  background: var(--verxina-bg);
+  border-color: var(--verxina-neon);
+  color: var(--verxina-neon);
+}
