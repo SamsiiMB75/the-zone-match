@@ -168,7 +168,7 @@ function renderActivePlayerSlot() {
     if (iconId.length === 4) iconId += "01"; 
     
     // ENLACE DIRECTO A GITHUB CORREGIDO
-    portraitImg.src = `https://raw.githubusercontent.com/noccu/uma-database/master/src/assets/img/chara/chara_${iconId}.png`;
+    portraitImg.src = `https://raw.githubusercontent.com/Furious/UmaMusume-Asset-Rip/main/icons/chara_${iconId}.png`;
     portraitImg.onerror = () => { portraitImg.src = 'assets/umas.jpg'; };
   } else {
     portraitImg.src = 'assets/umas.jpg';
