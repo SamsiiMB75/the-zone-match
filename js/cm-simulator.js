@@ -167,7 +167,7 @@ function renderActivePlayerSlot() {
     let iconId = selectedUmaData.id.toString();
     if (iconId.length === 4) iconId += "01"; 
     
-    portraitImg.src = `https://gametora.com/images/umamusume/characters/icons/chara_${iconId}.png`;
+    portraitImg.src = `assets/icons/${iconId}.png`;
     portraitImg.onerror = () => { portraitImg.src = 'assets/umas.jpg'; };
   } else {
     portraitImg.src = 'assets/umas.jpg';
