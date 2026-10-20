@@ -1,13 +1,13 @@
 import json
 import os
-import urllib.request
+import shutil
 
-print("🔄 Sincronizando base de datos local blindada...")
+print("🔄 Generando base de datos e iconos locales...")
 
 os.makedirs("data", exist_ok=True)
 os.makedirs("assets/icons", exist_ok=True)
 
-# Base de datos completa integrada en Python (sin depender de internet)
+# 1. Definir los datos base de las Umas
 UMAS_DATA = {
     "102001": {"name": ["Seiun Sky", "Seiun Sky (Original)"]},
     "100502": {"name": ["Maruzensky", "Maruzensky (Summer)"]},
@@ -41,7 +41,7 @@ SKILLS_DATA = [
     {"id": "2002", "name": "Swinging Maestro (Gold Heal)", "category": "heal", "targetSpeed": 0.0, "accel": 0.0, "heal": 0.055}
 ]
 
-# Guardar los JSON localmente de forma limpia
+# Guardar ficheros JSON
 with open("data/umas.json", "w", encoding="utf-8") as f:
     json.dump(UMAS_DATA, f, ensure_ascii=False, indent=2)
 
@@ -51,42 +51,19 @@ with open("data/tracks.json", "w", encoding="utf-8") as f:
 with open("data/skills.json", "w", encoding="utf-8") as f:
     json.dump(SKILLS_DATA, f, ensure_ascii=False, indent=2)
 
-print("[OK] Ficheros JSON locales generados correctamente.")
+print("[OK] Ficheros JSON generados.")
 
-# Descargar iconos de forma segura usando fuentes de respaldo en GitHub
-print("\n--- Sincronizando Iconos de Personajes ---")
-opener = urllib.request.build_opener()
-opener.addheaders = [('User-Agent', 'Mozilla/5.0')]
-urllib.request.install_opener(opener)
-
-descargados = 0
-for uid in UMAS_DATA.keys():
-    icon_id = str(uid).strip()
-    if len(icon_id) == 4:
-        icon_id += "01"
-        
-    icon_path = f"assets/icons/{icon_id}.png"
-    
-    if not os.path.exists(icon_path):
-        # Intentar descargar desde repositorios de assets estables en GitHub
-        urls_iconos = [
-            f"https://raw.githubusercontent.com/Furious/UmaMusume-Asset-Rip/main/icons/chara_{icon_id}.png",
-            f"https://uma.tools/images/icons/chara_{icon_id}.png"
-        ]
-        
-        exito = False
-        for url in urls_iconos:
-            try:
-                urllib.request.urlretrieve(url, icon_path)
-                exito = True
-                break
-            except:
-                continue
-        
-        if exito:
-            descargados += 1
-    else:
-        descargados += 1
-
-print(f"\n✨ Sincronización completada sin errores.")
-print(f"-> Iconos listos en local: {descargados}")
+# 2. Rellenar la carpeta de iconos usando tu 'umas.jpg' local como plantilla
+template_image = "assets/umas.jpg"
+if os.path.exists(template_image):
+    count = 0
+    for uid in UMAS_DATA.keys():
+        icon_id = str(uid).strip()
+        if len(icon_id) == 4:
+            icon_id += "01"
+        dest_path = f"assets/icons/{icon_id}.png"
+        shutil.copy(template_image, dest_path)
+        count += 1
+    print(f"✨ {count} iconos locales creados exitosamente en assets/icons/.")
+else:
+    print("⚠️ No se encontró 'assets/umas.jpg' para usar como plantilla.")
