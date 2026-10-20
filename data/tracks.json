@@ -1,0 +1,6347 @@
+[
+  {
+    "id": "10701",
+    "trackId": "10007",
+    "name": "Chukyo 1200m (Turf)",
+    "trackName": "Chukyo",
+    "distance": 1200,
+    "surface": "Turf",
+    "turn": 2,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 250,
+        "start": 300
+      },
+      {
+        "length": 238,
+        "start": 550
+      }
+    ],
+    "straights": [
+      {
+        "end": 300,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1200,
+        "frontType": 1,
+        "start": 788
+      }
+    ],
+    "slopes": [
+      {
+        "length": 775,
+        "slope": -10000,
+        "start": 100
+      },
+      {
+        "length": 100,
+        "slope": 20000,
+        "start": 875
+      }
+    ]
+  },
+  {
+    "id": "10706",
+    "trackId": "10007",
+    "name": "Chukyo 1200m (Dirt)",
+    "trackName": "Chukyo",
+    "distance": 1200,
+    "surface": "Dirt",
+    "turn": 2,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 200,
+        "start": 400
+      },
+      {
+        "length": 190,
+        "start": 600
+      }
+    ],
+    "straights": [
+      {
+        "end": 400,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1200,
+        "frontType": 1,
+        "start": 790
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "10702",
+    "trackId": "10007",
+    "name": "Chukyo 1400m (Turf)",
+    "trackName": "Chukyo",
+    "distance": 1400,
+    "surface": "Turf",
+    "turn": 2,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 250,
+        "start": 500
+      },
+      {
+        "length": 238,
+        "start": 750
+      }
+    ],
+    "straights": [
+      {
+        "end": 500,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1400,
+        "frontType": 1,
+        "start": 988
+      }
+    ],
+    "slopes": [
+      {
+        "length": 775,
+        "slope": -10000,
+        "start": 300
+      },
+      {
+        "length": 100,
+        "slope": 20000,
+        "start": 1075
+      }
+    ]
+  },
+  {
+    "id": "10707",
+    "trackId": "10007",
+    "name": "Chukyo 1400m (Dirt)",
+    "trackName": "Chukyo",
+    "distance": 1400,
+    "surface": "Dirt",
+    "turn": 2,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 200,
+        "start": 600
+      },
+      {
+        "length": 190,
+        "start": 800
+      }
+    ],
+    "straights": [
+      {
+        "end": 600,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1400,
+        "frontType": 1,
+        "start": 990
+      }
+    ],
+    "slopes": [
+      {
+        "length": 600,
+        "slope": -15000,
+        "start": 425
+      },
+      {
+        "length": 150,
+        "slope": 15000,
+        "start": 1025
+      }
+    ]
+  },
+  {
+    "id": "10703",
+    "trackId": "10007",
+    "name": "Chukyo 1600m (Turf)",
+    "trackName": "Chukyo",
+    "distance": 1600,
+    "surface": "Turf",
+    "turn": 2,
+    "courseSetStatus": [
+      1
+    ],
+    "corners": [
+      {
+        "length": 150,
+        "start": 150
+      },
+      {
+        "length": 250,
+        "start": 700
+      },
+      {
+        "length": 238,
+        "start": 950
+      }
+    ],
+    "straights": [
+      {
+        "end": 700,
+        "frontType": 2,
+        "start": 300
+      },
+      {
+        "end": 1600,
+        "frontType": 1,
+        "start": 1188
+      }
+    ],
+    "slopes": [
+      {
+        "length": 775,
+        "slope": -10000,
+        "start": 500
+      },
+      {
+        "length": 100,
+        "slope": 20000,
+        "start": 1275
+      }
+    ]
+  },
+  {
+    "id": "10708",
+    "trackId": "10007",
+    "name": "Chukyo 1800m (Dirt)",
+    "trackName": "Chukyo",
+    "distance": 1800,
+    "surface": "Dirt",
+    "turn": 2,
+    "courseSetStatus": [
+      2
+    ],
+    "corners": [
+      {
+        "length": 165,
+        "start": 270
+      },
+      {
+        "length": 165,
+        "start": 435
+      },
+      {
+        "length": 200,
+        "start": 1000
+      },
+      {
+        "length": 190,
+        "start": 1200
+      }
+    ],
+    "straights": [
+      {
+        "end": 270,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1000,
+        "frontType": 2,
+        "start": 600
+      },
+      {
+        "end": 1800,
+        "frontType": 1,
+        "start": 1390
+      }
+    ],
+    "slopes": [
+      {
+        "length": 50,
+        "slope": 15000,
+        "start": 0
+      },
+      {
+        "length": 600,
+        "slope": -15000,
+        "start": 825
+      },
+      {
+        "length": 150,
+        "slope": 15000,
+        "start": 1425
+      }
+    ]
+  },
+  {
+    "id": "10709",
+    "trackId": "10007",
+    "name": "Chukyo 1900m (Dirt)",
+    "trackName": "Chukyo",
+    "distance": 1900,
+    "surface": "Dirt",
+    "turn": 2,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 165,
+        "start": 370
+      },
+      {
+        "length": 165,
+        "start": 535
+      },
+      {
+        "length": 200,
+        "start": 1100
+      },
+      {
+        "length": 190,
+        "start": 1300
+      }
+    ],
+    "straights": [
+      {
+        "end": 370,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1100,
+        "frontType": 2,
+        "start": 700
+      },
+      {
+        "end": 1900,
+        "frontType": 1,
+        "start": 1490
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "10704",
+    "trackId": "10007",
+    "name": "Chukyo 2000m (Turf)",
+    "trackName": "Chukyo",
+    "distance": 2000,
+    "surface": "Turf",
+    "turn": 2,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 200,
+        "start": 300
+      },
+      {
+        "length": 200,
+        "start": 500
+      },
+      {
+        "length": 250,
+        "start": 1100
+      },
+      {
+        "length": 238,
+        "start": 1350
+      }
+    ],
+    "straights": [
+      {
+        "end": 300,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1100,
+        "frontType": 2,
+        "start": 700
+      },
+      {
+        "end": 2000,
+        "frontType": 1,
+        "start": 1588
+      }
+    ],
+    "slopes": [
+      {
+        "length": 50,
+        "slope": 20000,
+        "start": 0
+      },
+      {
+        "length": 775,
+        "slope": -10000,
+        "start": 900
+      },
+      {
+        "length": 100,
+        "slope": 20000,
+        "start": 1675
+      }
+    ]
+  },
+  {
+    "id": "10705",
+    "trackId": "10007",
+    "name": "Chukyo 2200m (Turf)",
+    "trackName": "Chukyo",
+    "distance": 2200,
+    "surface": "Turf",
+    "turn": 2,
+    "courseSetStatus": [
+      2
+    ],
+    "corners": [
+      {
+        "length": 200,
+        "start": 500
+      },
+      {
+        "length": 200,
+        "start": 700
+      },
+      {
+        "length": 250,
+        "start": 1300
+      },
+      {
+        "length": 238,
+        "start": 1550
+      }
+    ],
+    "straights": [
+      {
+        "end": 500,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1300,
+        "frontType": 2,
+        "start": 900
+      },
+      {
+        "end": 2200,
+        "frontType": 1,
+        "start": 1788
+      }
+    ],
+    "slopes": [
+      {
+        "length": 150,
+        "slope": -10000,
+        "start": 0
+      },
+      {
+        "length": 100,
+        "slope": 20000,
+        "start": 150
+      },
+      {
+        "length": 775,
+        "slope": -10000,
+        "start": 1100
+      },
+      {
+        "length": 100,
+        "slope": 20000,
+        "start": 1875
+      }
+    ]
+  },
+  {
+    "id": "10405",
+    "trackId": "10004",
+    "name": "Fukushima 1150m (Dirt)",
+    "trackName": "Fukushima",
+    "distance": 1150,
+    "surface": "Dirt",
+    "turn": 1,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 210,
+        "start": 500
+      },
+      {
+        "length": 145,
+        "start": 710
+      }
+    ],
+    "straights": [
+      {
+        "end": 500,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1150,
+        "frontType": 1,
+        "start": 855
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "10401",
+    "trackId": "10004",
+    "name": "Fukushima 1200m (Turf)",
+    "trackName": "Fukushima",
+    "distance": 1200,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 300,
+        "start": 420
+      },
+      {
+        "length": 188,
+        "start": 720
+      }
+    ],
+    "straights": [
+      {
+        "end": 420,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1200,
+        "frontType": 1,
+        "start": 908
+      }
+    ],
+    "slopes": [
+      {
+        "length": 100,
+        "slope": 15000,
+        "start": 180
+      }
+    ]
+  },
+  {
+    "id": "10406",
+    "trackId": "10004",
+    "name": "Fukushima 1700m (Dirt)",
+    "trackName": "Fukushima",
+    "distance": 1700,
+    "surface": "Dirt",
+    "turn": 1,
+    "courseSetStatus": [
+      3
+    ],
+    "corners": [
+      {
+        "length": 170,
+        "start": 360
+      },
+      {
+        "length": 170,
+        "start": 530
+      },
+      {
+        "length": 210,
+        "start": 1050
+      },
+      {
+        "length": 145,
+        "start": 1260
+      }
+    ],
+    "straights": [
+      {
+        "end": 360,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1050,
+        "frontType": 2,
+        "start": 700
+      },
+      {
+        "end": 1700,
+        "frontType": 1,
+        "start": 1405
+      }
+    ],
+    "slopes": [
+      {
+        "length": 320,
+        "slope": -10000,
+        "start": 285
+      }
+    ]
+  },
+  {
+    "id": "10402",
+    "trackId": "10004",
+    "name": "Fukushima 1800m (Turf)",
+    "trackName": "Fukushima",
+    "distance": 1800,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [
+      2
+    ],
+    "corners": [
+      {
+        "length": 200,
+        "start": 330
+      },
+      {
+        "length": 200,
+        "start": 530
+      },
+      {
+        "length": 300,
+        "start": 1020
+      },
+      {
+        "length": 188,
+        "start": 1320
+      }
+    ],
+    "straights": [
+      {
+        "end": 330,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1020,
+        "frontType": 2,
+        "start": 730
+      },
+      {
+        "end": 1800,
+        "frontType": 1,
+        "start": 1508
+      }
+    ],
+    "slopes": [
+      {
+        "length": 100,
+        "slope": 15000,
+        "start": 780
+      }
+    ]
+  },
+  {
+    "id": "10403",
+    "trackId": "10004",
+    "name": "Fukushima 2000m (Turf)",
+    "trackName": "Fukushima",
+    "distance": 2000,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [
+      2
+    ],
+    "corners": [
+      {
+        "length": 200,
+        "start": 530
+      },
+      {
+        "length": 200,
+        "start": 730
+      },
+      {
+        "length": 300,
+        "start": 1220
+      },
+      {
+        "length": 188,
+        "start": 1520
+      }
+    ],
+    "straights": [
+      {
+        "end": 530,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1220,
+        "frontType": 2,
+        "start": 930
+      },
+      {
+        "end": 2000,
+        "frontType": 1,
+        "start": 1708
+      }
+    ],
+    "slopes": [
+      {
+        "length": 100,
+        "slope": 15000,
+        "start": 980
+      }
+    ]
+  },
+  {
+    "id": "10407",
+    "trackId": "10004",
+    "name": "Fukushima 2400m (Dirt)",
+    "trackName": "Fukushima",
+    "distance": 2400,
+    "surface": "Dirt",
+    "turn": 1,
+    "courseSetStatus": [
+      2
+    ],
+    "corners": [
+      {
+        "length": 210,
+        "start": 310
+      },
+      {
+        "length": 160,
+        "start": 520
+      },
+      {
+        "length": 170,
+        "start": 1060
+      },
+      {
+        "length": 170,
+        "start": 1230
+      },
+      {
+        "length": 210,
+        "start": 1750
+      },
+      {
+        "length": 145,
+        "start": 1960
+      }
+    ],
+    "straights": [
+      {
+        "end": 310,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1060,
+        "frontType": 1,
+        "start": 680
+      },
+      {
+        "end": 1750,
+        "frontType": 2,
+        "start": 1400
+      },
+      {
+        "end": 2400,
+        "frontType": 1,
+        "start": 2105
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "10404",
+    "trackId": "10004",
+    "name": "Fukushima 2600m (Turf)",
+    "trackName": "Fukushima",
+    "distance": 2600,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 300,
+        "start": 220
+      },
+      {
+        "length": 200,
+        "start": 520
+      },
+      {
+        "length": 200,
+        "start": 1130
+      },
+      {
+        "length": 200,
+        "start": 1330
+      },
+      {
+        "length": 300,
+        "start": 1820
+      },
+      {
+        "length": 188,
+        "start": 2120
+      }
+    ],
+    "straights": [
+      {
+        "end": 220,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1130,
+        "frontType": 1,
+        "start": 720
+      },
+      {
+        "end": 1820,
+        "frontType": 2,
+        "start": 1530
+      },
+      {
+        "end": 2600,
+        "frontType": 1,
+        "start": 2308
+      }
+    ],
+    "slopes": [
+      {
+        "length": 80,
+        "slope": 15000,
+        "start": 0
+      },
+      {
+        "length": 100,
+        "slope": 15000,
+        "start": 1580
+      }
+    ]
+  },
+  {
+    "id": "11401",
+    "trackId": "10104",
+    "name": "Funabashi 1000m (Dirt)",
+    "trackName": "Funabashi",
+    "distance": 1000,
+    "surface": "Dirt",
+    "turn": 2,
+    "courseSetStatus": [
+      1
+    ],
+    "corners": [
+      {
+        "length": 170,
+        "start": 370
+      },
+      {
+        "length": 152,
+        "start": 540
+      }
+    ],
+    "straights": [
+      {
+        "end": 370,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1000,
+        "frontType": 1,
+        "start": 692
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "11402",
+    "trackId": "10104",
+    "name": "Funabashi 1600m (Dirt)",
+    "trackName": "Funabashi",
+    "distance": 1600,
+    "surface": "Dirt",
+    "turn": 2,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 180,
+        "start": 260
+      },
+      {
+        "length": 160,
+        "start": 440
+      },
+      {
+        "length": 170,
+        "start": 970
+      },
+      {
+        "length": 152,
+        "start": 1140
+      }
+    ],
+    "straights": [
+      {
+        "end": 260,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 970,
+        "frontType": 2,
+        "start": 600
+      },
+      {
+        "end": 1600,
+        "frontType": 1,
+        "start": 1292
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "11403",
+    "trackId": "10104",
+    "name": "Funabashi 1800m (Dirt)",
+    "trackName": "Funabashi",
+    "distance": 1800,
+    "surface": "Dirt",
+    "turn": 2,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 180,
+        "start": 460
+      },
+      {
+        "length": 160,
+        "start": 640
+      },
+      {
+        "length": 170,
+        "start": 1170
+      },
+      {
+        "length": 152,
+        "start": 1340
+      }
+    ],
+    "straights": [
+      {
+        "end": 460,
+        "frontType": 1,
+        "start": 90
+      },
+      {
+        "end": 1170,
+        "frontType": 2,
+        "start": 800
+      },
+      {
+        "end": 1800,
+        "frontType": 1,
+        "start": 1492
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "11404",
+    "trackId": "10104",
+    "name": "Funabashi 2400m (Dirt)",
+    "trackName": "Funabashi",
+    "distance": 2400,
+    "surface": "Dirt",
+    "turn": 2,
+    "courseSetStatus": [
+      2
+    ],
+    "corners": [
+      {
+        "length": 170,
+        "start": 370
+      },
+      {
+        "length": 150,
+        "start": 540
+      },
+      {
+        "length": 180,
+        "start": 1060
+      },
+      {
+        "length": 160,
+        "start": 1240
+      },
+      {
+        "length": 170,
+        "start": 1770
+      },
+      {
+        "length": 152,
+        "start": 1940
+      }
+    ],
+    "straights": [
+      {
+        "end": 370,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1060,
+        "frontType": 1,
+        "start": 690
+      },
+      {
+        "end": 1770,
+        "frontType": 2,
+        "start": 1400
+      },
+      {
+        "end": 2400,
+        "frontType": 1,
+        "start": 2092
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "10201",
+    "trackId": "10002",
+    "name": "Hakodate 1000m (Turf)",
+    "trackName": "Hakodate",
+    "distance": 1000,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 220,
+        "start": 310
+      },
+      {
+        "length": 208,
+        "start": 530
+      }
+    ],
+    "straights": [
+      {
+        "end": 310,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1000,
+        "frontType": 1,
+        "start": 738
+      }
+    ],
+    "slopes": [
+      {
+        "length": 555,
+        "slope": 10000,
+        "start": 0
+      }
+    ]
+  },
+  {
+    "id": "10206",
+    "trackId": "10002",
+    "name": "Hakodate 1000m (Dirt)",
+    "trackName": "Hakodate",
+    "distance": 1000,
+    "surface": "Dirt",
+    "turn": 1,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 190,
+        "start": 370
+      },
+      {
+        "length": 180,
+        "start": 560
+      }
+    ],
+    "straights": [
+      {
+        "end": 370,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1000,
+        "frontType": 1,
+        "start": 740
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "10202",
+    "trackId": "10002",
+    "name": "Hakodate 1200m (Turf)",
+    "trackName": "Hakodate",
+    "distance": 1200,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 220,
+        "start": 510
+      },
+      {
+        "length": 208,
+        "start": 730
+      }
+    ],
+    "straights": [
+      {
+        "end": 510,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1200,
+        "frontType": 1,
+        "start": 938
+      }
+    ],
+    "slopes": [
+      {
+        "length": 755,
+        "slope": 10000,
+        "start": 0
+      }
+    ]
+  },
+  {
+    "id": "10207",
+    "trackId": "10002",
+    "name": "Hakodate 1700m (Dirt)",
+    "trackName": "Hakodate",
+    "distance": 1700,
+    "surface": "Dirt",
+    "turn": 1,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 190,
+        "start": 350
+      },
+      {
+        "length": 190,
+        "start": 540
+      },
+      {
+        "length": 190,
+        "start": 1070
+      },
+      {
+        "length": 180,
+        "start": 1260
+      }
+    ],
+    "straights": [
+      {
+        "end": 350,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1070,
+        "frontType": 2,
+        "start": 730
+      },
+      {
+        "end": 1700,
+        "frontType": 1,
+        "start": 1440
+      }
+    ],
+    "slopes": [
+      {
+        "length": 340,
+        "slope": -10000,
+        "start": 275
+      },
+      {
+        "length": 670,
+        "slope": 10000,
+        "start": 615
+      }
+    ]
+  },
+  {
+    "id": "10203",
+    "trackId": "10002",
+    "name": "Hakodate 1800m (Turf)",
+    "trackName": "Hakodate",
+    "distance": 1800,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [
+      3
+    ],
+    "corners": [
+      {
+        "length": 220,
+        "start": 320
+      },
+      {
+        "length": 220,
+        "start": 540
+      },
+      {
+        "length": 220,
+        "start": 1110
+      },
+      {
+        "length": 208,
+        "start": 1330
+      }
+    ],
+    "straights": [
+      {
+        "end": 320,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1110,
+        "frontType": 2,
+        "start": 760
+      },
+      {
+        "end": 1800,
+        "frontType": 1,
+        "start": 1538
+      }
+    ],
+    "slopes": [
+      {
+        "length": 200,
+        "slope": -10000,
+        "start": 220
+      },
+      {
+        "length": 720,
+        "slope": 10000,
+        "start": 665
+      }
+    ]
+  },
+  {
+    "id": "10204",
+    "trackId": "10002",
+    "name": "Hakodate 2000m (Turf)",
+    "trackName": "Hakodate",
+    "distance": 2000,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [
+      1
+    ],
+    "corners": [
+      {
+        "length": 220,
+        "start": 520
+      },
+      {
+        "length": 220,
+        "start": 740
+      },
+      {
+        "length": 220,
+        "start": 1310
+      },
+      {
+        "length": 208,
+        "start": 1530
+      }
+    ],
+    "straights": [
+      {
+        "end": 520,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1310,
+        "frontType": 2,
+        "start": 960
+      },
+      {
+        "end": 2000,
+        "frontType": 1,
+        "start": 1738
+      }
+    ],
+    "slopes": [
+      {
+        "length": 200,
+        "slope": -10000,
+        "start": 420
+      },
+      {
+        "length": 720,
+        "slope": 10000,
+        "start": 865
+      }
+    ]
+  },
+  {
+    "id": "10208",
+    "trackId": "10002",
+    "name": "Hakodate 2400m (Dirt)",
+    "trackName": "Hakodate",
+    "distance": 2400,
+    "surface": "Dirt",
+    "turn": 1,
+    "courseSetStatus": [
+      2
+    ],
+    "corners": [
+      {
+        "length": 190,
+        "start": 292
+      },
+      {
+        "length": 190,
+        "start": 482
+      },
+      {
+        "length": 190,
+        "start": 1040
+      },
+      {
+        "length": 190,
+        "start": 1230
+      },
+      {
+        "length": 190,
+        "start": 1770
+      },
+      {
+        "length": 180,
+        "start": 1960
+      }
+    ],
+    "straights": [
+      {
+        "end": 292,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1040,
+        "frontType": 1,
+        "start": 672
+      },
+      {
+        "end": 1770,
+        "frontType": 2,
+        "start": 1420
+      },
+      {
+        "end": 2400,
+        "frontType": 1,
+        "start": 2140
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "10205",
+    "trackId": "10002",
+    "name": "Hakodate 2600m (Turf)",
+    "trackName": "Hakodate",
+    "distance": 2600,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [
+      2
+    ],
+    "corners": [
+      {
+        "length": 240,
+        "start": 260
+      },
+      {
+        "length": 230,
+        "start": 500
+      },
+      {
+        "length": 220,
+        "start": 1120
+      },
+      {
+        "length": 220,
+        "start": 1340
+      },
+      {
+        "length": 220,
+        "start": 1910
+      },
+      {
+        "length": 208,
+        "start": 2130
+      }
+    ],
+    "straights": [
+      {
+        "end": 260,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1120,
+        "frontType": 1,
+        "start": 730
+      },
+      {
+        "end": 1910,
+        "frontType": 2,
+        "start": 1560
+      },
+      {
+        "end": 2600,
+        "frontType": 1,
+        "start": 2338
+      }
+    ],
+    "slopes": [
+      {
+        "length": 495,
+        "slope": 10000,
+        "start": 0
+      },
+      {
+        "length": 200,
+        "slope": -10000,
+        "start": 970
+      },
+      {
+        "length": 720,
+        "slope": 10000,
+        "start": 1425
+      }
+    ]
+  },
+  {
+    "id": "10901",
+    "trackId": "10009",
+    "name": "Hanshin 1200m (Turf)",
+    "trackName": "Hanshin",
+    "distance": 1200,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 300,
+        "start": 250
+      },
+      {
+        "length": 294,
+        "start": 550
+      }
+    ],
+    "straights": [
+      {
+        "end": 250,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1200,
+        "frontType": 1,
+        "start": 844
+      }
+    ],
+    "slopes": [
+      {
+        "length": 595,
+        "slope": -10000,
+        "start": 400
+      },
+      {
+        "length": 125,
+        "slope": 20000,
+        "start": 1000
+      }
+    ]
+  },
+  {
+    "id": "10910",
+    "trackId": "10009",
+    "name": "Hanshin 1200m (Dirt)",
+    "trackName": "Hanshin",
+    "distance": 1200,
+    "surface": "Dirt",
+    "turn": 1,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 250,
+        "start": 350
+      },
+      {
+        "length": 248,
+        "start": 600
+      }
+    ],
+    "straights": [
+      {
+        "end": 350,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1200,
+        "frontType": 1,
+        "start": 848
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "10902",
+    "trackId": "10009",
+    "name": "Hanshin 1400m (Turf)",
+    "trackName": "Hanshin",
+    "distance": 1400,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 300,
+        "start": 450
+      },
+      {
+        "length": 294,
+        "start": 750
+      }
+    ],
+    "straights": [
+      {
+        "end": 450,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1400,
+        "frontType": 1,
+        "start": 1044
+      }
+    ],
+    "slopes": [
+      {
+        "length": 595,
+        "slope": -10000,
+        "start": 600
+      },
+      {
+        "length": 125,
+        "slope": 20000,
+        "start": 1200
+      }
+    ]
+  },
+  {
+    "id": "10911",
+    "trackId": "10009",
+    "name": "Hanshin 1400m (Dirt)",
+    "trackName": "Hanshin",
+    "distance": 1400,
+    "surface": "Dirt",
+    "turn": 1,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 250,
+        "start": 550
+      },
+      {
+        "length": 248,
+        "start": 800
+      }
+    ],
+    "straights": [
+      {
+        "end": 550,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1400,
+        "frontType": 1,
+        "start": 1048
+      }
+    ],
+    "slopes": [
+      {
+        "length": 125,
+        "slope": 15000,
+        "start": 1200
+      }
+    ]
+  },
+  {
+    "id": "10903",
+    "trackId": "10009",
+    "name": "Hanshin 1600m (Turf)",
+    "trackName": "Hanshin",
+    "distance": 1600,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [
+      3
+    ],
+    "corners": [
+      {
+        "length": 350,
+        "start": 450
+      },
+      {
+        "length": 327,
+        "start": 800
+      }
+    ],
+    "straights": [
+      {
+        "end": 450,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1600,
+        "frontType": 1,
+        "start": 1127
+      }
+    ],
+    "slopes": [
+      {
+        "length": 400,
+        "slope": -10000,
+        "start": 950
+      },
+      {
+        "length": 120,
+        "slope": 20000,
+        "start": 1405
+      }
+    ]
+  },
+  {
+    "id": "10904",
+    "trackId": "10009",
+    "name": "Hanshin 1800m (Turf)",
+    "trackName": "Hanshin",
+    "distance": 1800,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [
+      3
+    ],
+    "corners": [
+      {
+        "length": 350,
+        "start": 650
+      },
+      {
+        "length": 327,
+        "start": 1000
+      }
+    ],
+    "straights": [
+      {
+        "end": 650,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1800,
+        "frontType": 1,
+        "start": 1327
+      }
+    ],
+    "slopes": [
+      {
+        "length": 400,
+        "slope": -10000,
+        "start": 1150
+      },
+      {
+        "length": 120,
+        "slope": 20000,
+        "start": 1605
+      }
+    ]
+  },
+  {
+    "id": "10912",
+    "trackId": "10009",
+    "name": "Hanshin 1800m (Dirt)",
+    "trackName": "Hanshin",
+    "distance": 1800,
+    "surface": "Dirt",
+    "turn": 1,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 150,
+        "start": 330
+      },
+      {
+        "length": 150,
+        "start": 480
+      },
+      {
+        "length": 250,
+        "start": 950
+      },
+      {
+        "length": 248,
+        "start": 1200
+      }
+    ],
+    "straights": [
+      {
+        "end": 330,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 950,
+        "frontType": 2,
+        "start": 630
+      },
+      {
+        "end": 1800,
+        "frontType": 1,
+        "start": 1448
+      }
+    ],
+    "slopes": [
+      {
+        "length": 125,
+        "slope": 15000,
+        "start": 105
+      },
+      {
+        "length": 125,
+        "slope": 15000,
+        "start": 1599
+      }
+    ]
+  },
+  {
+    "id": "10905",
+    "trackId": "10009",
+    "name": "Hanshin 2000m (Turf)",
+    "trackName": "Hanshin",
+    "distance": 2000,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [
+      4
+    ],
+    "corners": [
+      {
+        "length": 190,
+        "start": 370
+      },
+      {
+        "length": 190,
+        "start": 560
+      },
+      {
+        "length": 300,
+        "start": 1050
+      },
+      {
+        "length": 294,
+        "start": 1350
+      }
+    ],
+    "straights": [
+      {
+        "end": 370,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1050,
+        "frontType": 2,
+        "start": 750
+      },
+      {
+        "end": 2000,
+        "frontType": 1,
+        "start": 1644
+      }
+    ],
+    "slopes": [
+      {
+        "length": 140,
+        "slope": -10000,
+        "start": 0
+      },
+      {
+        "length": 125,
+        "slope": 20000,
+        "start": 145
+      },
+      {
+        "length": 595,
+        "slope": -10000,
+        "start": 1200
+      },
+      {
+        "length": 125,
+        "slope": 20000,
+        "start": 1800
+      }
+    ]
+  },
+  {
+    "id": "10913",
+    "trackId": "10009",
+    "name": "Hanshin 2000m (Dirt)",
+    "trackName": "Hanshin",
+    "distance": 2000,
+    "surface": "Dirt",
+    "turn": 1,
+    "courseSetStatus": [
+      2,
+      3
+    ],
+    "corners": [
+      {
+        "length": 150,
+        "start": 500
+      },
+      {
+        "length": 150,
+        "start": 650
+      },
+      {
+        "length": 250,
+        "start": 1150
+      },
+      {
+        "length": 248,
+        "start": 1400
+      }
+    ],
+    "straights": [
+      {
+        "end": 500,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1150,
+        "frontType": 2,
+        "start": 800
+      },
+      {
+        "end": 2000,
+        "frontType": 1,
+        "start": 1648
+      }
+    ],
+    "slopes": [
+      {
+        "length": 125,
+        "slope": 15000,
+        "start": 275
+      },
+      {
+        "length": 125,
+        "slope": 15000,
+        "start": 1800
+      }
+    ]
+  },
+  {
+    "id": "10906",
+    "trackId": "10009",
+    "name": "Hanshin 2200m (Turf)",
+    "trackName": "Hanshin",
+    "distance": 2200,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [
+      1
+    ],
+    "corners": [
+      {
+        "length": 190,
+        "start": 520
+      },
+      {
+        "length": 190,
+        "start": 710
+      },
+      {
+        "length": 300,
+        "start": 1250
+      },
+      {
+        "length": 294,
+        "start": 1550
+      }
+    ],
+    "straights": [
+      {
+        "end": 520,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1250,
+        "frontType": 2,
+        "start": 900
+      },
+      {
+        "end": 2200,
+        "frontType": 1,
+        "start": 1844
+      }
+    ],
+    "slopes": [
+      {
+        "length": 290,
+        "slope": -10000,
+        "start": 0
+      },
+      {
+        "length": 125,
+        "slope": 20000,
+        "start": 295
+      },
+      {
+        "length": 595,
+        "slope": -10000,
+        "start": 1400
+      },
+      {
+        "length": 125,
+        "slope": 20000,
+        "start": 2000
+      }
+    ]
+  },
+  {
+    "id": "10907",
+    "trackId": "10009",
+    "name": "Hanshin 2400m (Turf)",
+    "trackName": "Hanshin",
+    "distance": 2400,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [
+      3
+    ],
+    "corners": [
+      {
+        "length": 190,
+        "start": 382
+      },
+      {
+        "length": 190,
+        "start": 558
+      },
+      {
+        "length": 350,
+        "start": 1250
+      },
+      {
+        "length": 327,
+        "start": 1600
+      }
+    ],
+    "straights": [
+      {
+        "end": 1250,
+        "frontType": 2,
+        "start": 750
+      },
+      {
+        "end": 2400,
+        "frontType": 1,
+        "start": 1927
+      }
+    ],
+    "slopes": [
+      {
+        "length": 132,
+        "slope": -10000,
+        "start": 0
+      },
+      {
+        "length": 120,
+        "slope": 20000,
+        "start": 187
+      },
+      {
+        "length": 400,
+        "slope": -10000,
+        "start": 1750
+      },
+      {
+        "length": 120,
+        "slope": 20000,
+        "start": 2205
+      }
+    ]
+  },
+  {
+    "id": "10908",
+    "trackId": "10009",
+    "name": "Hanshin 2600m (Turf)",
+    "trackName": "Hanshin",
+    "distance": 2600,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 190,
+        "start": 570
+      },
+      {
+        "length": 190,
+        "start": 760
+      },
+      {
+        "length": 350,
+        "start": 1450
+      },
+      {
+        "length": 327,
+        "start": 1800
+      }
+    ],
+    "straights": [
+      {
+        "end": 570,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1450,
+        "frontType": 2,
+        "start": 950
+      },
+      {
+        "end": 2600,
+        "frontType": 1,
+        "start": 2127
+      }
+    ],
+    "slopes": [
+      {
+        "length": 315,
+        "slope": -10000,
+        "start": 0
+      },
+      {
+        "length": 120,
+        "slope": 20000,
+        "start": 370
+      },
+      {
+        "length": 400,
+        "slope": -10000,
+        "start": 1950
+      },
+      {
+        "length": 120,
+        "slope": 20000,
+        "start": 2405
+      }
+    ]
+  },
+  {
+    "id": "10909",
+    "trackId": "10009",
+    "name": "Hanshin 3000m (Turf)",
+    "trackName": "Hanshin",
+    "distance": 3000,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [
+      3
+    ],
+    "corners": [
+      {
+        "length": 300,
+        "start": 348
+      },
+      {
+        "length": 300,
+        "start": 648
+      },
+      {
+        "length": 190,
+        "start": 1320
+      },
+      {
+        "length": 190,
+        "start": 1510
+      },
+      {
+        "length": 300,
+        "start": 2050
+      },
+      {
+        "length": 294,
+        "start": 2350
+      }
+    ],
+    "straights": [
+      {
+        "end": 348,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1320,
+        "frontType": 1,
+        "start": 948
+      },
+      {
+        "end": 2050,
+        "frontType": 2,
+        "start": 1700
+      },
+      {
+        "end": 3000,
+        "frontType": 1,
+        "start": 2644
+      }
+    ],
+    "slopes": [
+      {
+        "length": 595,
+        "slope": -10000,
+        "start": 498
+      },
+      {
+        "length": 125,
+        "slope": 20000,
+        "start": 1095
+      },
+      {
+        "length": 595,
+        "slope": -10000,
+        "start": 2200
+      },
+      {
+        "length": 125,
+        "slope": 20000,
+        "start": 2800
+      }
+    ]
+  },
+  {
+    "id": "10914",
+    "trackId": "10009",
+    "name": "Hanshin 3200m (Turf)",
+    "trackName": "Hanshin",
+    "distance": 3200,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 350,
+        "start": 370
+      },
+      {
+        "length": 350,
+        "start": 720
+      },
+      {
+        "length": 190,
+        "start": 1520
+      },
+      {
+        "length": 190,
+        "start": 1710
+      },
+      {
+        "length": 300,
+        "start": 2250
+      },
+      {
+        "length": 294,
+        "start": 2550
+      }
+    ],
+    "straights": [
+      {
+        "end": 370,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1520,
+        "frontType": 1,
+        "start": 1070
+      },
+      {
+        "end": 2250,
+        "frontType": 2,
+        "start": 1900
+      },
+      {
+        "end": 3200,
+        "frontType": 1,
+        "start": 2844
+      }
+    ],
+    "slopes": [
+      {
+        "length": 400,
+        "slope": -10000,
+        "start": 870
+      },
+      {
+        "length": 120,
+        "slope": 20000,
+        "start": 1325
+      },
+      {
+        "length": 595,
+        "slope": -10000,
+        "start": 2400
+      },
+      {
+        "length": 125,
+        "slope": 20000,
+        "start": 3000
+      }
+    ]
+  },
+  {
+    "id": "11301",
+    "trackId": "10103",
+    "name": "Kawasaki 1400m (Dirt)",
+    "trackName": "Kawasaki",
+    "distance": 1400,
+    "surface": "Dirt",
+    "turn": 2,
+    "courseSetStatus": [
+      5
+    ],
+    "corners": [
+      {
+        "length": 100,
+        "start": 300
+      },
+      {
+        "length": 100,
+        "start": 400
+      },
+      {
+        "length": 100,
+        "start": 900
+      },
+      {
+        "length": 100,
+        "start": 1000
+      }
+    ],
+    "straights": [
+      {
+        "end": 300,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 900,
+        "frontType": 2,
+        "start": 500
+      },
+      {
+        "end": 1400,
+        "frontType": 1,
+        "start": 1100
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "11302",
+    "trackId": "10103",
+    "name": "Kawasaki 1600m (Dirt)",
+    "trackName": "Kawasaki",
+    "distance": 1600,
+    "surface": "Dirt",
+    "turn": 2,
+    "courseSetStatus": [
+      5
+    ],
+    "corners": [
+      {
+        "length": 100,
+        "start": 500
+      },
+      {
+        "length": 100,
+        "start": 600
+      },
+      {
+        "length": 100,
+        "start": 1100
+      },
+      {
+        "length": 100,
+        "start": 1200
+      }
+    ],
+    "straights": [
+      {
+        "end": 500,
+        "frontType": 1,
+        "start": 100
+      },
+      {
+        "end": 1100,
+        "frontType": 2,
+        "start": 700
+      },
+      {
+        "end": 1600,
+        "frontType": 1,
+        "start": 1300
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "11303",
+    "trackId": "10103",
+    "name": "Kawasaki 2100m (Dirt)",
+    "trackName": "Kawasaki",
+    "distance": 2100,
+    "surface": "Dirt",
+    "turn": 2,
+    "courseSetStatus": [
+      2,
+      5
+    ],
+    "corners": [
+      {
+        "length": 100,
+        "start": 400
+      },
+      {
+        "length": 100,
+        "start": 500
+      },
+      {
+        "length": 100,
+        "start": 1000
+      },
+      {
+        "length": 100,
+        "start": 1100
+      },
+      {
+        "length": 100,
+        "start": 1600
+      },
+      {
+        "length": 100,
+        "start": 1700
+      }
+    ],
+    "straights": [
+      {
+        "end": 400,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1000,
+        "frontType": 1,
+        "start": 600
+      },
+      {
+        "end": 1600,
+        "frontType": 2,
+        "start": 1200
+      },
+      {
+        "end": 2100,
+        "frontType": 1,
+        "start": 1800
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "11005",
+    "trackId": "10010",
+    "name": "Kokura 1000m (Dirt)",
+    "trackName": "Kokura",
+    "distance": 1000,
+    "surface": "Dirt",
+    "turn": 1,
+    "courseSetStatus": [
+      1
+    ],
+    "corners": [
+      {
+        "length": 180,
+        "start": 360
+      },
+      {
+        "length": 169,
+        "start": 540
+      }
+    ],
+    "straights": [
+      {
+        "end": 360,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1000,
+        "frontType": 1,
+        "start": 709
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "11001",
+    "trackId": "10010",
+    "name": "Kokura 1200m (Turf)",
+    "trackName": "Kokura",
+    "distance": 1200,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [
+      1
+    ],
+    "corners": [
+      {
+        "length": 205,
+        "start": 500
+      },
+      {
+        "length": 202,
+        "start": 705
+      }
+    ],
+    "straights": [
+      {
+        "end": 500,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1200,
+        "frontType": 1,
+        "start": 907
+      }
+    ],
+    "slopes": [
+      {
+        "length": 60,
+        "slope": -15000,
+        "start": 0
+      }
+    ]
+  },
+  {
+    "id": "11006",
+    "trackId": "10010",
+    "name": "Kokura 1700m (Dirt)",
+    "trackName": "Kokura",
+    "distance": 1700,
+    "surface": "Dirt",
+    "turn": 1,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 180,
+        "start": 340
+      },
+      {
+        "length": 180,
+        "start": 520
+      },
+      {
+        "length": 180,
+        "start": 1060
+      },
+      {
+        "length": 169,
+        "start": 1240
+      }
+    ],
+    "straights": [
+      {
+        "end": 340,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1060,
+        "frontType": 2,
+        "start": 700
+      },
+      {
+        "end": 1700,
+        "frontType": 1,
+        "start": 1409
+      }
+    ],
+    "slopes": [
+      {
+        "length": 150,
+        "slope": 15000,
+        "start": 370
+      }
+    ]
+  },
+  {
+    "id": "11002",
+    "trackId": "10010",
+    "name": "Kokura 1800m (Turf)",
+    "trackName": "Kokura",
+    "distance": 1800,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 205,
+        "start": 290
+      },
+      {
+        "length": 205,
+        "start": 495
+      },
+      {
+        "length": 205,
+        "start": 1100
+      },
+      {
+        "length": 202,
+        "start": 1305
+      }
+    ],
+    "straights": [
+      {
+        "end": 290,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1100,
+        "frontType": 2,
+        "start": 700
+      },
+      {
+        "end": 1800,
+        "frontType": 1,
+        "start": 1507
+      }
+    ],
+    "slopes": [
+      {
+        "length": 255,
+        "slope": 15000,
+        "start": 280
+      }
+    ]
+  },
+  {
+    "id": "11003",
+    "trackId": "10010",
+    "name": "Kokura 2000m (Turf)",
+    "trackName": "Kokura",
+    "distance": 2000,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [
+      3
+    ],
+    "corners": [
+      {
+        "length": 205,
+        "start": 490
+      },
+      {
+        "length": 205,
+        "start": 695
+      },
+      {
+        "length": 205,
+        "start": 1300
+      },
+      {
+        "length": 202,
+        "start": 1505
+      }
+    ],
+    "straights": [
+      {
+        "end": 490,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1300,
+        "frontType": 2,
+        "start": 900
+      },
+      {
+        "end": 2000,
+        "frontType": 1,
+        "start": 1707
+      }
+    ],
+    "slopes": [
+      {
+        "length": 255,
+        "slope": 15000,
+        "start": 480
+      }
+    ]
+  },
+  {
+    "id": "11007",
+    "trackId": "10010",
+    "name": "Kokura 2400m (Dirt)",
+    "trackName": "Kokura",
+    "distance": 2400,
+    "surface": "Dirt",
+    "turn": 1,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 180,
+        "start": 312
+      },
+      {
+        "length": 180,
+        "start": 492
+      },
+      {
+        "length": 180,
+        "start": 1040
+      },
+      {
+        "length": 180,
+        "start": 1220
+      },
+      {
+        "length": 180,
+        "start": 1760
+      },
+      {
+        "length": 169,
+        "start": 1940
+      }
+    ],
+    "straights": [
+      {
+        "end": 312,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1040,
+        "frontType": 1,
+        "start": 672
+      },
+      {
+        "end": 1760,
+        "frontType": 2,
+        "start": 1400
+      },
+      {
+        "end": 2400,
+        "frontType": 1,
+        "start": 2109
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "11004",
+    "trackId": "10010",
+    "name": "Kokura 2600m (Turf)",
+    "trackName": "Kokura",
+    "distance": 2600,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [
+      2
+    ],
+    "corners": [
+      {
+        "length": 205,
+        "start": 309
+      },
+      {
+        "length": 205,
+        "start": 514
+      },
+      {
+        "length": 205,
+        "start": 1110
+      },
+      {
+        "length": 205,
+        "start": 1315
+      },
+      {
+        "length": 205,
+        "start": 1900
+      },
+      {
+        "length": 202,
+        "start": 2105
+      }
+    ],
+    "straights": [
+      {
+        "end": 309,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1110,
+        "frontType": 1,
+        "start": 719
+      },
+      {
+        "end": 1900,
+        "frontType": 2,
+        "start": 1520
+      },
+      {
+        "end": 2600,
+        "frontType": 1,
+        "start": 2307
+      }
+    ],
+    "slopes": [
+      {
+        "length": 255,
+        "slope": 15000,
+        "start": 1100
+      }
+    ]
+  },
+  {
+    "id": "10801",
+    "trackId": "10008",
+    "name": "Kyoto 1200m (Turf)",
+    "trackName": "Kyoto",
+    "distance": 1200,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 275,
+        "start": 320
+      },
+      {
+        "length": 277,
+        "start": 595
+      }
+    ],
+    "straights": [
+      {
+        "end": 320,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1200,
+        "frontType": 1,
+        "start": 872
+      }
+    ],
+    "slopes": [
+      {
+        "length": 175,
+        "slope": 15000,
+        "start": 120
+      },
+      {
+        "length": 150,
+        "slope": -15000,
+        "start": 420
+      }
+    ]
+  },
+  {
+    "id": "10812",
+    "trackId": "10008",
+    "name": "Kyoto 1200m (Dirt)",
+    "trackName": "Kyoto",
+    "distance": 1200,
+    "surface": "Dirt",
+    "turn": 1,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 225,
+        "start": 400
+      },
+      {
+        "length": 246,
+        "start": 625
+      }
+    ],
+    "straights": [
+      {
+        "end": 400,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1200,
+        "frontType": 1,
+        "start": 871
+      }
+    ],
+    "slopes": [
+      {
+        "length": 200,
+        "slope": 15000,
+        "start": 175
+      },
+      {
+        "length": 200,
+        "slope": -15000,
+        "start": 475
+      }
+    ]
+  },
+  {
+    "id": "10802",
+    "trackId": "10008",
+    "name": "Kyoto 1400m (Turf)",
+    "trackName": "Kyoto",
+    "distance": 1400,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 275,
+        "start": 520
+      },
+      {
+        "length": 277,
+        "start": 795
+      }
+    ],
+    "straights": [
+      {
+        "end": 520,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1400,
+        "frontType": 1,
+        "start": 1072
+      }
+    ],
+    "slopes": [
+      {
+        "length": 175,
+        "slope": 15000,
+        "start": 320
+      },
+      {
+        "length": 150,
+        "slope": -15000,
+        "start": 620
+      }
+    ]
+  },
+  {
+    "id": "10803",
+    "trackId": "10008",
+    "name": "Kyoto 1400m (Turf)",
+    "trackName": "Kyoto",
+    "distance": 1400,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 250,
+        "start": 500
+      },
+      {
+        "length": 247,
+        "start": 750
+      }
+    ],
+    "straights": [
+      {
+        "end": 500,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1400,
+        "frontType": 1,
+        "start": 997
+      }
+    ],
+    "slopes": [
+      {
+        "length": 100,
+        "slope": 20000,
+        "start": 250
+      },
+      {
+        "length": 225,
+        "slope": 10000,
+        "start": 350
+      },
+      {
+        "length": 150,
+        "slope": -20000,
+        "start": 575
+      }
+    ]
+  },
+  {
+    "id": "10813",
+    "trackId": "10008",
+    "name": "Kyoto 1400m (Dirt)",
+    "trackName": "Kyoto",
+    "distance": 1400,
+    "surface": "Dirt",
+    "turn": 1,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 225,
+        "start": 600
+      },
+      {
+        "length": 246,
+        "start": 825
+      }
+    ],
+    "straights": [
+      {
+        "end": 600,
+        "frontType": 2,
+        "start": 100
+      },
+      {
+        "end": 1400,
+        "frontType": 1,
+        "start": 1071
+      }
+    ],
+    "slopes": [
+      {
+        "length": 200,
+        "slope": 15000,
+        "start": 375
+      },
+      {
+        "length": 200,
+        "slope": -15000,
+        "start": 675
+      }
+    ]
+  },
+  {
+    "id": "10804",
+    "trackId": "10008",
+    "name": "Kyoto 1600m (Turf)",
+    "trackName": "Kyoto",
+    "distance": 1600,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [
+      1
+    ],
+    "corners": [
+      {
+        "length": 275,
+        "start": 720
+      },
+      {
+        "length": 277,
+        "start": 995
+      }
+    ],
+    "straights": [
+      {
+        "end": 720,
+        "frontType": 2,
+        "start": 200
+      },
+      {
+        "end": 1600,
+        "frontType": 1,
+        "start": 1272
+      }
+    ],
+    "slopes": [
+      {
+        "length": 175,
+        "slope": 15000,
+        "start": 520
+      },
+      {
+        "length": 150,
+        "slope": -15000,
+        "start": 820
+      }
+    ]
+  },
+  {
+    "id": "10805",
+    "trackId": "10008",
+    "name": "Kyoto 1600m (Turf)",
+    "trackName": "Kyoto",
+    "distance": 1600,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [
+      1
+    ],
+    "corners": [
+      {
+        "length": 250,
+        "start": 700
+      },
+      {
+        "length": 247,
+        "start": 950
+      }
+    ],
+    "straights": [
+      {
+        "end": 700,
+        "frontType": 2,
+        "start": 200
+      },
+      {
+        "end": 1600,
+        "frontType": 1,
+        "start": 1197
+      }
+    ],
+    "slopes": [
+      {
+        "length": 100,
+        "slope": 20000,
+        "start": 450
+      },
+      {
+        "length": 225,
+        "slope": 10000,
+        "start": 550
+      },
+      {
+        "length": 150,
+        "slope": -20000,
+        "start": 775
+      }
+    ]
+  },
+  {
+    "id": "10806",
+    "trackId": "10008",
+    "name": "Kyoto 1800m (Turf)",
+    "trackName": "Kyoto",
+    "distance": 1800,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 250,
+        "start": 900
+      },
+      {
+        "length": 247,
+        "start": 1150
+      }
+    ],
+    "straights": [
+      {
+        "end": 900,
+        "frontType": 2,
+        "start": 400
+      },
+      {
+        "end": 1800,
+        "frontType": 1,
+        "start": 1397
+      }
+    ],
+    "slopes": [
+      {
+        "length": 100,
+        "slope": 20000,
+        "start": 650
+      },
+      {
+        "length": 225,
+        "slope": 10000,
+        "start": 750
+      },
+      {
+        "length": 150,
+        "slope": -20000,
+        "start": 975
+      }
+    ]
+  },
+  {
+    "id": "10814",
+    "trackId": "10008",
+    "name": "Kyoto 1800m (Dirt)",
+    "trackName": "Kyoto",
+    "distance": 1800,
+    "surface": "Dirt",
+    "turn": 1,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 150,
+        "start": 300
+      },
+      {
+        "length": 150,
+        "start": 450
+      },
+      {
+        "length": 225,
+        "start": 1000
+      },
+      {
+        "length": 246,
+        "start": 1225
+      }
+    ],
+    "straights": [
+      {
+        "end": 300,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1000,
+        "frontType": 2,
+        "start": 600
+      },
+      {
+        "end": 1800,
+        "frontType": 1,
+        "start": 1471
+      }
+    ],
+    "slopes": [
+      {
+        "length": 200,
+        "slope": 15000,
+        "start": 775
+      },
+      {
+        "length": 200,
+        "slope": -15000,
+        "start": 1075
+      }
+    ]
+  },
+  {
+    "id": "10815",
+    "trackId": "10008",
+    "name": "Kyoto 1900m (Dirt)",
+    "trackName": "Kyoto",
+    "distance": 1900,
+    "surface": "Dirt",
+    "turn": 1,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 150,
+        "start": 400
+      },
+      {
+        "length": 150,
+        "start": 550
+      },
+      {
+        "length": 225,
+        "start": 1100
+      },
+      {
+        "length": 246,
+        "start": 1325
+      }
+    ],
+    "straights": [
+      {
+        "end": 400,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1100,
+        "frontType": 2,
+        "start": 700
+      },
+      {
+        "end": 1900,
+        "frontType": 1,
+        "start": 1571
+      }
+    ],
+    "slopes": [
+      {
+        "length": 200,
+        "slope": 15000,
+        "start": 875
+      },
+      {
+        "length": 200,
+        "slope": -15000,
+        "start": 1175
+      }
+    ]
+  },
+  {
+    "id": "10807",
+    "trackId": "10008",
+    "name": "Kyoto 2000m (Turf)",
+    "trackName": "Kyoto",
+    "distance": 2000,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [
+      3
+    ],
+    "corners": [
+      {
+        "length": 185,
+        "start": 400
+      },
+      {
+        "length": 185,
+        "start": 585
+      },
+      {
+        "length": 275,
+        "start": 1120
+      },
+      {
+        "length": 277,
+        "start": 1395
+      }
+    ],
+    "straights": [
+      {
+        "end": 400,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1120,
+        "frontType": 2,
+        "start": 770
+      },
+      {
+        "end": 2000,
+        "frontType": 1,
+        "start": 1672
+      }
+    ],
+    "slopes": [
+      {
+        "length": 175,
+        "slope": 15000,
+        "start": 970
+      },
+      {
+        "length": 150,
+        "slope": -15000,
+        "start": 1270
+      }
+    ]
+  },
+  {
+    "id": "10808",
+    "trackId": "10008",
+    "name": "Kyoto 2200m (Turf)",
+    "trackName": "Kyoto",
+    "distance": 2200,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [
+      1
+    ],
+    "corners": [
+      {
+        "length": 200,
+        "start": 400
+      },
+      {
+        "length": 200,
+        "start": 600
+      },
+      {
+        "length": 250,
+        "start": 1300
+      },
+      {
+        "length": 247,
+        "start": 1550
+      }
+    ],
+    "straights": [
+      {
+        "end": 400,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1300,
+        "frontType": 2,
+        "start": 800
+      },
+      {
+        "end": 2200,
+        "frontType": 1,
+        "start": 1797
+      }
+    ],
+    "slopes": [
+      {
+        "length": 100,
+        "slope": 20000,
+        "start": 1050
+      },
+      {
+        "length": 225,
+        "slope": 10000,
+        "start": 1150
+      },
+      {
+        "length": 150,
+        "slope": -20000,
+        "start": 1375
+      }
+    ]
+  },
+  {
+    "id": "10809",
+    "trackId": "10008",
+    "name": "Kyoto 2400m (Turf)",
+    "trackName": "Kyoto",
+    "distance": 2400,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [
+      3
+    ],
+    "corners": [
+      {
+        "length": 200,
+        "start": 600
+      },
+      {
+        "length": 200,
+        "start": 800
+      },
+      {
+        "length": 250,
+        "start": 1500
+      },
+      {
+        "length": 247,
+        "start": 1750
+      }
+    ],
+    "straights": [
+      {
+        "end": 600,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1500,
+        "frontType": 2,
+        "start": 1000
+      },
+      {
+        "end": 2400,
+        "frontType": 1,
+        "start": 1997
+      }
+    ],
+    "slopes": [
+      {
+        "length": 100,
+        "slope": 20000,
+        "start": 1250
+      },
+      {
+        "length": 225,
+        "slope": 10000,
+        "start": 1350
+      },
+      {
+        "length": 150,
+        "slope": -20000,
+        "start": 1575
+      }
+    ]
+  },
+  {
+    "id": "10810",
+    "trackId": "10008",
+    "name": "Kyoto 3000m (Turf)",
+    "trackName": "Kyoto",
+    "distance": 3000,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [
+      3,
+      5
+    ],
+    "corners": [
+      {
+        "length": 250,
+        "start": 261
+      },
+      {
+        "length": 250,
+        "start": 511
+      },
+      {
+        "length": 200,
+        "start": 1250
+      },
+      {
+        "length": 200,
+        "start": 1450
+      },
+      {
+        "length": 250,
+        "start": 2100
+      },
+      {
+        "length": 247,
+        "start": 2350
+      }
+    ],
+    "straights": [
+      {
+        "end": 261,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1250,
+        "frontType": 1,
+        "start": 761
+      },
+      {
+        "end": 2100,
+        "frontType": 2,
+        "start": 1650
+      },
+      {
+        "end": 3000,
+        "frontType": 1,
+        "start": 2597
+      }
+    ],
+    "slopes": [
+      {
+        "length": 100,
+        "slope": 20000,
+        "start": 11
+      },
+      {
+        "length": 225,
+        "slope": 10000,
+        "start": 111
+      },
+      {
+        "length": 150,
+        "slope": -20000,
+        "start": 336
+      },
+      {
+        "length": 100,
+        "slope": 20000,
+        "start": 1850
+      },
+      {
+        "length": 225,
+        "slope": 10000,
+        "start": 1950
+      },
+      {
+        "length": 150,
+        "slope": -20000,
+        "start": 2175
+      }
+    ]
+  },
+  {
+    "id": "10811",
+    "trackId": "10008",
+    "name": "Kyoto 3200m (Turf)",
+    "trackName": "Kyoto",
+    "distance": 3200,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 250,
+        "start": 458
+      },
+      {
+        "length": 250,
+        "start": 708
+      },
+      {
+        "length": 200,
+        "start": 1450
+      },
+      {
+        "length": 200,
+        "start": 1650
+      },
+      {
+        "length": 250,
+        "start": 2300
+      },
+      {
+        "length": 247,
+        "start": 2550
+      }
+    ],
+    "straights": [
+      {
+        "end": 458,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1450,
+        "frontType": 1,
+        "start": 958
+      },
+      {
+        "end": 2300,
+        "frontType": 2,
+        "start": 1850
+      },
+      {
+        "end": 3200,
+        "frontType": 1,
+        "start": 2797
+      }
+    ],
+    "slopes": [
+      {
+        "length": 100,
+        "slope": 20000,
+        "start": 208
+      },
+      {
+        "length": 225,
+        "slope": 10000,
+        "start": 308
+      },
+      {
+        "length": 150,
+        "slope": -20000,
+        "start": 533
+      },
+      {
+        "length": 100,
+        "slope": 20000,
+        "start": 2050
+      },
+      {
+        "length": 225,
+        "slope": 10000,
+        "start": 2150
+      },
+      {
+        "length": 150,
+        "slope": -20000,
+        "start": 2375
+      }
+    ]
+  },
+  {
+    "id": "11501",
+    "trackId": "10105",
+    "name": "Morioka 1200m (Dirt)",
+    "trackName": "Morioka",
+    "distance": 1200,
+    "surface": "Dirt",
+    "turn": 2,
+    "courseSetStatus": [
+      2
+    ],
+    "corners": [
+      {
+        "length": 200,
+        "start": 500
+      },
+      {
+        "length": 200,
+        "start": 700
+      }
+    ],
+    "straights": [
+      {
+        "end": 500,
+        "frontType": 2,
+        "start": 100
+      },
+      {
+        "end": 1200,
+        "frontType": 1,
+        "start": 900
+      }
+    ],
+    "slopes": [
+      {
+        "length": 375,
+        "slope": 10000,
+        "start": 100
+      },
+      {
+        "length": 450,
+        "slope": -15000,
+        "start": 475
+      },
+      {
+        "length": 175,
+        "slope": 10000,
+        "start": 975
+      }
+    ]
+  },
+  {
+    "id": "11502",
+    "trackId": "10105",
+    "name": "Morioka 1600m (Dirt)",
+    "trackName": "Morioka",
+    "distance": 1600,
+    "surface": "Dirt",
+    "turn": 2,
+    "courseSetStatus": [
+      2,
+      5
+    ],
+    "corners": [
+      {
+        "length": 200,
+        "start": 900
+      },
+      {
+        "length": 200,
+        "start": 1100
+      }
+    ],
+    "straights": [
+      {
+        "end": 900,
+        "frontType": 2,
+        "start": 500
+      },
+      {
+        "end": 1600,
+        "frontType": 1,
+        "start": 1300
+      }
+    ],
+    "slopes": [
+      {
+        "length": 375,
+        "slope": 10000,
+        "start": 500
+      },
+      {
+        "length": 450,
+        "slope": -15000,
+        "start": 875
+      },
+      {
+        "length": 175,
+        "slope": 10000,
+        "start": 1375
+      }
+    ]
+  },
+  {
+    "id": "11503",
+    "trackId": "10105",
+    "name": "Morioka 1800m (Dirt)",
+    "trackName": "Morioka",
+    "distance": 1800,
+    "surface": "Dirt",
+    "turn": 2,
+    "courseSetStatus": [
+      2,
+      5
+    ],
+    "corners": [
+      {
+        "length": 200,
+        "start": 300
+      },
+      {
+        "length": 200,
+        "start": 500
+      },
+      {
+        "length": 200,
+        "start": 1100
+      },
+      {
+        "length": 200,
+        "start": 1300
+      }
+    ],
+    "straights": [
+      {
+        "end": 300,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1100,
+        "frontType": 2,
+        "start": 700
+      },
+      {
+        "end": 1800,
+        "frontType": 1,
+        "start": 1500
+      }
+    ],
+    "slopes": [
+      {
+        "length": 150,
+        "slope": 10000,
+        "start": 0
+      },
+      {
+        "length": 450,
+        "slope": -15000,
+        "start": 700
+      },
+      {
+        "length": 175,
+        "slope": 10000,
+        "start": 1575
+      }
+    ]
+  },
+  {
+    "id": "11504",
+    "trackId": "10105",
+    "name": "Morioka 2000m (Dirt)",
+    "trackName": "Morioka",
+    "distance": 2000,
+    "surface": "Dirt",
+    "turn": 2,
+    "courseSetStatus": [
+      2
+    ],
+    "corners": [
+      {
+        "length": 200,
+        "start": 500
+      },
+      {
+        "length": 200,
+        "start": 700
+      },
+      {
+        "length": 200,
+        "start": 1300
+      },
+      {
+        "length": 200,
+        "start": 1500
+      }
+    ],
+    "straights": [
+      {
+        "end": 500,
+        "frontType": 1,
+        "start": 100
+      },
+      {
+        "end": 1300,
+        "frontType": 2,
+        "start": 900
+      },
+      {
+        "end": 2000,
+        "frontType": 1,
+        "start": 1700
+      }
+    ],
+    "slopes": [
+      {
+        "length": 175,
+        "slope": 10000,
+        "start": 175
+      },
+      {
+        "length": 375,
+        "slope": 10000,
+        "start": 900
+      },
+      {
+        "length": 450,
+        "slope": -15000,
+        "start": 1275
+      },
+      {
+        "length": 175,
+        "slope": 10000,
+        "start": 1775
+      }
+    ]
+  },
+  {
+    "id": "10501",
+    "trackId": "10005",
+    "name": "Nakayama 1200m (Turf)",
+    "trackName": "Nakayama",
+    "distance": 1200,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 350,
+        "start": 300
+      },
+      {
+        "length": 240,
+        "start": 650
+      }
+    ],
+    "straights": [
+      {
+        "end": 1200,
+        "frontType": 1,
+        "start": 890
+      }
+    ],
+    "slopes": [
+      {
+        "length": 200,
+        "slope": -15000,
+        "start": 0
+      },
+      {
+        "length": 110,
+        "slope": 20000,
+        "start": 1025
+      }
+    ]
+  },
+  {
+    "id": "10508",
+    "trackId": "10005",
+    "name": "Nakayama 1200m (Dirt)",
+    "trackName": "Nakayama",
+    "distance": 1200,
+    "surface": "Dirt",
+    "turn": 1,
+    "courseSetStatus": [
+      3
+    ],
+    "corners": [
+      {
+        "length": 200,
+        "start": 500
+      },
+      {
+        "length": 192,
+        "start": 700
+      }
+    ],
+    "straights": [
+      {
+        "end": 500,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1200,
+        "frontType": 1,
+        "start": 892
+      }
+    ],
+    "slopes": [
+      {
+        "length": 175,
+        "slope": -15000,
+        "start": 175
+      },
+      {
+        "length": 175,
+        "slope": 15000,
+        "start": 1000
+      }
+    ]
+  },
+  {
+    "id": "10502",
+    "trackId": "10005",
+    "name": "Nakayama 1600m (Turf)",
+    "trackName": "Nakayama",
+    "distance": 1600,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [
+      3
+    ],
+    "corners": [
+      {
+        "length": 450,
+        "start": 50
+      },
+      {
+        "length": 350,
+        "start": 700
+      },
+      {
+        "length": 240,
+        "start": 1050
+      }
+    ],
+    "straights": [
+      {
+        "end": 1600,
+        "frontType": 1,
+        "start": 1290
+      }
+    ],
+    "slopes": [
+      {
+        "length": 300,
+        "slope": -15000,
+        "start": 300
+      },
+      {
+        "length": 110,
+        "slope": 20000,
+        "start": 1425
+      }
+    ]
+  },
+  {
+    "id": "10503",
+    "trackId": "10005",
+    "name": "Nakayama 1800m (Turf)",
+    "trackName": "Nakayama",
+    "distance": 1800,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 250,
+        "start": 175
+      },
+      {
+        "length": 250,
+        "start": 425
+      },
+      {
+        "length": 250,
+        "start": 1000
+      },
+      {
+        "length": 240,
+        "start": 1250
+      }
+    ],
+    "straights": [
+      {
+        "end": 175,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1000,
+        "frontType": 2,
+        "start": 675
+      },
+      {
+        "end": 1800,
+        "frontType": 1,
+        "start": 1490
+      }
+    ],
+    "slopes": [
+      {
+        "length": 35,
+        "slope": 20000,
+        "start": 1
+      },
+      {
+        "length": 200,
+        "slope": 15000,
+        "start": 125
+      },
+      {
+        "length": 400,
+        "slope": -15000,
+        "start": 425
+      },
+      {
+        "length": 110,
+        "slope": 20000,
+        "start": 1625
+      }
+    ]
+  },
+  {
+    "id": "10509",
+    "trackId": "10005",
+    "name": "Nakayama 1800m (Dirt)",
+    "trackName": "Nakayama",
+    "distance": 1800,
+    "surface": "Dirt",
+    "turn": 1,
+    "courseSetStatus": [
+      3
+    ],
+    "corners": [
+      {
+        "length": 200,
+        "start": 350
+      },
+      {
+        "length": 200,
+        "start": 550
+      },
+      {
+        "length": 200,
+        "start": 1100
+      },
+      {
+        "length": 192,
+        "start": 1300
+      }
+    ],
+    "straights": [
+      {
+        "end": 350,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1100,
+        "frontType": 1,
+        "start": 750
+      },
+      {
+        "end": 1800,
+        "frontType": 1,
+        "start": 1492
+      }
+    ],
+    "slopes": [
+      {
+        "length": 175,
+        "slope": 15000,
+        "start": 100
+      },
+      {
+        "length": 175,
+        "slope": 10000,
+        "start": 350
+      },
+      {
+        "length": 175,
+        "slope": -15000,
+        "start": 775
+      },
+      {
+        "length": 175,
+        "slope": 15000,
+        "start": 1600
+      }
+    ]
+  },
+  {
+    "id": "10504",
+    "trackId": "10005",
+    "name": "Nakayama 2000m (Turf)",
+    "trackName": "Nakayama",
+    "distance": 2000,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [
+      1
+    ],
+    "corners": [
+      {
+        "length": 250,
+        "start": 375
+      },
+      {
+        "length": 250,
+        "start": 625
+      },
+      {
+        "length": 250,
+        "start": 1200
+      },
+      {
+        "length": 240,
+        "start": 1450
+      }
+    ],
+    "straights": [
+      {
+        "end": 375,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1200,
+        "frontType": 2,
+        "start": 875
+      },
+      {
+        "end": 2000,
+        "frontType": 1,
+        "start": 1690
+      }
+    ],
+    "slopes": [
+      {
+        "length": 110,
+        "slope": 20000,
+        "start": 125
+      },
+      {
+        "length": 200,
+        "slope": 15000,
+        "start": 325
+      },
+      {
+        "length": 400,
+        "slope": -15000,
+        "start": 625
+      },
+      {
+        "length": 110,
+        "slope": 20000,
+        "start": 1825
+      }
+    ]
+  },
+  {
+    "id": "10505",
+    "trackId": "10005",
+    "name": "Nakayama 2200m (Turf)",
+    "trackName": "Nakayama",
+    "distance": 2200,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [
+      2,
+      4
+    ],
+    "corners": [
+      {
+        "length": 247,
+        "start": 403
+      },
+      {
+        "length": 450,
+        "start": 650
+      },
+      {
+        "length": 350,
+        "start": 1300
+      },
+      {
+        "length": 240,
+        "start": 1650
+      }
+    ],
+    "straights": [
+      {
+        "end": 403,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 2200,
+        "frontType": 1,
+        "start": 1890
+      }
+    ],
+    "slopes": [
+      {
+        "length": 110,
+        "slope": 20000,
+        "start": 153
+      },
+      {
+        "length": 200,
+        "slope": 15000,
+        "start": 353
+      },
+      {
+        "length": 300,
+        "slope": -15000,
+        "start": 900
+      },
+      {
+        "length": 110,
+        "slope": 20000,
+        "start": 2025
+      }
+    ]
+  },
+  {
+    "id": "10510",
+    "trackId": "10005",
+    "name": "Nakayama 2400m (Dirt)",
+    "trackName": "Nakayama",
+    "distance": 2400,
+    "surface": "Dirt",
+    "turn": 1,
+    "courseSetStatus": [
+      2
+    ],
+    "corners": [
+      {
+        "length": 200,
+        "start": 200
+      },
+      {
+        "length": 200,
+        "start": 400
+      },
+      {
+        "length": 200,
+        "start": 950
+      },
+      {
+        "length": 200,
+        "start": 1150
+      },
+      {
+        "length": 200,
+        "start": 1700
+      },
+      {
+        "length": 192,
+        "start": 1900
+      }
+    ],
+    "straights": [
+      {
+        "end": 200,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 950,
+        "frontType": 1,
+        "start": 600
+      },
+      {
+        "end": 1700,
+        "frontType": 2,
+        "start": 1350
+      },
+      {
+        "end": 2400,
+        "frontType": 1,
+        "start": 2092
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "10506",
+    "trackId": "10005",
+    "name": "Nakayama 2500m (Turf)",
+    "trackName": "Nakayama",
+    "distance": 2500,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [
+      2,
+      4
+    ],
+    "corners": [
+      {
+        "length": 146,
+        "start": 100
+      },
+      {
+        "length": 250,
+        "start": 246
+      },
+      {
+        "length": 250,
+        "start": 875
+      },
+      {
+        "length": 250,
+        "start": 1125
+      },
+      {
+        "length": 250,
+        "start": 1700
+      },
+      {
+        "length": 240,
+        "start": 1950
+      }
+    ],
+    "straights": [
+      {
+        "end": 875,
+        "frontType": 1,
+        "start": 496
+      },
+      {
+        "end": 1700,
+        "frontType": 2,
+        "start": 1375
+      },
+      {
+        "end": 2500,
+        "frontType": 1,
+        "start": 2190
+      }
+    ],
+    "slopes": [
+      {
+        "length": 110,
+        "slope": 20000,
+        "start": 621
+      },
+      {
+        "length": 200,
+        "slope": 15000,
+        "start": 825
+      },
+      {
+        "length": 400,
+        "slope": -15000,
+        "start": 1125
+      },
+      {
+        "length": 110,
+        "slope": 20000,
+        "start": 2325
+      }
+    ]
+  },
+  {
+    "id": "10511",
+    "trackId": "10005",
+    "name": "Nakayama 2500m (Dirt)",
+    "trackName": "Nakayama",
+    "distance": 2500,
+    "surface": "Dirt",
+    "turn": 1,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 200,
+        "start": 300
+      },
+      {
+        "length": 200,
+        "start": 500
+      },
+      {
+        "length": 200,
+        "start": 1050
+      },
+      {
+        "length": 200,
+        "start": 1250
+      },
+      {
+        "length": 200,
+        "start": 1800
+      },
+      {
+        "length": 192,
+        "start": 2000
+      }
+    ],
+    "straights": [
+      {
+        "end": 300,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1050,
+        "frontType": 1,
+        "start": 700
+      },
+      {
+        "end": 1800,
+        "frontType": 2,
+        "start": 1450
+      },
+      {
+        "end": 2500,
+        "frontType": 1,
+        "start": 2192
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "10507",
+    "trackId": "10005",
+    "name": "Nakayama 3600m (Turf)",
+    "trackName": "Nakayama",
+    "distance": 3600,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [
+      2
+    ],
+    "corners": [
+      {
+        "length": 250,
+        "start": 290
+      },
+      {
+        "length": 250,
+        "start": 540
+      },
+      {
+        "length": 250,
+        "start": 1115
+      },
+      {
+        "length": 250,
+        "start": 1365
+      },
+      {
+        "length": 250,
+        "start": 1975
+      },
+      {
+        "length": 250,
+        "start": 2225
+      },
+      {
+        "length": 250,
+        "start": 2800
+      },
+      {
+        "length": 240,
+        "start": 3050
+      }
+    ],
+    "straights": [
+      {
+        "end": 290,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1115,
+        "frontType": 2,
+        "start": 790
+      },
+      {
+        "end": 1975,
+        "frontType": 1,
+        "start": 1615
+      },
+      {
+        "end": 2800,
+        "frontType": 2,
+        "start": 2475
+      },
+      {
+        "end": 3600,
+        "frontType": 1,
+        "start": 3290
+      }
+    ],
+    "slopes": [
+      {
+        "length": 110,
+        "slope": 20000,
+        "start": 40
+      },
+      {
+        "length": 200,
+        "slope": 15000,
+        "start": 240
+      },
+      {
+        "length": 400,
+        "slope": -15000,
+        "start": 540
+      },
+      {
+        "length": 110,
+        "slope": 20000,
+        "start": 1740
+      },
+      {
+        "length": 200,
+        "slope": 15000,
+        "start": 1925
+      },
+      {
+        "length": 400,
+        "slope": -15000,
+        "start": 2225
+      },
+      {
+        "length": 110,
+        "slope": 20000,
+        "start": 3425
+      }
+    ]
+  },
+  {
+    "id": "10301",
+    "trackId": "10003",
+    "name": "Niigata 1000m (Turf)",
+    "trackName": "Niigata",
+    "distance": 1000,
+    "surface": "Turf",
+    "turn": 4,
+    "courseSetStatus": [
+      3
+    ],
+    "corners": [],
+    "straights": [
+      {
+        "end": 649.9,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1000,
+        "frontType": 1,
+        "start": 650
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "10302",
+    "trackId": "10003",
+    "name": "Niigata 1200m (Turf)",
+    "trackName": "Niigata",
+    "distance": 1200,
+    "surface": "Turf",
+    "turn": 2,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 200,
+        "start": 450
+      },
+      {
+        "length": 192,
+        "start": 650
+      }
+    ],
+    "straights": [
+      {
+        "end": 450,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1200,
+        "frontType": 1,
+        "start": 842
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "10310",
+    "trackId": "10003",
+    "name": "Niigata 1200m (Dirt)",
+    "trackName": "Niigata",
+    "distance": 1200,
+    "surface": "Dirt",
+    "turn": 2,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 160,
+        "start": 540
+      },
+      {
+        "length": 147,
+        "start": 700
+      }
+    ],
+    "straights": [
+      {
+        "end": 540,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1200,
+        "frontType": 1,
+        "start": 847
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "10303",
+    "trackId": "10003",
+    "name": "Niigata 1400m (Turf)",
+    "trackName": "Niigata",
+    "distance": 1400,
+    "surface": "Turf",
+    "turn": 2,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 200,
+        "start": 650
+      },
+      {
+        "length": 192,
+        "start": 850
+      }
+    ],
+    "straights": [
+      {
+        "end": 650,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1400,
+        "frontType": 1,
+        "start": 1042
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "10304",
+    "trackId": "10003",
+    "name": "Niigata 1600m (Turf)",
+    "trackName": "Niigata",
+    "distance": 1600,
+    "surface": "Turf",
+    "turn": 2,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 200,
+        "start": 550
+      },
+      {
+        "length": 192,
+        "start": 750
+      }
+    ],
+    "straights": [
+      {
+        "end": 550,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1600,
+        "frontType": 1,
+        "start": 942
+      }
+    ],
+    "slopes": [
+      {
+        "length": 350,
+        "slope": 10000,
+        "start": 250
+      },
+      {
+        "length": 300,
+        "slope": -15000,
+        "start": 600
+      }
+    ]
+  },
+  {
+    "id": "10305",
+    "trackId": "10003",
+    "name": "Niigata 1800m (Turf)",
+    "trackName": "Niigata",
+    "distance": 1800,
+    "surface": "Turf",
+    "turn": 2,
+    "courseSetStatus": [
+      3
+    ],
+    "corners": [
+      {
+        "length": 200,
+        "start": 750
+      },
+      {
+        "length": 192,
+        "start": 950
+      }
+    ],
+    "straights": [
+      {
+        "end": 750,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1800,
+        "frontType": 1,
+        "start": 1142
+      }
+    ],
+    "slopes": [
+      {
+        "length": 350,
+        "slope": 10000,
+        "start": 450
+      },
+      {
+        "length": 300,
+        "slope": -15000,
+        "start": 800
+      }
+    ]
+  },
+  {
+    "id": "10311",
+    "trackId": "10003",
+    "name": "Niigata 1800m (Dirt)",
+    "trackName": "Niigata",
+    "distance": 1800,
+    "surface": "Dirt",
+    "turn": 2,
+    "courseSetStatus": [
+      5
+    ],
+    "corners": [
+      {
+        "length": 160,
+        "start": 400
+      },
+      {
+        "length": 160,
+        "start": 560
+      },
+      {
+        "length": 160,
+        "start": 1140
+      },
+      {
+        "length": 147,
+        "start": 1300
+      }
+    ],
+    "straights": [
+      {
+        "end": 400,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1140,
+        "frontType": 2,
+        "start": 720
+      },
+      {
+        "end": 1800,
+        "frontType": 1,
+        "start": 1447
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "10306",
+    "trackId": "10003",
+    "name": "Niigata 2000m (Turf)",
+    "trackName": "Niigata",
+    "distance": 2000,
+    "surface": "Turf",
+    "turn": 2,
+    "courseSetStatus": [
+      2,
+      3
+    ],
+    "corners": [
+      {
+        "length": 200,
+        "start": 420
+      },
+      {
+        "length": 200,
+        "start": 620
+      },
+      {
+        "length": 200,
+        "start": 1250
+      },
+      {
+        "length": 192,
+        "start": 1450
+      }
+    ],
+    "straights": [
+      {
+        "end": 420,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1250,
+        "frontType": 2,
+        "start": 820
+      },
+      {
+        "end": 2000,
+        "frontType": 1,
+        "start": 1642
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "10307",
+    "trackId": "10003",
+    "name": "Niigata 2000m (Turf)",
+    "trackName": "Niigata",
+    "distance": 2000,
+    "surface": "Turf",
+    "turn": 2,
+    "courseSetStatus": [
+      2,
+      3
+    ],
+    "corners": [
+      {
+        "length": 200,
+        "start": 950
+      },
+      {
+        "length": 192,
+        "start": 1150
+      }
+    ],
+    "straights": [
+      {
+        "end": 950,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 2000,
+        "frontType": 1,
+        "start": 1342
+      }
+    ],
+    "slopes": [
+      {
+        "length": 350,
+        "slope": 10000,
+        "start": 650
+      },
+      {
+        "length": 300,
+        "slope": -15000,
+        "start": 1000
+      }
+    ]
+  },
+  {
+    "id": "10308",
+    "trackId": "10003",
+    "name": "Niigata 2200m (Turf)",
+    "trackName": "Niigata",
+    "distance": 2200,
+    "surface": "Turf",
+    "turn": 2,
+    "courseSetStatus": [
+      1
+    ],
+    "corners": [
+      {
+        "length": 200,
+        "start": 650
+      },
+      {
+        "length": 200,
+        "start": 850
+      },
+      {
+        "length": 200,
+        "start": 1450
+      },
+      {
+        "length": 192,
+        "start": 1650
+      }
+    ],
+    "straights": [
+      {
+        "end": 650,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1450,
+        "frontType": 2,
+        "start": 1050
+      },
+      {
+        "end": 2200,
+        "frontType": 1,
+        "start": 1842
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "10309",
+    "trackId": "10003",
+    "name": "Niigata 2400m (Turf)",
+    "trackName": "Niigata",
+    "distance": 2400,
+    "surface": "Turf",
+    "turn": 2,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 200,
+        "start": 810
+      },
+      {
+        "length": 200,
+        "start": 1010
+      },
+      {
+        "length": 200,
+        "start": 1650
+      },
+      {
+        "length": 192,
+        "start": 1850
+      }
+    ],
+    "straights": [
+      {
+        "end": 810,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1650,
+        "frontType": 2,
+        "start": 1210
+      },
+      {
+        "end": 2400,
+        "frontType": 1,
+        "start": 2042
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "10312",
+    "trackId": "10003",
+    "name": "Niigata 2500m (Dirt)",
+    "trackName": "Niigata",
+    "distance": 2500,
+    "surface": "Dirt",
+    "turn": 2,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 160,
+        "start": 380
+      },
+      {
+        "length": 160,
+        "start": 540
+      },
+      {
+        "length": 160,
+        "start": 1120
+      },
+      {
+        "length": 160,
+        "start": 1280
+      },
+      {
+        "length": 160,
+        "start": 1850
+      },
+      {
+        "length": 160,
+        "start": 2010
+      }
+    ],
+    "straights": [
+      {
+        "end": 380,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1120,
+        "frontType": 1,
+        "start": 700
+      },
+      {
+        "end": 1850,
+        "frontType": 2,
+        "start": 1440
+      },
+      {
+        "end": 2500,
+        "frontType": 1,
+        "start": 2170
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "11101",
+    "trackId": "10101",
+    "name": "Ooi 1200m (Dirt)",
+    "trackName": "Ooi",
+    "distance": 1200,
+    "surface": "Dirt",
+    "turn": 1,
+    "courseSetStatus": [
+      4,
+      5
+    ],
+    "corners": [
+      {
+        "length": 150,
+        "start": 500
+      },
+      {
+        "length": 164,
+        "start": 650
+      }
+    ],
+    "straights": [
+      {
+        "end": 500,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1200,
+        "frontType": 1,
+        "start": 814
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "11102",
+    "trackId": "10101",
+    "name": "Ooi 1800m (Dirt)",
+    "trackName": "Ooi",
+    "distance": 1800,
+    "surface": "Dirt",
+    "turn": 1,
+    "courseSetStatus": [
+      3
+    ],
+    "corners": [
+      {
+        "length": 150,
+        "start": 300
+      },
+      {
+        "length": 150,
+        "start": 500
+      },
+      {
+        "length": 150,
+        "start": 1100
+      },
+      {
+        "length": 164,
+        "start": 1250
+      }
+    ],
+    "straights": [
+      {
+        "end": 301,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1100.23,
+        "frontType": 2,
+        "start": 600
+      },
+      {
+        "end": 1800,
+        "frontType": 1,
+        "start": 1414
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "11103",
+    "trackId": "10101",
+    "name": "Ooi 2000m (Dirt)",
+    "trackName": "Ooi",
+    "distance": 2000,
+    "surface": "Dirt",
+    "turn": 1,
+    "courseSetStatus": [
+      2
+    ],
+    "corners": [
+      {
+        "length": 150,
+        "start": 500
+      },
+      {
+        "length": 150,
+        "start": 650
+      },
+      {
+        "length": 150,
+        "start": 1300
+      },
+      {
+        "length": 164,
+        "start": 1450
+      }
+    ],
+    "straights": [
+      {
+        "end": 500,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1300,
+        "frontType": 2,
+        "start": 800
+      },
+      {
+        "end": 2000,
+        "frontType": 1,
+        "start": 1614
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "10106",
+    "trackId": "10001",
+    "name": "Sapporo 1000m (Dirt)",
+    "trackName": "Sapporo",
+    "distance": 1000,
+    "surface": "Dirt",
+    "turn": 1,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 230,
+        "start": 280
+      },
+      {
+        "length": 226,
+        "start": 510
+      }
+    ],
+    "straights": [
+      {
+        "end": 280,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1000,
+        "frontType": 1,
+        "start": 736
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "10101",
+    "trackId": "10001",
+    "name": "Sapporo 1200m (Turf)",
+    "trackName": "Sapporo",
+    "distance": 1200,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 275,
+        "start": 400
+      },
+      {
+        "length": 259,
+        "start": 675
+      }
+    ],
+    "straights": [
+      {
+        "end": 400,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1200,
+        "frontType": 1,
+        "start": 934
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "10102",
+    "trackId": "10001",
+    "name": "Sapporo 1500m (Turf)",
+    "trackName": "Sapporo",
+    "distance": 1500,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 275,
+        "start": 150
+      },
+      {
+        "length": 275,
+        "start": 700
+      },
+      {
+        "length": 259,
+        "start": 975
+      }
+    ],
+    "straights": [
+      {
+        "end": 700,
+        "frontType": 2,
+        "start": 425
+      },
+      {
+        "end": 1500,
+        "frontType": 1,
+        "start": 1234
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "10107",
+    "trackId": "10001",
+    "name": "Sapporo 1700m (Dirt)",
+    "trackName": "Sapporo",
+    "distance": 1700,
+    "surface": "Dirt",
+    "turn": 1,
+    "courseSetStatus": [
+      1
+    ],
+    "corners": [
+      {
+        "length": 230,
+        "start": 240
+      },
+      {
+        "length": 230,
+        "start": 470
+      },
+      {
+        "length": 230,
+        "start": 980
+      },
+      {
+        "length": 226,
+        "start": 1210
+      }
+    ],
+    "straights": [
+      {
+        "end": 240,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 980,
+        "frontType": 2,
+        "start": 700
+      },
+      {
+        "end": 1700,
+        "frontType": 1,
+        "start": 1436
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "10103",
+    "trackId": "10001",
+    "name": "Sapporo 1800m (Turf)",
+    "trackName": "Sapporo",
+    "distance": 1800,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 275,
+        "start": 175
+      },
+      {
+        "length": 275,
+        "start": 450
+      },
+      {
+        "length": 275,
+        "start": 1000
+      },
+      {
+        "length": 259,
+        "start": 1275
+      }
+    ],
+    "straights": [
+      {
+        "end": 175,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1000,
+        "frontType": 2,
+        "start": 725
+      },
+      {
+        "end": 1800,
+        "frontType": 1,
+        "start": 1534
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "10104",
+    "trackId": "10001",
+    "name": "Sapporo 2000m (Turf)",
+    "trackName": "Sapporo",
+    "distance": 2000,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [
+      3
+    ],
+    "corners": [
+      {
+        "length": 275,
+        "start": 375
+      },
+      {
+        "length": 275,
+        "start": 650
+      },
+      {
+        "length": 275,
+        "start": 1200
+      },
+      {
+        "length": 259,
+        "start": 1475
+      }
+    ],
+    "straights": [
+      {
+        "end": 375,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1200,
+        "frontType": 2,
+        "start": 925
+      },
+      {
+        "end": 2000,
+        "frontType": 1,
+        "start": 1734
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "10108",
+    "trackId": "10001",
+    "name": "Sapporo 2400m (Dirt)",
+    "trackName": "Sapporo",
+    "distance": 2400,
+    "surface": "Dirt",
+    "turn": 1,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 230,
+        "start": 200
+      },
+      {
+        "length": 230,
+        "start": 430
+      },
+      {
+        "length": 230,
+        "start": 940
+      },
+      {
+        "length": 230,
+        "start": 1170
+      },
+      {
+        "length": 230,
+        "start": 1680
+      },
+      {
+        "length": 226,
+        "start": 1910
+      }
+    ],
+    "straights": [
+      {
+        "end": 200,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 940,
+        "frontType": 1,
+        "start": 660
+      },
+      {
+        "end": 1680,
+        "frontType": 2,
+        "start": 1408
+      },
+      {
+        "end": 2400,
+        "frontType": 1,
+        "start": 2136
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "10105",
+    "trackId": "10001",
+    "name": "Sapporo 2600m (Turf)",
+    "trackName": "Sapporo",
+    "distance": 2600,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [
+      2
+    ],
+    "corners": [
+      {
+        "length": 275,
+        "start": 175
+      },
+      {
+        "length": 275,
+        "start": 450
+      },
+      {
+        "length": 275,
+        "start": 975
+      },
+      {
+        "length": 275,
+        "start": 1250
+      },
+      {
+        "length": 275,
+        "start": 1800
+      },
+      {
+        "length": 259,
+        "start": 2075
+      }
+    ],
+    "straights": [
+      {
+        "end": 175,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 975,
+        "frontType": 1,
+        "start": 725
+      },
+      {
+        "end": 1800,
+        "frontType": 2,
+        "start": 1525
+      },
+      {
+        "end": 2600,
+        "frontType": 1,
+        "start": 2334
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "10609",
+    "trackId": "10006",
+    "name": "Tokyo 1300m (Dirt)",
+    "trackName": "Tokyo",
+    "distance": 1300,
+    "surface": "Dirt",
+    "turn": 2,
+    "courseSetStatus": [
+      1
+    ],
+    "corners": [
+      {
+        "length": 225,
+        "start": 350
+      },
+      {
+        "length": 224,
+        "start": 575
+      }
+    ],
+    "straights": [
+      {
+        "end": 350,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1300,
+        "frontType": 1,
+        "start": 799
+      }
+    ],
+    "slopes": [
+      {
+        "length": 200,
+        "slope": -10000,
+        "start": 275
+      },
+      {
+        "length": 250,
+        "slope": 15000,
+        "start": 800
+      }
+    ]
+  },
+  {
+    "id": "10601",
+    "trackId": "10006",
+    "name": "Tokyo 1400m (Turf)",
+    "trackName": "Tokyo",
+    "distance": 1400,
+    "surface": "Turf",
+    "turn": 2,
+    "courseSetStatus": [
+      2,
+      3
+    ],
+    "corners": [
+      {
+        "length": 275,
+        "start": 350
+      },
+      {
+        "length": 250,
+        "start": 625
+      }
+    ],
+    "straights": [
+      {
+        "end": 350,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1400,
+        "frontType": 1,
+        "start": 875
+      }
+    ],
+    "slopes": [
+      {
+        "length": 75,
+        "slope": 20000,
+        "start": 125
+      },
+      {
+        "length": 250,
+        "slope": -15000,
+        "start": 250
+      },
+      {
+        "length": 150,
+        "slope": 15000,
+        "start": 950
+      }
+    ]
+  },
+  {
+    "id": "10610",
+    "trackId": "10006",
+    "name": "Tokyo 1400m (Dirt)",
+    "trackName": "Tokyo",
+    "distance": 1400,
+    "surface": "Dirt",
+    "turn": 2,
+    "courseSetStatus": [
+      2
+    ],
+    "corners": [
+      {
+        "length": 225,
+        "start": 450
+      },
+      {
+        "length": 224,
+        "start": 675
+      }
+    ],
+    "straights": [
+      {
+        "end": 450,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1400,
+        "frontType": 1,
+        "start": 899
+      }
+    ],
+    "slopes": [
+      {
+        "length": 200,
+        "slope": -10000,
+        "start": 375
+      },
+      {
+        "length": 250,
+        "slope": 15000,
+        "start": 900
+      }
+    ]
+  },
+  {
+    "id": "10602",
+    "trackId": "10006",
+    "name": "Tokyo 1600m (Turf)",
+    "trackName": "Tokyo",
+    "distance": 1600,
+    "surface": "Turf",
+    "turn": 2,
+    "courseSetStatus": [
+      2,
+      4
+    ],
+    "corners": [
+      {
+        "length": 275,
+        "start": 550
+      },
+      {
+        "length": 250,
+        "start": 825
+      }
+    ],
+    "straights": [
+      {
+        "end": 550,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1600,
+        "frontType": 1,
+        "start": 1075
+      }
+    ],
+    "slopes": [
+      {
+        "length": 75,
+        "slope": 20000,
+        "start": 325
+      },
+      {
+        "length": 250,
+        "slope": -15000,
+        "start": 450
+      },
+      {
+        "length": 150,
+        "slope": 15000,
+        "start": 1150
+      }
+    ]
+  },
+  {
+    "id": "10611",
+    "trackId": "10006",
+    "name": "Tokyo 1600m (Dirt)",
+    "trackName": "Tokyo",
+    "distance": 1600,
+    "surface": "Dirt",
+    "turn": 2,
+    "courseSetStatus": [
+      1,
+      2
+    ],
+    "corners": [
+      {
+        "length": 225,
+        "start": 650
+      },
+      {
+        "length": 224,
+        "start": 875
+      }
+    ],
+    "straights": [
+      {
+        "end": 650,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1600,
+        "frontType": 1,
+        "start": 1099
+      }
+    ],
+    "slopes": [
+      {
+        "length": 200,
+        "slope": -10000,
+        "start": 575
+      },
+      {
+        "length": 250,
+        "slope": 15000,
+        "start": 1100
+      }
+    ]
+  },
+  {
+    "id": "10603",
+    "trackId": "10006",
+    "name": "Tokyo 1800m (Turf)",
+    "trackName": "Tokyo",
+    "distance": 1800,
+    "surface": "Turf",
+    "turn": 2,
+    "courseSetStatus": [
+      1
+    ],
+    "corners": [
+      {
+        "length": 250,
+        "start": 75
+      },
+      {
+        "length": 275,
+        "start": 750
+      },
+      {
+        "length": 250,
+        "start": 1025
+      }
+    ],
+    "straights": [
+      {
+        "end": 750,
+        "frontType": 2,
+        "start": 325
+      },
+      {
+        "end": 1800,
+        "frontType": 1,
+        "start": 1275
+      }
+    ],
+    "slopes": [
+      {
+        "length": 75,
+        "slope": 20000,
+        "start": 525
+      },
+      {
+        "length": 250,
+        "slope": -15000,
+        "start": 650
+      },
+      {
+        "length": 150,
+        "slope": 15000,
+        "start": 1350
+      }
+    ]
+  },
+  {
+    "id": "10604",
+    "trackId": "10006",
+    "name": "Tokyo 2000m (Turf)",
+    "trackName": "Tokyo",
+    "distance": 2000,
+    "surface": "Turf",
+    "turn": 2,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 200,
+        "start": 200
+      },
+      {
+        "length": 275,
+        "start": 950
+      },
+      {
+        "length": 250,
+        "start": 1225
+      }
+    ],
+    "straights": [
+      {
+        "end": 950,
+        "frontType": 2,
+        "start": 400
+      },
+      {
+        "end": 2000,
+        "frontType": 1,
+        "start": 1475
+      }
+    ],
+    "slopes": [
+      {
+        "length": 75,
+        "slope": 20000,
+        "start": 725
+      },
+      {
+        "length": 250,
+        "slope": -15000,
+        "start": 850
+      },
+      {
+        "length": 150,
+        "slope": 15000,
+        "start": 1550
+      }
+    ]
+  },
+  {
+    "id": "10612",
+    "trackId": "10006",
+    "name": "Tokyo 2100m (Dirt)",
+    "trackName": "Tokyo",
+    "distance": 2100,
+    "surface": "Dirt",
+    "turn": 2,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 250,
+        "start": 200
+      },
+      {
+        "length": 250,
+        "start": 450
+      },
+      {
+        "length": 225,
+        "start": 1150
+      },
+      {
+        "length": 224,
+        "start": 1375
+      }
+    ],
+    "straights": [
+      {
+        "end": 200,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1150,
+        "frontType": 2,
+        "start": 700
+      },
+      {
+        "end": 2100,
+        "frontType": 1,
+        "start": 1599
+      }
+    ],
+    "slopes": [
+      {
+        "length": 200,
+        "slope": -10000,
+        "start": 1075
+      },
+      {
+        "length": 250,
+        "slope": 15000,
+        "start": 1600
+      }
+    ]
+  },
+  {
+    "id": "10605",
+    "trackId": "10006",
+    "name": "Tokyo 2300m (Turf)",
+    "trackName": "Tokyo",
+    "distance": 2300,
+    "surface": "Turf",
+    "turn": 2,
+    "courseSetStatus": [
+      3
+    ],
+    "corners": [
+      {
+        "length": 250,
+        "start": 225
+      },
+      {
+        "length": 325,
+        "start": 475
+      },
+      {
+        "length": 275,
+        "start": 1250
+      },
+      {
+        "length": 250,
+        "start": 1525
+      }
+    ],
+    "straights": [
+      {
+        "end": 225,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1250,
+        "frontType": 2,
+        "start": 800
+      },
+      {
+        "end": 2300,
+        "frontType": 1,
+        "start": 1775
+      }
+    ],
+    "slopes": [
+      {
+        "length": 75,
+        "slope": 20000,
+        "start": 1025
+      },
+      {
+        "length": 250,
+        "slope": -15000,
+        "start": 1150
+      },
+      {
+        "length": 150,
+        "slope": 15000,
+        "start": 1850
+      }
+    ]
+  },
+  {
+    "id": "10606",
+    "trackId": "10006",
+    "name": "Tokyo 2400m (Turf)",
+    "trackName": "Tokyo",
+    "distance": 2400,
+    "surface": "Turf",
+    "turn": 2,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 250,
+        "start": 325
+      },
+      {
+        "length": 325,
+        "start": 575
+      },
+      {
+        "length": 275,
+        "start": 1350
+      },
+      {
+        "length": 250,
+        "start": 1625
+      }
+    ],
+    "straights": [
+      {
+        "end": 325,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1350,
+        "frontType": 2,
+        "start": 900
+      },
+      {
+        "end": 2400,
+        "frontType": 1,
+        "start": 1875
+      }
+    ],
+    "slopes": [
+      {
+        "length": 40,
+        "slope": 15000,
+        "start": 0
+      },
+      {
+        "length": 75,
+        "slope": 20000,
+        "start": 1125
+      },
+      {
+        "length": 250,
+        "slope": -15000,
+        "start": 1250
+      },
+      {
+        "length": 150,
+        "slope": 15000,
+        "start": 1950
+      }
+    ]
+  },
+  {
+    "id": "10613",
+    "trackId": "10006",
+    "name": "Tokyo 2400m (Dirt)",
+    "trackName": "Tokyo",
+    "distance": 2400,
+    "surface": "Dirt",
+    "turn": 2,
+    "courseSetStatus": [
+      2
+    ],
+    "corners": [
+      {
+        "length": 250,
+        "start": 500
+      },
+      {
+        "length": 250,
+        "start": 750
+      },
+      {
+        "length": 225,
+        "start": 1450
+      },
+      {
+        "length": 225,
+        "start": 1675
+      },
+      {
+        "length": 500,
+        "start": 2348
+      }
+    ],
+    "straights": [
+      {
+        "end": 500,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1450,
+        "frontType": 2,
+        "start": 1000
+      },
+      {
+        "end": 2400,
+        "frontType": 1,
+        "start": 1900
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "10607",
+    "trackId": "10006",
+    "name": "Tokyo 2500m (Turf)",
+    "trackName": "Tokyo",
+    "distance": 2500,
+    "surface": "Turf",
+    "turn": 2,
+    "courseSetStatus": [
+      2
+    ],
+    "corners": [
+      {
+        "length": 250,
+        "start": 425
+      },
+      {
+        "length": 325,
+        "start": 675
+      },
+      {
+        "length": 275,
+        "start": 1450
+      },
+      {
+        "length": 250,
+        "start": 1725
+      }
+    ],
+    "straights": [
+      {
+        "end": 425,
+        "frontType": 1,
+        "start": 0
+      },
+      {
+        "end": 1450,
+        "frontType": 2,
+        "start": 1000
+      },
+      {
+        "end": 2500,
+        "frontType": 1,
+        "start": 1975
+      }
+    ],
+    "slopes": [
+      {
+        "length": 140,
+        "slope": 15000,
+        "start": 0
+      },
+      {
+        "length": 75,
+        "slope": 20000,
+        "start": 1225
+      },
+      {
+        "length": 250,
+        "slope": -15000,
+        "start": 1350
+      },
+      {
+        "length": 150,
+        "slope": 15000,
+        "start": 2050
+      }
+    ]
+  },
+  {
+    "id": "10608",
+    "trackId": "10006",
+    "name": "Tokyo 3400m (Turf)",
+    "trackName": "Tokyo",
+    "distance": 3400,
+    "surface": "Turf",
+    "turn": 2,
+    "courseSetStatus": [],
+    "corners": [
+      {
+        "length": 275,
+        "start": 292
+      },
+      {
+        "length": 275,
+        "start": 567
+      },
+      {
+        "length": 250,
+        "start": 1325
+      },
+      {
+        "length": 325,
+        "start": 1575
+      },
+      {
+        "length": 275,
+        "start": 2350
+      },
+      {
+        "length": 250,
+        "start": 2625
+      }
+    ],
+    "straights": [
+      {
+        "end": 292,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 1325,
+        "frontType": 1,
+        "start": 842
+      },
+      {
+        "end": 2350,
+        "frontType": 2,
+        "start": 1900
+      },
+      {
+        "end": 3400,
+        "frontType": 1,
+        "start": 2875
+      }
+    ],
+    "slopes": [
+      {
+        "length": 75,
+        "slope": 20000,
+        "start": 67
+      },
+      {
+        "length": 250,
+        "slope": -15000,
+        "start": 192
+      },
+      {
+        "length": 150,
+        "slope": 15000,
+        "start": 892
+      },
+      {
+        "length": 75,
+        "slope": 20000,
+        "start": 2125
+      },
+      {
+        "length": 250,
+        "slope": -15000,
+        "start": 2250
+      },
+      {
+        "length": 150,
+        "slope": 15000,
+        "start": 2950
+      }
+    ]
+  },
+  {
+    "id": "11203",
+    "trackId": "10201",
+    "name": "Track 10201 2400m (Turf)",
+    "trackName": "Track 10201",
+    "distance": 2400,
+    "surface": "Turf",
+    "turn": 1,
+    "courseSetStatus": [
+      3
+    ],
+    "corners": [
+      {
+        "length": 400,
+        "start": 800
+      },
+      {
+        "length": 400,
+        "start": 1200
+      }
+    ],
+    "straights": [
+      {
+        "end": 798,
+        "frontType": 2,
+        "start": 0
+      },
+      {
+        "end": 2399,
+        "frontType": 1,
+        "start": 1600
+      }
+    ],
+    "slopes": []
+  }
+]
