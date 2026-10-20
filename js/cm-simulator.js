@@ -2,6 +2,7 @@
    MOTOR DE SIMULACIÓN CHAMPIONS MEETING (3v6) - CLUB LA ZONA
    Conectado a data/tracks.json, data/skills.json y data/umas.json
    ============================================================================ */
+let currentSkillFilter = 'all';
 
 // Base de datos de respaldo (Fallback) por si aún no se ha ejecutado sync_data.py
 const FALLBACK_TRACKS = [
@@ -169,10 +170,20 @@ function renderSkillPills(filterText = "") {
   const uma = STATE.playerTeam[STATE.activeSlot];
   const query = filterText.toLowerCase().trim();
 
-  const filtered = STATE.skills.filter(s => s.name.toLowerCase().includes(query));
+  const filtered = STATE.skills.filter(sk => {
+    const matchesText = sk.name.toLowerCase().includes(query);
+    let matchesType = true;
+    
+    if (currentSkillFilter === 'speed') matchesType = sk.targetSpeed > 0;
+    if (currentSkillFilter === 'accel') matchesType = sk.accel > 0;
+    if (currentSkillFilter === 'heal') matchesType = sk.heal > 0;
+    
+    return matchesText && matchesType;
+  });
+
   document.getElementById("activeSkillCount").textContent = uma.skills.length;
 
-  container.innerHTML = filtered.slice(0, 80).map(sk => {
+  container.innerHTML = filtered.slice(0, 100).map(sk => {
     const isActive = uma.skills.includes(sk.id);
     return `<div class="skill-pill ${isActive ? 'active' : ''} type-${sk.category || 'white'}" data-skill-id="${sk.id}">
       ${sk.name}
@@ -564,7 +575,14 @@ document.addEventListener("DOMContentLoaded", () => {
       renderActivePlayerSlot();
     });
   });
-
+document.querySelectorAll(".filter-btn").forEach(btn => {
+  btn.addEventListener("click", (e) => {
+    document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+    e.target.classList.add("active");
+    currentSkillFilter = e.target.getAttribute("data-filter");
+    renderSkillPills(document.getElementById("skillSearchInput").value);
+  });
+});
   // Guardar cambios de inputs de la Uma activa
   const bindInput = (id, key, isNum = true) => {
     document.getElementById(id).addEventListener("input", (e) => {

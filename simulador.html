@@ -3,15 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Simulador CM 3v6 | Club La Zona</title>
+  <title>Simulador CM 3v6 | THE ZONE</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,700;0,900;1,800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=5" />
+  <link rel="stylesheet" href="css/style.css?v=6" />
 </head>
 <body>
 
-  <!-- CABECERA UNIFICADA DE LA ZONA -->
   <header class="zone-header">
     <div class="header-halftone"></div>
     <div class="header-container">
@@ -37,7 +36,6 @@
   </header>
 
   <main class="zone-main">
-    <!-- BARRA DE CONTROL DE COPA Y CIRCUITO -->
     <section class="cm-top-bar">
       <div class="track-selector-group">
         <div class="field-group" style="flex: 2;">
@@ -63,123 +61,117 @@
       </div>
 
       <div class="cm-actions">
-        <button id="btnRunCM" class="btn-run-cm">🏁 SIMULAR CHAMPIONS MEETING</button>
+        <button id="btnRunCM" class="btn-run-cm">SIMULAR CHAMPIONS MEETING</button>
       </div>
     </section>
 
-    <!-- GRID PRINCIPAL: EQUIPO JUGADOR (3) VS SALA RIVAL (6) -->
     <div class="cm-main-grid">
-      
-      <!-- COLUMNA IZQUIERDA: TUS 3 UMAS -->
       <div class="cm-panel">
         <div class="panel-header">
-          <h2>🛡️ Tu Equipo (La Zona)</h2>
+          <h2>Tu Equipo (La Zona)</h2>
           <span class="db-status" id="dbStatusBadge">Conectando DB...</span>
         </div>
 
-        <!-- PESTAÑAS DE LAS 3 UMAS -->
         <div class="uma-tabs">
           <button class="uma-tab active" data-slot="0">Ace #1</button>
           <button class="uma-tab" data-slot="1">Ace #2</button>
           <button class="uma-tab" data-slot="2">Slot #3 (Support/Ace)</button>
         </div>
 
-        <!-- EDITOR DE LA UMA SELECCIONADA -->
         <div id="playerUmaEditor" class="uma-editor-body">
-          <div class="editor-row-2">
-            <div class="field-group">
-              <label class="cm-label">PERSONAJE (UMA)</label>
-              <select id="umaCharSelect" class="cm-input"></select>
-            </div>
-            <div class="field-group">
-              <label class="cm-label">ESTILO DE CARRERA</label>
-              <select id="umaStyleSelect" class="cm-input">
-                <option value="1">Front Runner (Nige)</option>
-                <option value="2">Pace Chaser (Senkou)</option>
-                <option value="3">Late Surger (Sashi)</option>
-                <option value="4">End Closer (Oikomi)</option>
-              </select>
+          <div class="editor-row-2" style="display: flex; gap: 1rem; align-items: center;">
+            <img id="umaPortrait" src="assets/umas.jpg" style="width: 64px; height: 64px; border-radius: 12px; border: 2px solid rgba(255,255,255,0.1); object-fit: cover;" />
+            <div style="flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+              <div class="field-group">
+                <label class="cm-label">PERSONAJE (UMA)</label>
+                <select id="umaCharSelect" class="cm-input"></select>
+              </div>
+              <div class="field-group">
+                <label class="cm-label">ESTILO DE CARRERA</label>
+                <select id="umaStyleSelect" class="cm-input">
+                  <option value="1">Front Runner (Nige)</option>
+                  <option value="2">Pace Chaser (Senkou)</option>
+                  <option value="3">Late Surger (Sashi)</option>
+                  <option value="4">End Closer (Oikomi)</option>
+                </select>
+              </div>
             </div>
           </div>
 
           <!-- 5 ESTADÍSTICAS -->
-          <div class="stats-5-grid">
+          <div class="stats-5-grid" style="margin-top: 1rem;">
             <div class="stat-box">
               <label>SPEED</label>
-              <input type="number" id="statSpeed" min="100" max="1200" value="1200" class="cm-stat-input">
+              <input type="number" id="statSpeed" min="100" max="2000" value="1200" class="cm-stat-input">
             </div>
             <div class="stat-box">
               <label>STAMINA</label>
-              <input type="number" id="statStamina" min="100" max="1200" value="850" class="cm-stat-input">
+              <input type="number" id="statStamina" min="100" max="2000" value="850" class="cm-stat-input">
             </div>
             <div class="stat-box">
               <label>POWER</label>
-              <input type="number" id="statPower" min="100" max="1200" value="950" class="cm-stat-input">
+              <input type="number" id="statPower" min="100" max="2000" value="950" class="cm-stat-input">
             </div>
             <div class="stat-box">
               <label>GUTS</label>
-              <input type="number" id="statGuts" min="100" max="1200" value="400" class="cm-stat-input">
+              <input type="number" id="statGuts" min="100" max="2000" value="400" class="cm-stat-input">
             </div>
             <div class="stat-box">
               <label>WIT</label>
-              <input type="number" id="statWit" min="100" max="1200" value="650" class="cm-stat-input">
+              <input type="number" id="statWit" min="100" max="2000" value="650" class="cm-stat-input">
             </div>
           </div>
 
-          <!-- BUSCADOR Y SELECTOR DE HABILIDADES -->
-          <div class="skills-section">
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4rem;">
+          <div class="skills-section" style="margin-top: 1.5rem;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.8rem;">
               <label class="cm-label">HABILIDADES EQUIPADAS (<span id="activeSkillCount">0</span>)</label>
-              <input type="text" id="skillSearchInput" placeholder="🔍 Buscar skill (ej. Angling, Spurt, Maestro...)" class="cm-search-input">
+              <input type="text" id="skillSearchInput" placeholder="Buscar skill (ej. Maestro...)" class="cm-search-input">
+            </div>
+            <div class="skill-filters" style="display: flex; gap: 0.5rem; margin-bottom: 0.8rem;">
+              <button class="filter-btn active" data-filter="all">Todas</button>
+              <button class="filter-btn" data-filter="speed">Velocidad</button>
+              <button class="filter-btn" data-filter="accel">Aceleración</button>
+              <button class="filter-btn" data-filter="heal">Recuperación</button>
             </div>
             <div id="skillPillsContainer" class="skills-scroll-box"></div>
           </div>
         </div>
       </div>
 
-      <!-- COLUMNA DERECHA: LOS 6 BOTS RIVALES DEL LOBBY -->
       <div class="cm-panel">
         <div class="panel-header">
-          <h2>⚔️ Lobby Rival (6 Oponentes)</h2>
+          <h2>Lobby Rival (6 Oponentes)</h2>
           <div class="preset-lobby-btns">
             <select id="rivalTierSelect" class="cm-input-sm">
-              <option value="whale">Nivel: Liga A Final (Whale 1200 SPD)</option>
-              <option value="comp" selected>Nivel: Liga A Estándar (Competitivo)</option>
+              <option value="whale">Nivel: Grand Live (1600 SPD)</option>
+              <option value="comp" selected>Nivel: MHR Estándar (1200 SPD)</option>
               <option value="casual">Nivel: Liga B (Casual)</option>
             </select>
           </div>
         </div>
-        <p class="sub-text" style="margin-top:0;">El número de corredoras Front (Nige) y Debuffers altera el ritmo real (Pacemaker) y el consumo de Stamina de tus Umas.</p>
+        <p class="sub-text" style="margin-top:0;">El número de corredoras Front (Nige) y Debuffers altera el ritmo real (Pacemaker) y el consumo de Stamina.</p>
 
         <div id="rivalsGrid" class="rivals-6-grid"></div>
       </div>
-
     </div>
 
-    <!-- ÚNICO PANEL DE RESULTADOS Y TELEMETRÍA (SIN DUPLICADOS) -->
     <section class="cm-results-panel panel">
       <div class="results-header">
         <div>
-          <h2>📊 Telemetría y Winrate de la Copa</h2>
+          <h2>Telemetría y Winrate de la Copa</h2>
           <p id="cmSummaryText" class="sub-text">Pulsa "Simular Champions Meeting" para correr la batería de pruebas.</p>
         </div>
         <div id="teamWinrateBadge" class="winrate-hero">WINRATE EQUIPO: --%</div>
       </div>
 
-      <!-- TARJETAS DE WINRATE DE LAS 9 CORREDORAS -->
       <div id="scoreboardGrid" class="scoreboard-grid"></div>
 
-      <!-- GRÁFICA DE VELOCIDAD POR METROS -->
       <div class="chart-wrapper">
         <canvas id="telemetryCanvas" width="1100" height="340"></canvas>
       </div>
     </section>
   </main>
 
-  <footer style="text-align:center; padding:1.5rem 0; color:#64748b; font-size:0.78rem;">
-    Propiedad intelectual de personajes y mecánicas © Cygames, Inc. Datos sincronizados vía uma-tools Global &amp; GameTora.
-  </footer>
-
-  <script src="js/cm-simulator.js?v=5"></script>
+  <script src="js/cm-simulator.js?v=6"></script>
 </body>
 </html>
