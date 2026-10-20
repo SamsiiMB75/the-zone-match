@@ -1,8 +1,9 @@
 /* ============================================================================
    MOTOR DE SIMULACIÓN CHAMPIONS MEETING (3v6) - CLUB LA ZONA
-   Conectado a data/tracks.json, data/skills.json y data/umas.json
+   Conectado a data/tracks.json, data/skills.json y data/umas.json locales
    ============================================================================ */
 
+// Base de datos de respaldo (Fallback) por seguridad
 const FALLBACK_TRACKS = [
   {
     id: "10606", trackName: "Tokyo", name: "Tokyo 2400m (Turf) - Japanese Derby / Japan Cup",
@@ -56,6 +57,7 @@ const FALLBACK_SKILLS = [
   { id: "2010", name: "Tail Held High", category: "white", duration: 3.0, targetSpeed: 0.25, accel: 0.0, heal: 0, phase: "mid", reqRank: [1, 9] }
 ];
 
+// Estado global de la aplicación
 let currentSkillFilter = 'all';
 
 const STATE = {
@@ -86,6 +88,9 @@ const RIVAL_ROLES = {
   debuffer: { name: "Debuffer", style: 3, skills: ["2009"], debuffStamina: 0.03 } 
 };
 
+// ============================================================================
+// 1. CARGA DE LA BASE DE DATOS LOCAL (CON FALLBACK)
+// ============================================================================
 async function initDatabase() {
   const badge = document.getElementById("dbStatusBadge");
   try {
@@ -100,20 +105,27 @@ async function initDatabase() {
       const loadedSkills = await skillsRes.json();
       STATE.tracks = loadedTracks.length > 0 ? loadedTracks : FALLBACK_TRACKS;
       STATE.skills = [...FALLBACK_SKILLS, ...loadedSkills.slice(0, 300)];
-      badge.textContent = `DB Global Conectada (${STATE.skills.length} skills)`;
+      badge.textContent = `DB Local Conectada (${STATE.skills.length} skills)`;
       badge.style.color = "#34d399";
     } else {
-      throw new Error("Archivos locales aún no generados");
+      throw new Error("Archivos locales no encontrados");
     }
 
     if (umasRes && umasRes.ok) {
       const rawUmas = await umasRes.json();
       const parsedUmas = [];
       for (const [uid, uval] of Object.entries(rawUmas)) {
-        const uname = uval.name ? (Array.isArray(uval.name) ? uval.name[1] || uval.name[0] : uval.name) : `Uma #${uid}`;
+        let uname = `Uma #${uid}`;
+        if (uval.name) {
+          if (Array.isArray(uval.name)) {
+            uname = uval.name[1] || uval.name[0];
+          } else {
+            uname = uval.name;
+          }
+        }
         parsedUmas.push({ id: uid, name: uname, defaultStyle: 2 });
       }
-      STATE.umas = parsedUmas.length > 0 ? [...FALLBACK_UMAS, ...parsedUmas] : FALLBACK_UMAS;
+      STATE.umas = parsedUmas.length > 0 ? parsedUmas : FALLBACK_UMAS;
     } else {
       STATE.umas = FALLBACK_UMAS;
     }
@@ -121,7 +133,7 @@ async function initDatabase() {
     STATE.tracks = FALLBACK_TRACKS;
     STATE.skills = FALLBACK_SKILLS;
     STATE.umas = FALLBACK_UMAS;
-    badge.textContent = "DB Semilla Activa (Ejecuta sync_data.py para expandir)";
+    badge.textContent = "DB Semilla Activa (Ejecuta sync_data.py)";
     badge.style.color = "#fbbf24";
   }
 
@@ -130,6 +142,9 @@ async function initDatabase() {
   runChampionsMeeting();
 }
 
+// ============================================================================
+// 2. INTERFAZ Y EVENTOS DEL USUARIO
+// ============================================================================
 function renderUI() {
   const trackSel = document.getElementById("trackSelect");
   trackSel.innerHTML = STATE.tracks.map((t, idx) => `<option value="${idx}">${t.name}</option>`).join("");
@@ -151,28 +166,17 @@ function renderActivePlayerSlot() {
   document.getElementById("statGuts").value = uma.guts;
   document.getElementById("statWit").value = uma.wit;
 
+  // Carga de imagen ultrarrápida y 100% local desde assets/icons/
   const portraitImg = document.getElementById("umaPortrait");
-  // Búsqueda más flexible para esquivar problemas de caché
-  const selectedUmaData = STATE.umas.find(u => u.name === uma.name) || STATE.umas.find(u => u.name.includes(uma.name.split(" ")[0]));
+  const searchName = uma.name.trim();
+  const selectedUmaData = STATE.umas.find(u => u.name === searchName) || STATE.umas.find(u => u.name.includes(searchName.split(" ")[0]));
   
   if (selectedUmaData && selectedUmaData.id) {
     let iconId = selectedUmaData.id.toString();
     if (iconId.length === 4) iconId += "01"; 
     
-    const fallbackChain = [
-      `https://uma.tools/images/icons/chara_${iconId}.png`, 
-      `https://wsrv.nl/?url=gametora.com/images/umamusume/characters/icons/chara_${iconId}.png`, 
-      `assets/umas.jpg` 
-    ];
-    
-    let attempt = 0;
-    portraitImg.src = fallbackChain[attempt];
-    portraitImg.onerror = () => {
-      attempt++;
-      if (attempt < fallbackChain.length) {
-        portraitImg.src = fallbackChain[attempt];
-      }
-    };
+    portraitImg.src = `assets/icons/${iconId}.png`;
+    portraitImg.onerror = () => { portraitImg.src = 'assets/umas.jpg'; };
   } else {
     portraitImg.src = 'assets/umas.jpg';
   }
@@ -251,6 +255,9 @@ function loadSavedBuilds() {
   }
 }
 
+// ============================================================================
+// 3. MOTOR FÍSICO DE CARRERA DE 9 UMAS
+// ============================================================================
 const STYLE_COEFF = {
   1: { earlySpd: 1.000, midSpd: 0.980, spurtSpd: 0.962, earlyAcc: 1.00, midAcc: 1.00, spurtAcc: 0.996, hpMult: 0.95 }, 
   2: { earlySpd: 0.978, midSpd: 0.991, spurtSpd: 0.975, earlyAcc: 0.985, midAcc: 1.00, spurtAcc: 0.996, hpMult: 0.89 }, 
@@ -437,6 +444,9 @@ function simulateSingleRace(runnersConfig, track, groundMod) {
   return states;
 }
 
+// ============================================================================
+// 4. EJECUCIÓN MONTE CARLO Y DIBUJADO DE TELEMETRÍA
+// ============================================================================
 function runChampionsMeeting() {
   const trackIdx = parseInt(document.getElementById("trackSelect").value) || 0;
   const track = STATE.tracks[trackIdx] || FALLBACK_TRACKS[0];
@@ -475,7 +485,7 @@ function runChampionsMeeting() {
   badge.style.borderColor = teamWinrate >= 50 ? "#34d399" : "#f43f5e";
 
   document.getElementById("cmSummaryText").textContent =
-    `Simuladas ${runs} carreras en ${track.name} contra nivel ${tier.toUpperCase()}. Tu equipo ganó ${teamWins} de ${runs} partidas.`;
+    `Simuladas ${runs} carreras en ${track.name || track.id} contra nivel ${tier.toUpperCase()}. Tu equipo ganó ${teamWins} de ${runs} partidas.`;
 
   const sbGrid = document.getElementById("scoreboardGrid");
   sbGrid.innerHTML = runners.map((r, i) => {
@@ -549,6 +559,9 @@ function drawTelemetryCanvas(raceStates, track) {
   }
 }
 
+// ============================================================================
+// 5. VINCULAR CONTROLES DEL DOM
+// ============================================================================
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".uma-tab").forEach(tab => {
     tab.addEventListener("click", () => {
