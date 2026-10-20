@@ -159,7 +159,7 @@ function renderActivePlayerSlot() {
   document.getElementById("statGuts").value = uma.guts;
   document.getElementById("statWit").value = uma.wit;
 
-  // Cargar imagen dinámica desde el servidor de GitHub
+  // Cargar imagen dinámica con SISTEMA MULTI-CDN (Anti 404)
   const portraitImg = document.getElementById("umaPortrait");
   const selectedUmaData = STATE.umas.find(u => u.name === uma.name);
   
@@ -167,9 +167,21 @@ function renderActivePlayerSlot() {
     let iconId = selectedUmaData.id.toString();
     if (iconId.length === 4) iconId += "01"; 
     
-    // ENLACE DIRECTO A GITHUB CORREGIDO
-    portraitImg.src = `https://raw.githubusercontent.com/Furious/UmaMusume-Asset-Rip/main/icons/chara_${iconId}.png`;
-    portraitImg.onerror = () => { portraitImg.src = 'assets/umas.jpg'; };
+    // Cola de enlaces: Si uno falla, intenta el siguiente automáticamente
+    const fallbackChain = [
+      `https://uma.tools/images/icons/chara_${iconId}.png`, // Intento 1: Uma-tools
+      `https://wsrv.nl/?url=gametora.com/images/umamusume/characters/icons/chara_${iconId}.png`, // Intento 2: GameTora vía Proxy (Se salta el bloqueo CORS)
+      `assets/umas.jpg` // Intento 3: Imagen local por defecto
+    ];
+    
+    let attempt = 0;
+    portraitImg.src = fallbackChain[attempt];
+    portraitImg.onerror = () => {
+      attempt++;
+      if (attempt < fallbackChain.length) {
+        portraitImg.src = fallbackChain[attempt];
+      }
+    };
   } else {
     portraitImg.src = 'assets/umas.jpg';
   }
