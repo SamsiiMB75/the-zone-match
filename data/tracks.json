@@ -1,23 +1,548 @@
 [
   {
-    "id": "10606",
-    "trackName": "Tokyo",
-    "name": "Tokyo 2400m (Turf) - Japanese Derby / Japan Cup",
-    "distance": 2400,
-    "surface": "Turf"
+    "id": "10701",
+    "trackName": "Chukyo",
+    "name": "Chukyo 1200m (Turf) - Takamatsunomiya Kinen",
+    "distance": 1200,
+    "surface": "Turf",
+    "corners": [
+      {
+        "start": 300,
+        "length": 450
+      }
+    ],
+    "straights": [
+      {
+        "start": 0,
+        "end": 300
+      },
+      {
+        "start": 750,
+        "end": 1200
+      }
+    ],
+    "slopes": [
+      {
+        "start": 820,
+        "length": 160,
+        "slope": 200
+      }
+    ]
   },
   {
-    "id": "10506",
+    "id": "10501",
     "trackName": "Nakayama",
-    "name": "Nakayama 2500m (Turf) - Arima Kinen",
-    "distance": 2500,
-    "surface": "Turf"
+    "name": "Nakayama 1200m (Turf) - Sprinters Stakes",
+    "distance": 1200,
+    "surface": "Turf",
+    "corners": [
+      {
+        "start": 280,
+        "length": 480
+      }
+    ],
+    "straights": [
+      {
+        "start": 0,
+        "end": 280
+      },
+      {
+        "start": 760,
+        "end": 1200
+      }
+    ],
+    "slopes": [
+      {
+        "start": 980,
+        "length": 180,
+        "slope": 220
+      }
+    ]
+  },
+  {
+    "id": "10902",
+    "trackName": "Hanshin",
+    "name": "Hanshin 1400m (Turf) - Hanshin Cup",
+    "distance": 1400,
+    "surface": "Turf",
+    "corners": [
+      {
+        "start": 450,
+        "length": 480
+      }
+    ],
+    "straights": [
+      {
+        "start": 0,
+        "end": 450
+      },
+      {
+        "start": 930,
+        "end": 1400
+      }
+    ],
+    "slopes": [
+      {
+        "start": 1150,
+        "length": 150,
+        "slope": 190
+      }
+    ]
+  },
+  {
+    "id": "10602",
+    "trackName": "Tokyo",
+    "name": "Tokyo 1600m (Turf) - Yasuda Kinen / Victoria Mile",
+    "distance": 1600,
+    "surface": "Turf",
+    "corners": [
+      {
+        "start": 550,
+        "length": 520
+      }
+    ],
+    "straights": [
+      {
+        "start": 0,
+        "end": 550
+      },
+      {
+        "start": 1070,
+        "end": 1600
+      }
+    ],
+    "slopes": [
+      {
+        "start": 1150,
+        "length": 200,
+        "slope": 190
+      }
+    ]
   },
   {
     "id": "10903",
     "trackName": "Hanshin",
     "name": "Hanshin 1600m (Turf) - Mile Championship / Oka Sho",
     "distance": 1600,
-    "surface": "Turf"
+    "surface": "Turf",
+    "corners": [
+      {
+        "start": 650,
+        "length": 470
+      }
+    ],
+    "straights": [
+      {
+        "start": 0,
+        "end": 650
+      },
+      {
+        "start": 1120,
+        "end": 1600
+      }
+    ],
+    "slopes": [
+      {
+        "start": 1350,
+        "length": 150,
+        "slope": 180
+      }
+    ]
+  },
+  {
+    "id": "10803",
+    "trackName": "Kyoto",
+    "name": "Kyoto 1600m (Turf) - Mile Championship",
+    "distance": 1600,
+    "surface": "Turf",
+    "corners": [
+      {
+        "start": 700,
+        "length": 500
+      }
+    ],
+    "straights": [
+      {
+        "start": 0,
+        "end": 700
+      },
+      {
+        "start": 1200,
+        "end": 1600
+      }
+    ],
+    "slopes": [
+      {
+        "start": 800,
+        "length": 150,
+        "slope": 150
+      }
+    ]
+  },
+  {
+    "id": "10611",
+    "trackName": "Tokyo",
+    "name": "Tokyo 1600m (Dirt) - February Stakes",
+    "distance": 1600,
+    "surface": "Dirt",
+    "corners": [
+      {
+        "start": 600,
+        "length": 500
+      }
+    ],
+    "straights": [
+      {
+        "start": 0,
+        "end": 600
+      },
+      {
+        "start": 1100,
+        "end": 1600
+      }
+    ],
+    "slopes": [
+      {
+        "start": 1150,
+        "length": 200,
+        "slope": 180
+      }
+    ]
+  },
+  {
+    "id": "10711",
+    "trackName": "Chukyo",
+    "name": "Chukyo 1800m (Dirt) - Champions Cup",
+    "distance": 1800,
+    "surface": "Dirt",
+    "corners": [
+      {
+        "start": 300,
+        "length": 400
+      },
+      {
+        "start": 1050,
+        "length": 410
+      }
+    ],
+    "straights": [
+      {
+        "start": 0,
+        "end": 300
+      },
+      {
+        "start": 700,
+        "end": 1050
+      },
+      {
+        "start": 1460,
+        "end": 1800
+      }
+    ],
+    "slopes": [
+      {
+        "start": 1500,
+        "length": 160,
+        "slope": 200
+      }
+    ]
+  },
+  {
+    "id": "10604",
+    "trackName": "Tokyo",
+    "name": "Tokyo 2000m (Turf) - Tenno Sho (Autumn)",
+    "distance": 2000,
+    "surface": "Turf",
+    "corners": [
+      {
+        "start": 150,
+        "length": 300
+      },
+      {
+        "start": 950,
+        "length": 520
+      }
+    ],
+    "straights": [
+      {
+        "start": 0,
+        "end": 150
+      },
+      {
+        "start": 450,
+        "end": 950
+      },
+      {
+        "start": 1470,
+        "end": 2000
+      }
+    ],
+    "slopes": [
+      {
+        "start": 1550,
+        "length": 200,
+        "slope": 200
+      }
+    ]
+  },
+  {
+    "id": "10504",
+    "trackName": "Nakayama",
+    "name": "Nakayama 2000m (Turf) - Satsuki Sho",
+    "distance": 2000,
+    "surface": "Turf",
+    "corners": [
+      {
+        "start": 400,
+        "length": 450
+      },
+      {
+        "start": 1250,
+        "length": 440
+      }
+    ],
+    "straights": [
+      {
+        "start": 0,
+        "end": 400
+      },
+      {
+        "start": 850,
+        "end": 1250
+      },
+      {
+        "start": 1690,
+        "end": 2000
+      }
+    ],
+    "slopes": [
+      {
+        "start": 1780,
+        "length": 180,
+        "slope": 220
+      }
+    ]
+  },
+  {
+    "id": "11001",
+    "trackName": "Ooi",
+    "name": "Ooi 2000m (Dirt) - Tokyo Daishoten / Teio Sho",
+    "distance": 2000,
+    "surface": "Dirt",
+    "corners": [
+      {
+        "start": 350,
+        "length": 450
+      },
+      {
+        "start": 1200,
+        "length": 420
+      }
+    ],
+    "straights": [
+      {
+        "start": 0,
+        "end": 350
+      },
+      {
+        "start": 800,
+        "end": 1200
+      },
+      {
+        "start": 1620,
+        "end": 2000
+      }
+    ],
+    "slopes": []
+  },
+  {
+    "id": "10905",
+    "trackName": "Hanshin",
+    "name": "Hanshin 2200m (Turf) - Takarazuka Kinen",
+    "distance": 2200,
+    "surface": "Turf",
+    "corners": [
+      {
+        "start": 500,
+        "length": 450
+      },
+      {
+        "start": 1350,
+        "length": 500
+      }
+    ],
+    "straights": [
+      {
+        "start": 0,
+        "end": 500
+      },
+      {
+        "start": 950,
+        "end": 1350
+      },
+      {
+        "start": 1850,
+        "end": 2200
+      }
+    ],
+    "slopes": [
+      {
+        "start": 1980,
+        "length": 150,
+        "slope": 200
+      }
+    ]
+  },
+  {
+    "id": "10606",
+    "trackName": "Tokyo",
+    "name": "Tokyo 2400m (Turf) - Japanese Derby / Japan Cup",
+    "distance": 2400,
+    "surface": "Turf",
+    "corners": [
+      {
+        "start": 350,
+        "length": 400
+      },
+      {
+        "start": 1400,
+        "length": 450
+      }
+    ],
+    "straights": [
+      {
+        "start": 0,
+        "end": 350
+      },
+      {
+        "start": 750,
+        "end": 1400
+      },
+      {
+        "start": 1850,
+        "end": 2400
+      }
+    ],
+    "slopes": [
+      {
+        "start": 1900,
+        "length": 200,
+        "slope": 200
+      }
+    ]
+  },
+  {
+    "id": "10506",
+    "trackName": "Nakayama",
+    "name": "Nakayama 2500m (Turf) - Arima Kinen",
+    "distance": 2500,
+    "surface": "Turf",
+    "corners": [
+      {
+        "start": 300,
+        "length": 400
+      },
+      {
+        "start": 1550,
+        "length": 640
+      }
+    ],
+    "straights": [
+      {
+        "start": 0,
+        "end": 300
+      },
+      {
+        "start": 700,
+        "end": 1550
+      },
+      {
+        "start": 2190,
+        "end": 2500
+      }
+    ],
+    "slopes": [
+      {
+        "start": 2250,
+        "length": 180,
+        "slope": 220
+      }
+    ]
+  },
+  {
+    "id": "10808",
+    "trackName": "Kyoto",
+    "name": "Kyoto 3000m (Turf) - Kikuka Sho",
+    "distance": 3000,
+    "surface": "Turf",
+    "corners": [
+      {
+        "start": 400,
+        "length": 500
+      },
+      {
+        "start": 2100,
+        "length": 500
+      }
+    ],
+    "straights": [
+      {
+        "start": 0,
+        "end": 400
+      },
+      {
+        "start": 900,
+        "end": 2100
+      },
+      {
+        "start": 2600,
+        "end": 3000
+      }
+    ],
+    "slopes": [
+      {
+        "start": 2000,
+        "length": 200,
+        "slope": 180
+      }
+    ]
+  },
+  {
+    "id": "10809",
+    "trackName": "Kyoto",
+    "name": "Kyoto 3200m (Turf) - Tenno Sho (Spring)",
+    "distance": 3200,
+    "surface": "Turf",
+    "corners": [
+      {
+        "start": 500,
+        "length": 500
+      },
+      {
+        "start": 2300,
+        "length": 500
+      }
+    ],
+    "straights": [
+      {
+        "start": 0,
+        "end": 500
+      },
+      {
+        "start": 1000,
+        "end": 2300
+      },
+      {
+        "start": 2800,
+        "end": 3200
+      }
+    ],
+    "slopes": [
+      {
+        "start": 2200,
+        "length": 200,
+        "slope": 200
+      }
+    ]
   }
 ]

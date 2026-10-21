@@ -1,32 +1,98 @@
 {
-  "102001": {
+  "101901": {
     "name": [
-      "Seiun Sky",
-      "Seiun Sky (Original)"
+      "Agnes Digital",
+      "Agnes Digital (Original)"
     ]
   },
-  "100502": {
+  "103201": {
     "name": [
-      "Maruzensky",
-      "Maruzensky (Summer)"
+      "Agnes Tachyon",
+      "Agnes Tachyon (Original)"
     ]
   },
-  "100401": {
+  "101801": {
     "name": [
-      "Oguri Cap",
-      "Oguri Cap (Original)"
+      "Air Groove",
+      "Air Groove (Original)"
     ]
   },
-  "103401": {
+  "101802": {
     "name": [
-      "Narita Taishin",
-      "Narita Taishin (Original)"
+      "Air Groove",
+      "Air Groove (Wedding)"
     ]
   },
-  "102701": {
+  "105301": {
     "name": [
-      "Mejiro Ryan",
-      "Mejiro Ryan (Original)"
+      "Bambooo Memory",
+      "Bamboo Memory (Original)"
+    ]
+  },
+  "102302": {
+    "name": [
+      "Biwa Hayahide",
+      "Biwa Hayahide (Christmas)"
+    ]
+  },
+  "102301": {
+    "name": [
+      "Biwa Hayahide",
+      "Biwa Hayahide (Original)"
+    ]
+  },
+  "103801": {
+    "name": [
+      "Curren Chan",
+      "Curren Chan (Original)"
+    ]
+  },
+  "100901": {
+    "name": [
+      "Daiwa Scarlet",
+      "Daiwa Scarlet (Original)"
+    ]
+  },
+  "106401": {
+    "name": [
+      "Eishin Flash",
+      "Eishin Flash (Original)"
+    ]
+  },
+  "101402": {
+    "name": [
+      "El Condor Pasa",
+      "El Condor Pasa (Fantasy)"
+    ]
+  },
+  "101401": {
+    "name": [
+      "El Condor Pasa",
+      "El Condor Pasa (Original)"
+    ]
+  },
+  "103501": {
+    "name": [
+      "Fine Motion",
+      "Fine Motion (Original)"
+    ]
+  },
+  "100601": {
+    "name": [
+      "Fuji Kiseki",
+      "Fuji Kiseki (Original)"
+    ]
+  },
+  "104002": {
+    "name": [
+      "Gold City",
+      "Gold City (Festival)"
+    ]
+  },
+  "104001": {
+    "name": [
+      "Gold City",
+      "Gold City (Original)"
     ]
   },
   "100701": {
@@ -35,16 +101,382 @@
       "Gold Ship (Original)"
     ]
   },
+  "101102": {
+    "name": [
+      "Grass Wonder",
+      "Grass Wonder (Fantasy)"
+    ]
+  },
+  "101101": {
+    "name": [
+      "Grass Wonder",
+      "Grass Wonder (Original)"
+    ]
+  },
+  "105202": {
+    "name": [
+      "Haru Urara",
+      "Haru Urara (New Year)"
+    ]
+  },
+  "105201": {
+    "name": [
+      "Haru Urara",
+      "Haru Urara (Original)"
+    ]
+  },
+  "102801": {
+    "name": [
+      "Hishi Akebono",
+      "Hishi Akebono (Original)"
+    ]
+  },
+  "101201": {
+    "name": [
+      "Hishi Amazon",
+      "Hishi Amazon (Original)"
+    ]
+  },
+  "103101": {
+    "name": [
+      "Ines Fujin",
+      "Ines Fujin (Original)"
+    ]
+  },
+  "103901": {
+    "name": [
+      "Kawakami Princess",
+      "Kawakami Princess (Original)"
+    ]
+  },
+  "106101": {
+    "name": [
+      "King Halo",
+      "King Halo (Original)"
+    ]
+  },
+  "106802": {
+    "name": [
+      "Kitasan Black",
+      "Kitasan Black (New Year)"
+    ]
+  },
+  "106801": {
+    "name": [
+      "Kitasan Black",
+      "Kitasan Black (Original)"
+    ]
+  },
+  "102501": {
+    "name": [
+      "Manhattan Cafe",
+      "Manhattan Cafe (Original)"
+    ]
+  },
+  "100501": {
+    "name": [
+      "Maruzensky",
+      "Maruzensky (Original)"
+    ]
+  },
+  "100502": {
+    "name": [
+      "Maruzensky",
+      "Maruzensky (Summer)"
+    ]
+  },
+  "105602": {
+    "name": [
+      "Matikanefukukitaru",
+      "Matikanefukukitaru (Full Armor)"
+    ]
+  },
+  "105601": {
+    "name": [
+      "Matikanefukukitaru",
+      "Matikanefukukitaru (Original)"
+    ]
+  },
+  "106201": {
+    "name": [
+      "Matikanetannhauser",
+      "Matikanetannhauser (Original)"
+    ]
+  },
+  "102401": {
+    "name": [
+      "Mayano Top Gun",
+      "Mayano Top Gun (Original)"
+    ]
+  },
+  "102402": {
+    "name": [
+      "Mayano Top Gun",
+      "Mayano Top Gun (Wedding)"
+    ]
+  },
+  "105801": {
+    "name": [
+      "Meisho Doto",
+      "Meisho Doto (Original)"
+    ]
+  },
+  "107101": {
+    "name": [
+      "Mejiro Ardan",
+      "Mejiro Ardan (Original)"
+    ]
+  },
+  "107401": {
+    "name": [
+      "Mejiro Bright",
+      "Mejiro Bright (Original)"
+    ]
+  },
+  "105901": {
+    "name": [
+      "Mejiro Dober",
+      "Mejiro Dober (Original)"
+    ]
+  },
+  "101302": {
+    "name": [
+      "Mejiro McQueen",
+      "Mejiro McQueen (Anime Collab)"
+    ]
+  },
+  "101301": {
+    "name": [
+      "Mejiro McQueen",
+      "Mejiro McQueen (Original)"
+    ]
+  },
+  "106402": {
+    "name": [
+      "Mejiro Palmer",
+      "Mejiro Palmer (Original)"
+    ]
+  },
+  "102701": {
+    "name": [
+      "Mejiro Ryan",
+      "Mejiro Ryan (Original)"
+    ]
+  },
+  "102601": {
+    "name": [
+      "Mihono Bourbon",
+      "Mihono Bourbon (Original)"
+    ]
+  },
+  "102602": {
+    "name": [
+      "Mihono Bourbon",
+      "Mihono Bourbon (Valentine)"
+    ]
+  },
+  "101601": {
+    "name": [
+      "Narita Brian",
+      "Narita Brian (Original)"
+    ]
+  },
+  "103401": {
+    "name": [
+      "Narita Taishin",
+      "Narita Taishin (Original)"
+    ]
+  },
+  "106001": {
+    "name": [
+      "Nice Nature",
+      "Nice Nature (Original)"
+    ]
+  },
+  "105101": {
+    "name": [
+      "Nishino Flower",
+      "Nishino Flower (Original)"
+    ]
+  },
+  "100402": {
+    "name": [
+      "Oguri Cap",
+      "Oguri Cap (Christmas)"
+    ]
+  },
+  "100401": {
+    "name": [
+      "Oguri Cap",
+      "Oguri Cap (Original)"
+    ]
+  },
+  "103002": {
+    "name": [
+      "Rice Shower",
+      "Rice Shower (Halloween)"
+    ]
+  },
+  "103001": {
+    "name": [
+      "Rice Shower",
+      "Rice Shower (Original)"
+    ]
+  },
+  "104101": {
+    "name": [
+      "Sakura Bakushin O",
+      "Sakura Bakushin O (Original)"
+    ]
+  },
+  "106901": {
+    "name": [
+      "Sakura Chiyono O",
+      "Sakura Chiyono O (Original)"
+    ]
+  },
+  "106702": {
+    "name": [
+      "Satono Diamond",
+      "Satono Diamond (New Year)"
+    ]
+  },
+  "106701": {
+    "name": [
+      "Satono Diamond",
+      "Satono Diamond (Original)"
+    ]
+  },
+  "102001": {
+    "name": [
+      "Seiun Sky",
+      "Seiun Sky (Original)"
+    ]
+  },
+  "104801": {
+    "name": [
+      "Shinko Windy",
+      "Shinko Windy (Original)"
+    ]
+  },
+  "100201": {
+    "name": [
+      "Silence Suzuka",
+      "Silence Suzuka (Original)"
+    ]
+  },
+  "104601": {
+    "name": [
+      "Smart Falcon",
+      "Smart Falcon (Original)"
+    ]
+  },
   "100101": {
     "name": [
       "Special Week",
       "Special Week (Original)"
     ]
   },
+  "100102": {
+    "name": [
+      "Special Week",
+      "Special Week (Summer)"
+    ]
+  },
+  "104502": {
+    "name": [
+      "Super Creek",
+      "Super Creek (Halloween)"
+    ]
+  },
+  "104501": {
+    "name": [
+      "Super Creek",
+      "Super Creek (Original)"
+    ]
+  },
+  "104401": {
+    "name": [
+      "Sweep Tosho",
+      "Sweep Tosho (Original)"
+    ]
+  },
+  "101702": {
+    "name": [
+      "Symboli Rudolf",
+      "Symboli Rudolf (Festival)"
+    ]
+  },
   "101701": {
     "name": [
       "Symboli Rudolf",
       "Symboli Rudolf (Original)"
+    ]
+  },
+  "101502": {
+    "name": [
+      "T.M. Opera O",
+      "T.M. Opera O (New Year)"
+    ]
+  },
+  "101501": {
+    "name": [
+      "T.M. Opera O",
+      "T.M. Opera O (Original)"
+    ]
+  },
+  "101001": {
+    "name": [
+      "Taiki Shuttle",
+      "Taiki Shuttle (Original)"
+    ]
+  },
+  "102101": {
+    "name": [
+      "Tamamo Cross",
+      "Tamamo Cross (Original)"
+    ]
+  },
+  "100302": {
+    "name": [
+      "Tokai Teio",
+      "Tokai Teio (Anime Collab)"
+    ]
+  },
+  "100301": {
+    "name": [
+      "Tokai Teio",
+      "Tokai Teio (Original)"
+    ]
+  },
+  "104701": {
+    "name": [
+      "Tosen Jordan",
+      "Tosen Jordan (Original)"
+    ]
+  },
+  "100801": {
+    "name": [
+      "Vodka",
+      "Vodka (Original)"
+    ]
+  },
+  "103601": {
+    "name": [
+      "Winning Ticket",
+      "Winning Ticket (Original)"
+    ]
+  },
+  "107201": {
+    "name": [
+      "Yaeno Muteki",
+      "Yaeno Muteki (Original)"
+    ]
+  },
+  "102901": {
+    "name": [
+      "Yukino Bijin",
+      "Yukino Bijin (Original)"
     ]
   }
 }
