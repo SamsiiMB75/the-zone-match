@@ -42,23 +42,24 @@
     <section class="cm-top-bar">
       <div class="track-selector-group">
         <div class="field-group" style="flex: 2;">
-          <label class="cm-label">HIPÓDROMO Y DISTANCIA (BASE DE DATOS GLOBAL)</label>
+          <label class="cm-label">HIPÓDROMO Y DISTANCIA</label>
           <select id="trackSelect" class="cm-input"></select>
         </div>
         <div class="field-group" style="flex: 1;">
           <label class="cm-label">ESTADO DE PISTA</label>
           <select id="groundSelect" class="cm-input">
-            <option value="1">Firm / Good (Rápida)</option>
-            <option value="2">Soft (Blanda)</option>
-            <option value="3">Heavy (Pesada - Lluvia)</option>
+            <option value="1">Firm condition</option>
+            <option value="1.5">Good condition</option>
+            <option value="2">Soft condition</option>
+            <option value="3">Heavy condition</option>
           </select>
         </div>
         <div class="field-group" style="flex: 1;">
           <label class="cm-label">SIMULACIONES</label>
           <select id="simRunsSelect" class="cm-input">
-            <option value="20">20 Carreras (Rápido)</option>
-            <option value="50" selected>50 Carreras (Estándar CM)</option>
-            <option value="100">100 Carreras (Alta Precisión)</option>
+            <option value="20">20 Carreras</option>
+            <option value="50" selected>50 Carreras</option>
+            <option value="100">100 Carreras</option>
           </select>
         </div>
       </div>
@@ -98,7 +99,7 @@
                 <label class="cm-label">ESTILO DE CARRERA</label>
                 <select id="umaStyleSelect" class="cm-input">
                   <option value="1">Front Runner</option>
-                  <option value="2">Pace</option>
+                  <option value="2">Pace Chaser</option>
                   <option value="3">Late Surger</option>
                   <option value="4">End Closer</option>
                 </select>
